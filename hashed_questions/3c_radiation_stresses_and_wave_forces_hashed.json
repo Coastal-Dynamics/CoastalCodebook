@@ -1,0 +1,238 @@
+{
+    "Q3c-boundary": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "In the summarizing figure, select the input parameters such that the wave is in intermediate water at the offshore boundary. Which change(s) to the input parameters result in the wave to be in deep(er) water at the offshore boundary?",
+        "options": {
+            "a": "A smaller offshore wave height",
+            "b": "A smaller wave period",
+            "c": "A steeper bed slope",
+            "d": "A larger water depth at the boundary",
+            "e": "A smaller offshore wave angle"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done!",
+            "incorrect": "Incorrect. Please try again."
+        }
+    },
+    "Q3c-period": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Using the summarizing figure, compare two waves with a different period. What is the effect of a larger wave period?",
+        "options": {
+            "a": "Larger wave lengths",
+            "b": "Smaller phase velocities",
+            "c": "Larger group velocities",
+            "d": "Larger wave heights in the shoaling zone",
+            "e": "A smaller surf zone width",
+            "f": "More gradual refraction"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done!",
+            "incorrect": "Incorrect. Please try again."
+        }
+    },
+    "Q3c-angle": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Using the summarizing figure, compare two waves with a different wave angle. What is the effect of a larger wave angle?",
+        "options": {
+            "a": "Smaller wave heights in the shoaling zone",
+            "b": "A more narrow surf zone",
+            "c": "Larger wave lengths",
+            "d": "Smaller wave energy in the region where both waves are breaking",
+            "e": "Larger n-values",
+            "f": "Smaller phase velocities"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done!",
+            "incorrect": "Incorrect. Please try again."
+        }
+    },
+    "Q3c-increasing_breaking_height": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Investigate the various parameters by changing them one by one in the summarizing figure. Which parameter(s) increase(s) the wave height at breaking?",
+        "options": {
+            "a": "A larger wave height at the offshore boundary",
+            "b": "A larger wave period",
+            "c": "A less steep bed slope",
+            "d": "A larger wave angle at the offshore boundary",
+            "e": "A smaller breaker parameter"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done!",
+            "incorrect": "Incorrect. Please try again."
+        }
+    },
+    "Q3c-increasing_surf_zone_width": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Investigate the various parameters by changing them one by one in the summarizing figure. Which parameter(s) increase(s) the width of the surf zone?",
+        "options": {
+            "a": "A larger wave height at the offshore boundary",
+            "b": "A larger wave period",
+            "c": "A less steep bed slope",
+            "d": "A larger wave angle at the offshore boundary",
+            "e": "A smaller breaker parameter"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done!",
+            "incorrect": "Incorrect. Please try again."
+        }
+    },
+    "Q3c-angle-part2": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Using the summarizing figure of Part 2, investigate the effect of the wave angle. What is true?",
+        "options": {
+            "a": "For normally incident waves the set-up is zero",
+            "b": "For normally incident waves the longshore current is zero",
+            "c": "The smaller the offshore wave angle, the larger the maximum set-down and set-up",
+            "d": "The larger the offshore wave angle, the smaller the alongshore current"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done!",
+            "incorrect": "Incorrect. Please try again."
+        }
+    },
+    "Q3c-fx-fy": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Using the summarizing figure of Part 2, investigate the wave forces Fx and Fy. What is true?",
+        "options": {
+            "a": "The wave forces are non-zero in the surf zone only",
+            "b": "The alongshore wave force is zero in deep water and in the shoaling zone",
+            "c": "The maximum offshore directed wave force is smaller than the maximum onshore directed wave force",
+            "d": "The wave forces are maximum where the radiation stresses are maximum"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done!",
+            "incorrect": "Incorrect. Please try again."
+        }
+    },
+    "Q3c-breaking_wave_height-part2": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "In the summarizing figure of Part 2, select two identical obliquely incident waves. Now increase the offshore wave height of one of the waves such that the breaking wave height becomes about twice as high (you made need both summarizing figures to determine the correct settings). Which other parameter(s) also get(s) twice as large?",
+        "options": {
+            "a": "The surf zone width",
+            "b": "The maximum radiation shear stress",
+            "c": "The surf zone discharge of the longshore current",
+            "d": "The maximum radiation normal stress",
+            "e": "The maximum longshore current velocity"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done! What does this mean for the increase in surf zone discharge?",
+            "incorrect": "Incorrect. Please read the text at the bottom of page 225 of the textbook and try again."
+        }
+    },
+    "Q3c-slope-part2": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Using the summarizing figure of Part 2, investigate the effect of the beach slope on the longshore current. Suppose the beach slope gets twice as steep, what is true?",
+        "options": {
+            "a": "The maximum longshore current velocity gets about twice as large",
+            "b": "The maximum longshore current velocity gets about twice as small",
+            "c": "The width of the surf zone gets about twice as large",
+            "d": "The width of the surf zone gets about twice as small",
+            "e": "The surf zone discharge gets about twice as large",
+            "f": "The surf zone discharge gets about twice as small"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done! Can you explain this in physical terms?",
+            "incorrect": "Incorrect. Please read the text at the bottom of page 225 of the textbook and try again."
+        }
+    },
+    "Q3c-longshoretransport": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "In which zones do you expect longshore sediment transport?",
+        "options": {
+            "a": "Offshore zone (deep water)",
+            "b": "Shoaling zone",
+            "c": "Surf zone"
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done! ",
+            "incorrect": "Incorrect. Please study the cross-shore distribution of the longshore current and try again."
+        }
+    },
+    "Q3c-cross_shoretransport1": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "In which zones do you expect sediment transport by the oscillatory wave motion?",
+        "options": {
+            "a": "Offshore zone (deep water)",
+            "b": "Shoaling zone",
+            "c": "Surf zone"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done! ",
+            "incorrect": "Incorrect. Please study the cross-shore distribution of the orbital velocity amplitude and try again."
+        }
+    },
+    "Q3c-cross_shoretransport2": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "In which zones do you expect sediment transport by the undertow?",
+        "options": {
+            "a": "Offshore zone (deep water)",
+            "b": "Shoaling zone",
+            "c": "Surf zone"
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "That is correct, well done! ",
+            "incorrect": "Incorrect. Remember that the undertow is a circulation current that exists due to the vertical disbalance between the onshore wave force and the offshore pressure force. Please try again. "
+        }
+    }
+}

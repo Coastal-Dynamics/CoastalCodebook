@@ -1,0 +1,360 @@
+{
+    "Q3a-classification-trends": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "What can be observed from the global distribution of tidal range and character?",
+        "options": {
+            "a": "Semi-diurnal and mainly semi-diurnal mixed tides tend to have smaller tidal ranges than diurnal and mainly diurnal mixed tides.",
+            "b": "Most of the worlds's coastlines experience either diurnal or mainly diurnal mixed tides.",
+            "c": "Diurnal and mainly diurnal mixed tides are mostly found at low latitudes.",
+            "d": "Semi-enclosed seas tend to have a relatively large tidal range."
+        },
+        "answer": [
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done. Section 4.4.1. of the book explains this in detail.",
+            "incorrect": "Incorrect, please study Section 4.4.1. of the book and try again."
+        }
+    },
+    "Q3a-F-Scheveningen": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the form factor for Scheveningen? Give your answer in two significant figures.",
+        "answer": "dc08a4e8bbdd4019572c30507de074a79e24846715cd9028fb82bda6f3f8f9d7",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-F-Galveston": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the form factor for Galveston? Give your answer in two significant figures.",
+        "answer": "eca06fdd26e513a7b8510c86602285041a916de5491de13373d94fe0d7e04737",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-F-Jakarta": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the form factor for Jakarta? Give your answer in two significant figures.",
+        "answer": "fbd04e1aae9ce0b11a8946e2c9ac2619f7428a64d32d01eff61d809dcb70ee8e",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-F-Valparaiso": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the form factor for Valparaiso? Give your answer in two significant figures.",
+        "answer": "bffb16d6fe1445f051b3cff3025340011b817b391ffc04dcd77d1452efa10c25",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-category-Scheveningen": {
+        "name": "Q1",
+        "type": "multiple_choice",
+        "question": "What is the tidal character of Scheveningen?",
+        "options": {
+            "a": "Semi-diurnal",
+            "b": "Mixed, mainly semi-diurnal",
+            "c": "Mixed, mainly diurnal",
+            "d": "Diurnal"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-category-Galveston": {
+        "name": "Q2",
+        "type": "multiple_choice",
+        "question": "What is the tidal character of Galveston?",
+        "options": {
+            "a": "Semi-diurnal",
+            "b": "Mixed, mainly semi-diurnal",
+            "c": "Mixed, mainly diurnal",
+            "d": "Diurnal"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-category-Jakarta": {
+        "name": "Q3",
+        "type": "multiple_choice",
+        "question": "What is the tidal character of Jakarta?",
+        "options": {
+            "a": "Semi-diurnal",
+            "b": "Mixed, mainly semi-diurnal",
+            "c": "Mixed, mainly diurnal",
+            "d": "Diurnal"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-category-Valparaiso": {
+        "name": "Q4",
+        "type": "multiple_choice",
+        "question": "What is the tidal character of Valparaiso?",
+        "options": {
+            "a": "Semi-diurnal",
+            "b": "Mixed, mainly semi-diurnal",
+            "c": "Mixed, mainly diurnal",
+            "d": "Diurnal"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-label-1": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Closely look at the differences between the four subplots. The figure with label '1' shows the tidal curve of the following location:",
+        "options": {
+            "a": "Scheveningen",
+            "b": "Galveston",
+            "c": "Jakarta",
+            "d": "Valparaiso"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-label-2": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Closely look at the differences between the four subplots. The figure with label '2' shows the tidal curve of the following location:",
+        "options": {
+            "a": "Scheveningen",
+            "b": "Galveston",
+            "c": "Jakarta",
+            "d": "Valparaiso"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-label-3": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Closely look at the differences between the four subplots. The figure with label '3' shows the tidal curve of the following location:",
+        "options": {
+            "a": "Scheveningen",
+            "b": "Galveston",
+            "c": "Jakarta",
+            "d": "Valparaiso"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-label-4": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Closely look at the differences between the four subplots. The figure with label '4' shows the tidal curve of the following location:",
+        "options": {
+            "a": "Scheveningen",
+            "b": "Galveston",
+            "c": "Jakarta",
+            "d": "Valparaiso"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-semi-diurnal-TC12": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "In a semi-diurnal environment, spring tide occurs for tidal constituents TC1 and TC2 every D1 days. Select TC1 and TC2.",
+        "options": {
+            "a": "M2",
+            "b": "S2",
+            "c": "N2",
+            "d": "K2",
+            "e": "K1",
+            "f": "O1",
+            "g": "P1",
+            "h": "Q1"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again. You may have to go back to the open questions above."
+        }
+    },
+    "Q3a-semi-diurnal-D1": {
+        "name": "Q7",
+        "type": "numeric",
+        "question": "In a semi-diurnal environment, spring tide occurs for tidal constituents TC1 and TC2 every D1 days. What is the duration of D1 in days (use four significant figures)?",
+        "answer": "19881447305db2036e349cf36fc8879fb744fcefeb5271f5e8e431cd02b0cdd1",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-diurnal-TC34": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "In a diurnal environment, spring tide occurs for tidal constituents TC3 and TC4 every D2 days. Select TC3 and TC4.",
+        "options": {
+            "a": "M2",
+            "b": "S2",
+            "c": "N2",
+            "d": "K2",
+            "e": "K1",
+            "f": "O1",
+            "g": "P1",
+            "h": "Q1"
+        },
+        "answer": [
+            "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea",
+            "252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again. You may have to go back to the open questions above."
+        }
+    },
+    "Q3a-diurnal-D2": {
+        "name": "name",
+        "type": "numeric",
+        "question": "In a diurnal environment, spring tide occurs for tidal constituents TC3 and TC4 every D2 days. What is the duration of D2 in days (use four significant figures)?",
+        "answer": "b8a759f5a69ae52d4eb5cee97c34a326aa5930ee78ab1a20f3173331db23b29a",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q3a-semi-diurnal-month12": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Strongest semi-diurnal tides are found around the 21st of the months Month1 and Month2, as can be seen from adding constituents TC5 and TC6. Select Month1 and Month2.",
+        "options": {
+            "a": "January",
+            "b": "February",
+            "c": "March",
+            "d": "April",
+            "e": "May",
+            "f": "June",
+            "g": "July",
+            "h": "August",
+            "i": "September",
+            "j": "October",
+            "k": "November",
+            "l": "December"
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "de7d1b721a1e0632b7cf04edf5032c8ecffa9f9a08492152b926f1a5a7e765d7"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done. These are the Spring and Autumnal Equinoxes.",
+            "incorrect": "Incorrect, please try again. You may have to go back to the open questions above."
+        }
+    },
+    "Q3a-semi-diurnal-TC56": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Strongest semi-diurnal tides are found around the 21st of the months Month1 and Month2, as can be seen from adding constituents TC5 and TC6. Select TC5 and TC6.",
+        "options": {
+            "a": "M2",
+            "b": "S2",
+            "c": "N2",
+            "d": "K2",
+            "e": "K1",
+            "f": "O1",
+            "g": "P1",
+            "h": "Q1"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done. Have you computed the beat length? Check that is is 182.6 days.",
+            "incorrect": "Incorrect, please try again. You may have to go back to the open questions above."
+        }
+    },
+    "Q3a-diurnal-month34": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Strongest diurnal tides are found around the 21st of the months Month3 and Month4, as can be seen from adding constituents TC7 and TC8. Select Month3 and Month4.",
+        "options": {
+            "a": "January",
+            "b": "February",
+            "c": "March",
+            "d": "April",
+            "e": "May",
+            "f": "June",
+            "g": "July",
+            "h": "August",
+            "i": "September",
+            "j": "October",
+            "k": "November",
+            "l": "December"
+        },
+        "answer": [
+            "252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111",
+            "acac86c0e609ca906f632b0e2dacccb2b77d22b0621f20ebece1a4835b93f6f0"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done. These are the Summer and Winter solstices.",
+            "incorrect": "Incorrect, please try again. You may have to go back to the open questions above."
+        }
+    },
+    "Q3a-diurnal-TC78": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Strongest diurnal tides are found around the 21st of the months Month3 and Month4, as can be seen from adding constituents TC7 and TC8. Select TC7 and TC8.",
+        "options": {
+            "a": "M2",
+            "b": "S2",
+            "c": "N2",
+            "d": "K2",
+            "e": "K1",
+            "f": "O1",
+            "g": "P1",
+            "h": "Q1"
+        },
+        "answer": [
+            "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea",
+            "cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a64aced233c9afe29"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done. Have you computed the beat length? Check that is is 182.6 days.",
+            "incorrect": "Incorrect, please try again. You may have to go back to the open questions above."
+        }
+    }
+}

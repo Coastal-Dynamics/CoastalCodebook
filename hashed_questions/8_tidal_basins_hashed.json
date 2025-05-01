@@ -1,0 +1,794 @@
+{
+    "Q8a-cross_section_loc1": {
+        "name": "Q8-1",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 1? Where does it move to, point A, B, C, D, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "B",
+            "c": "C",
+            "d": "D",
+            "e": "E",
+            "f": "N"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! Since u\u2091 is smaller than u_eq, the inlet will get smaller and eventually close. In terms of the equilibirum points: it will move further away from the unstable equilibrium point.",
+            "incorrect": "Incorrect. Is u\u2091 smaller of larger than u_eq? What would that mean for its trajectory on the Escoffier curve? You can also ask yourself: which equilibrium point is location 1 closest to? Is this a stable or unstable equilibrium? Which side of that point is location 1 on?"
+        }
+    },
+    "Q8a-cross_section_loc2": {
+        "name": "Q8-2",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 2? Where does it move to, point A, B, C, D, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "B",
+            "c": "C",
+            "d": "D",
+            "e": "E",
+            "f": "N"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! Since u\u2091 is larger than u_eq, the inlet cross-section will increase until the stable eqilibrium point D is reached. In other words: it will move away from the unstable equilibrium point and towards the stable equilibrium point.",
+            "incorrect": "Incorrect. Is u\u2091 smaller of larger than u_eq? What would that mean for its trajectory on the Escoffier curve? You can also ask yourself: which equilibrium point is location 2 closest to? Is this a stable or unstable equilibrium? Which side of that point is location 2 on?"
+        }
+    },
+    "Q8a-cross_section_loc3": {
+        "name": "Q8-3",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 3? Where does it move to, point A, B, C, D, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "B",
+            "c": "C",
+            "d": "D",
+            "e": "E",
+            "f": "N"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! Since u\u2091 is larger than u_eq, the inlet cross-section will increase until the stable eqilibrium point D is reached. In other words: it will move towards the stable equilibrium point.",
+            "incorrect": "Incorrect. Is u\u2091 smaller of larger than u_eq? What would that mean for its trajectory on the Escoffier curve? You can also ask yourself: which equilibrium point is location 3 closest to? Is this a stable or unstable equilibrium? Which side of that point is location 3 on?"
+        }
+    },
+    "Q8a-cross_section_loc4": {
+        "name": "Q8-4",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 4? Where does it move to, point A, B, C, D, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "B",
+            "c": "C",
+            "d": "D",
+            "e": "E",
+            "f": "N"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! Since u\u2091 is smaller than u_eq, the inlet cross-section will decrease until the stable eqilibrium point D is reached. Thus, it will move towards the stable equilibrium point.",
+            "incorrect": " Incorrect. Is u\u2091 smaller of larger than u_eq? What would that mean for its trajectory on the Escoffier curve? You can also ask yourself: which equilibrium point is location 4 closest to? Is this a stable or unstable equilibrium? Which side of that point is location 4 on?"
+        }
+    },
+    "Q8a-cross_section_loc5": {
+        "name": "Q8-5",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 5? Where does it move to, point A, B, C, D, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "B",
+            "c": "C",
+            "d": "D",
+            "e": "E",
+            "f": "N"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! Since u\u2091 is smaller than u_eq, the inlet cross-section will decrease until the stable eqilibrium point D is reached. Thus, it will move towards the stable equilibrium point.",
+            "incorrect": " Incorrect. Is u\u2091 smaller of larger than u_eq? What would that mean for its trajectory on the Escoffier curve? You can also ask yourself: which equilibrium point is location 5 closest to? Is this a stable or unstable equilibrium? Which side of that point is location 5 on?"
+        }
+    },
+    "Q8a-cross_section_III_loc1": {
+        "name": "Q8-6",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 1 for scenario S-III? Where does it move to, point A, C, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "C",
+            "c": "E",
+            "d": "N"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! Since the velocity u\u2091 is smaller than the equilibrium velocity u_eq, the inlet cross-section will decrease until it is closed off eventually. Point C is an unstable equilibrium point, since moving away from it to a slightly smaller cross-section, will further reduce the cross-section.",
+            "incorrect": " Incorrect. What is the velocity u\u2091 here relative to the equilibrium velocity u_eq? Where is the nearest equilibrium point? Is it stable or unstable?"
+        }
+    },
+    "Q8a-cross_section_III_loc2": {
+        "name": "Q8-7",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 2 for scenario S-III? Where does it move to, point A, C, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "C",
+            "c": "E",
+            "d": "N"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! There is no stable equilibrium for this scenario. A perturbation to slightly larger cross-sections, will lead to u\u2091 < u_eq and make the channel return to point C. However, a perturbation to a slightly smaller cross-section, will also result in u\u2091 becoming smaller than the equilibrium velocity u_eq and, thus, a further reduction of the cross-section. Therefore, the inlet will eventually close off.",
+            "incorrect": "Incorrect. Is this an equilibrium point? Is it stable or unstable? What would that mean for our trajectory along the Escoffier curve?"
+        }
+    },
+    "Q8a-cross_section_III_loc3": {
+        "name": "Q8-8",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 3 for scenario S-II? Where does it move to, point A, C, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "C",
+            "c": "E",
+            "d": "N"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! There is no stable equilibrium for this scenario. Since u\u2091 < u_eq the channel will move to the unstable equilibrium point C. From there it will move towards A, as per the previous question.",
+            "incorrect": "Incorrect. What is the velocity u\u2091 here relative to the equilibrium velocity u_eq? Where is the nearest equilibrium point? Is it stable or unstable?"
+        }
+    },
+    "Q8a-cross_section_II_loc1": {
+        "name": "Q8-9",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 1 for scenario S-II? Where does it move to, point A, C, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "C",
+            "c": "E",
+            "d": "N"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! There is no equilibrium for this scenario and since the velocity u\u2091 is always smaller than the equilibrium velocity u_eq, the inlet cross-section will decrease until it is closed off eventually.",
+            "incorrect": " Incorrect. What is the velocity u\u2091 here relative to the equilibrium velocity u_eq? Where is the nearest equilibrium point? Is there an equilibrium point?"
+        }
+    },
+    "Q8a-cross_section_II_loc2": {
+        "name": "Q8-10",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 2 for scenario S-II? Where does it move to, point A, C, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "C",
+            "c": "E",
+            "d": "N"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! There is no equilibrium for this scenario and since the velocity u\u2091 is always smaller than the equilibrium velocity u_eq, the inlet cross-section will decrease until it is closed off eventually.",
+            "incorrect": " Incorrect. What is the velocity u\u2091 here relative to the equilibrium velocity u_eq? Where is the nearest equilibrium point? Is there an equilibrium point?"
+        }
+    },
+    "Q8a-cross_section_II_loc3": {
+        "name": "Q8-11",
+        "type": "multiple_choice",
+        "question": "What happens to the channel cross-section X at location 3 for scenario S-II? Where does it move to, point A, C, E or neither (N)?",
+        "options": {
+            "a": "A",
+            "b": "C",
+            "c": "E",
+            "d": "N"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! There is no equilibrium for this scenario and since the velocity u\u2091 is always smaller than the equilibrium velocity u_eq, the inlet cross-section will decrease until it is closed off eventually.",
+            "incorrect": " Incorrect. What is the velocity u\u2091 here relative to the equilibrium velocity u_eq? Where is the nearest equilibrium point? Is there an equilibrium point?"
+        }
+    },
+    "Q8a-escoffier_engineering": {
+        "name": "Q8-12",
+        "type": "multiple_selection",
+        "question": "How can you modify the Escoffier curve through engineering?",
+        "options": {
+            "a": "By reclaiming land in the back barrier basin or constructing a closure dam.",
+            "b": "Via managed realignment or depoldering",
+            "c": "By dredging the inlet channel to a larger depth",
+            "d": "By nourishing the channel walls with sand"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+        ],
+        "feedback": {
+            "correct": "Correct! Reclaiming land in the basin, constructing a closure dam, or expanding the intertidal area via managed realignment or depoldering all modify the tidal prism, and therefore the Escoffier curve.",
+            "incorrect": "Incorrect. How do we modify the curve as opposed to just moving along it? Which of these options would induce such a modification?"
+        }
+    },
+    "Q8a-closure_vary_in_time": {
+        "name": "Q8-13",
+        "type": "multiple_choice",
+        "question": "How can the closure curve vary in time?",
+        "options": {
+            "a": "Via seasonal changes in river discharge",
+            "b": "Via periodic dredging works of the channel.",
+            "c": "By constructing jetties at the inlet",
+            "d": "Via periodic nourishments"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": " Correct! As river discharge varies seasonally, it will effectively modify the tidal prism, and therefore the Escoffier curve will also vary in time.",
+            "incorrect": " Incorrect. How do we modify the curve as opposed to just moving along it? Which of these options would induce such a modification?"
+        }
+    },
+    "Q8b-zero_flow_ebb_dominant1": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Let us first assume zero residual flow and M6 velocity (u\u2080 = 0 and u_M6 = 0). Choose reasonable M2 and M4 velocity amplitudes. Which phase difference(s) \u03c6\u2084\u2082 between u_M2 and u_M4 leads to an ebb-dominant velocity signal?",
+        "options": {
+            "a": "0.00 rad",
+            "b": "1.57 rad",
+            "c": "3.14 rad",
+            "d": "4.71 rad",
+            "e": "No combination of M2 and M4 will result in an ebb-dominant tidal signal."
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct, a phase difference \u03c6\u2084\u2082 of \u03c0 (3.14) will lead to an ebb-dominant signal where the peak negative velocity is higher than the peak positive velocity. Verify from u\u00b3 that an export of sediment can be expected.",
+            "incorrect": "Incorrect. What are the characteristics of an ebb-dominant signal? Which phase difference (\u03c6\u2084\u2082) will reproduce that signal? See Eq. (2) in this notebook and play with the sliders in the interactive figure above or see Figure 9.28 in the textbook). Also compare with the effect of higher harmonics for short waves in notebook 3b on wave asymmetry and skewness."
+        }
+    },
+    "Q8b-zero_flow_ebb_dominant2": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "To how many hours does the phase difference \u03c6\u2084\u2082 as found in the previous question correspond? The answer options are in hours rounded to the nearest integer.",
+        "options": {
+            "a": "0 hrs",
+            "b": "3 hrs",
+            "c": "6 hrs",
+            "d": "9 hrs",
+            "e": "12 hrs",
+            "f": "No combination of M2 and M4 will result in an ebb-dominant tidal signal."
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+        ],
+        "feedback": {
+            "correct": "Correct, a phase difference of \u03c6\u2084\u2082 of \u03c0 (3.14) corresponds to half of the cycle time of \u2248 6 hrs of the M4 component.",
+            "incorrect": "Incorrect. Which part of the cycle time is this of the M4 component? What is the period of the M4 component?"
+        }
+    },
+    "Q8b-channel_geometry": {
+        "name": "Q8-15",
+        "type": "multiple_choice",
+        "question": "Which kind of channel geometry is most likely to lead to such a signal?",
+        "options": {
+            "a": "Shallow channels and large intertidal flats",
+            "b": "Deep channels and large intertidal flats",
+            "c": "Shallow channels and minimal intertidal flats",
+            "d": "Deep channels and minimal intertidal flats"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct! Deep channels and large intertidal flats will lead to a larger mean depth at low water (h_LW) compared to at high water (h_HW), when the shallow flats will reduce the cross-sectional average. This means that the low water will propagate relatively faster and enhance ebb-dominance. Such systems enhance seaward near-bed transport and flush (medium to) coarse sediment seaward.",
+            "incorrect": "Incorrect. How does the average water level at low and high water (h_LW and h_HW, respectively) change for each of the channels above? How would that influence the tidal propagation and flow velocity signal?"
+        }
+    },
+    "Q8b-M6_distortion": {
+        "name": "Q8-16",
+        "type": "multiple_choice",
+        "question": "Now let\u2019s consider the addition of an M6 component. This term mathematically describes the physical distortion of the tidal wave that arises from:",
+        "options": {
+            "a": "High water propagating faster than low water (i.e., continuity)",
+            "b": "Stokes drift compensation",
+            "c": "Alignment of the sun and moon",
+            "d": "Minimal bottom friction at slack tide"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! The M6 overtide comes from a Fourier expansion of the quadratic bottom friction term \ud835\udf0f_b = \u03c1*cf*u*|u|. The multiplication of u with |u| weighs towards the higher flood \u00e1nd ebb velocities without creating any asymmetry. This is exactly the effect of the addition of an M6 component (at zero phase difference with M2), as you can check from the interactive figure. Note that bottom friction varies with depth, meaning that it also plays a role in generating M4 overtides.",
+            "incorrect": "Incorrect. Some of these processes instead generate other constituents. Which is which? Revisit Chapter 5.7.5 and the Chapter 5 lecture slides."
+        }
+    },
+    "Q8b-zero_flow_flood_dominant": {
+        "name": "Q8-17",
+        "type": "multiple_selection",
+        "question": "Now consider M2 and M6 velocities only (choose reasonable amplitudes) and zero residual flow or M4 overtide. Which phase difference(s) between the M2 and M6 tidal-current components (\u03c6\u2086\u2082) leads to a flood-dominant tidal signal?",
+        "options": {
+            "a": "0.00",
+            "b": "1.57",
+            "c": "3.14",
+            "d": "4.71",
+            "e": "No combination of M2 and M6 will result in a flood-dominant tidal signal."
+        },
+        "answer": [
+            "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea"
+        ],
+        "feedback": {
+            "correct": "Correct! M2 and M6 components alone cannot lead to an asymmetric tidal signal, and hence cannot produce a flood-dominant signal. The combination of M2 and M6 plus an additional component like M4 is capable of producing asymmetry, though.",
+            "incorrect": "Incorrect. Consider how the M6 signal interacts with M2 at each of these phase differences (play with the sliders in the interactive figure above or see Figure 9.30 in the textbook)."
+        }
+    },
+    "Q8b-flow_flood_dominant": {
+        "name": "Q8-18",
+        "type": "multiple_selection",
+        "question": "Now let us consider a residual flow u\u2080 of -0.45 m/s, \u00fb_M2 of 0.5 m/s, \u00fb_M4 of 0.2 m/s, \u00fb_M6 of 0.1 m/s, and zero phase difference \u03c6\u2086\u2082 between M2 and M6. Which phase difference(s) between M2 and M4 tides (\u03c6\u2084\u2082) lead to a net import of sediment?",
+        "options": {
+            "a": "0.00",
+            "b": "1.57",
+            "c": "3.14",
+            "d": "4.71",
+            "e": "With these values, no combination will result in a net import of sediment."
+        },
+        "answer": [
+            "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea"
+        ],
+        "feedback": {
+            "correct": "Correct! The large seaward residual flow dominates the other tidal components and means that even when we see landward-positive transport, it never exceeds the maximum seaward magnitude (at least for this particular combination).",
+            "incorrect": "Incorrect. Set the given values and examine all possible phase differences \u03c6\u2084\u2082 using the slider. What might a large seaward residual flow mean for a system\u2019s tendency to become flood dominant?"
+        }
+    },
+    "Q8b-basin_type": {
+        "name": "Q8-21",
+        "type": "multiple_choice",
+        "question": "Suppose that this signal is representative of the characteristics of the entire basin. When we examine the total contributions from all terms, what type of basin does this signal likely correspond to?",
+        "options": {
+            "a": "A river-dominated, micro-tidal estuary",
+            "b": "A funnel-shaped estuary with strong convergence",
+            "c": "A basin with deep channels and extensive intertidal flats",
+            "d": "A wide, deep fjord in the winter"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct! The small u\u2080 relative to the 1.15 m/s \u00fb_M2 indicates that tides are more dominant than rivers, and the ebb-dominant signal produced by the M2/M4/M6 terms suggests that we do not have the flood dominance-promoting geometry of a strongly convergent funnel-shaped estuary. Conversely, a basin with deep channels and wide flats will generate an ebb-dominant signal like the one we observe. A wide, deep fjord would likely not produce sufficient friction to generate significant M6 overtides (remember that friction is depth-dependent).",
+            "incorrect": "Incorrect. What does the magnitude of the residual current relative to the tide tell us? What do the phase differences suggest? What would the morphodynamic consequences of the observed net transport be?"
+        }
+    },
+    "Q8b-barotropic": {
+        "name": "Q8-22",
+        "type": "multiple_selection",
+        "question": "Which barotropic (i.e., not related to density-driven flows) physical processes can be neglected in deriving net import or export of sediment to/from a tidal basin?",
+        "options": {
+            "a": "Secondary flow patterns due to Coriolis",
+            "b": "Stokes drift compensation",
+            "c": "Curvature-induced flow",
+            "d": "River discharge"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct! We can neglect the two cross-channel processes (secondary flow due to Coriolis and curvature) when estimating net import or export of the basin, though they can still be influence the internal dynamics of the basin. However, we must account for Stokes drift compensation and river discharge. These both typically lead to a net export of sediment under well-mixed conditions (i.e., neglecting the density effects of fresh water from a river). However, the situation becomes more complicated when we consider these density effects, with density-driven estuarine circulation potentially leading to net import of sediment and the formation of an estuarine turbidity maximum. See Advanced Coastal & Estuarine Systems in the Coastal B-Module (CIEM3210) for more details!",
+            "incorrect": "Incorrect. See Chapter 9.7.2 for more details."
+        }
+    },
+    "Q8c-quasi-steady": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Based on the velocity and equilibrium concentration signals as in the plot above, what do you expect for the tide-averaged transport?",
+        "options": {
+            "a": "A net transport in flood direction",
+            "b": "A net transport in ebb direction",
+            "c": "A zero net transport"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct! For \u03c6\u2084\u2082 = 3/2 \u03c0, the velocity signal is symmetrical about the horizontal axis and this will be same for the sediment flux u*c_eq. Averaged over the tidal period, this will yield a zero result. But be aware: this holds only for coarser sediment, for which the concentration responds quasi-steadily and can reach the equilibirum concentration.",
+            "incorrect": "Incorrect. It may help to compare with Figure 5.17 (right panel) in the book, which you recreated in Notebook 3b. Or with Figure 9.29 (bottom right panel), which you recreated in Notebook 8b."
+        }
+    },
+    "Q8c-fine_equilibrium_concentration": {
+        "name": "Q8-23",
+        "type": "multiple_selection",
+        "question": "Why may we expect the concentration to deviate from the equilibrium concentration when fine sediment is considered?",
+        "options": {
+            "a": "Fine sediment takes more time to settle than coarser sand particles",
+            "b": "Fine sediment settles more quickly than coarse sediment",
+            "c": "The value for n is larger for fine sediment than for coarse sediment.",
+            "d": "Fine sediment does not respond instantaneously to flow conditions"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct! Fine sediment takes more time to settle than coarser sand; the concentration may not get back to zero when the velocity reverses direction. In other words, the sediment concentration does not respond instantaneously to flow conditions. We need to account for this in our concentration estimates. Eq. 2 (Eq. 9.29) represents a quasi-steady response, regardless of the value of n.",
+            "incorrect": "Incorrect. What influence does grain size have on settling time? What does the exponent n tell us (compare quasi-steady bed load and suspended load formulas)? Do the quasi-steady flow assumptions that we use for sand apply to fine sediment?"
+        }
+    },
+    "Q8c-initial_concentration1": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "What can be said about the initial concentration c\u2080 at the start of the simulation?",
+        "options": {
+            "a": "The numerical model needs spin-up time, to accurately reflect the effect of past conditions.",
+            "b": "In this case, the time period of three M2 periods does not allow for sufficient spin-up time.",
+            "c": "We could also have used, for instance, c\u2080 = 0 as the initial condition.",
+            "d": "The computation of the equilibrium concentration also requires spin-up time."
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct. Only for the actual concentration - that depends on past flow velocities - a spin-up time is required. After one M2 period, the actual concentration is already pretty stable; the concentration in the second and third M2 period is approximately the same.",
+            "incorrect": "Incorrect. Do the second and third M2 period show approximately the same concentration? What is the fundamental difference between the equilibrium concentration and the actual concentration, and what does that imply for the required spin-up time?"
+        }
+    },
+    "Q8c-actual_versus_equilibrium": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "What differences do you observe between the equilibrium concentration and the actual concentration?",
+        "options": {
+            "a": "The peaks of the actual concentration are larger.",
+            "b": "The peaks of the actual concentration lag behind the velocity peaks.",
+            "c": "More sediment can settle between the time of maximum flood and the time of maximum ebb than between the time of maximum ebb and maximum flood.",
+            "d": "The concentrations are higher during the flood period than during the ebb period."
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct. The time lag is clearly visible, as well as the higher maximum and higher minimum concentrations during the flood perid, as compared to during the ebb period.",
+            "incorrect": "How does the asymmetry in the velocity signal contribute to differences in settling for different moments in the tidal period? What does this mean for the maximum and minimum concentrations during flood and during ebb?"
+        }
+    },
+    "Q8c-net_sediment_flux_figure932": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Based on the velocity and actual concentration signals as in the plot above, what do you expect for the tide-averaged transport of fines?",
+        "options": {
+            "a": "A net transport in flood direction",
+            "b": "A net transport in ebb direction",
+            "c": "A zero net transport"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct. Since the concentration is higher during the flood period, the sediment flux is also higher during the flood period (30% higher, see Figure 9.32). The result is a net transport in flood direction, hence an import of fine sediment. So we see that the prolonged duration between flood and ebb (high water slack) makes the import of sediment more likely. Although this is an oversimplification (see the Advanced Coastal & Estuarine Systems course for more details) it still provides a useful conceptual illustration.",
+            "incorrect": "Incorrect. Is the actual concentration during the flood period on average higher than, lower than or equal to the concentration during the ebb period. What does this mean for the tide-averaged value of the flux u*c?"
+        }
+    },
+    "Q8c-increase_sediment_size": {
+        "name": "Q8-24",
+        "type": "multiple_selection",
+        "question": "What happens to the sedimentation timescale T_se and concentration c if we increase the sediment size?",
+        "options": {
+            "a": "Sedimentation timescale increases because of decreased settling velocity",
+            "b": "Sediment concentration converges on the equilibrium concentration",
+            "c": "Sediment concentration increases due to the larger mass of sediment in suspension",
+            "d": "Sedimentation timescale decreases because of increased settling velocity"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct. The increased grain size makes particles settle faster, decreasing the sedimentation timescale T_se. This means that sediment concentration will converge on the equilibrium concentration, i.e., a more instantaneous response.",
+            "incorrect": "Incorrect. How are settling velocity and particle size related? See Chapter 6.2.3. How does settling velocity influence the sedimentation timescale T_se? How will the sediment concentration change in time as a result?"
+        }
+    },
+    "Q8c-shallow_intertidal_flats": {
+        "name": "Q8-25",
+        "type": "multiple_selection",
+        "question": "What happens to the sedimentation timescale T_se and concentration c on shallow intertidal flats?",
+        "options": {
+            "a": "Sedimentation timescale becomes longer because of decreased depth",
+            "b": "Sediment concentration becomes relatively less variable in time than in deeper channels",
+            "c": "Sedimentation timescale becomes shorter because of decreased depth",
+            "d": "Sediment concentration becomes relatively more variable in time than in deeper channels"
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct! Sedimentation timescale T_se is proportional to depth divided by settling velocity (h/w\u209b), so there will be a shorter sedimentation timescale on shallow intertidal flats. This also means that the concentration becomes relatively more variable in time than in deeper channels, since sediment responds more rapidly.",
+            "incorrect": "Incorrect. How do we calculate the sedimentation timescale T_se? Which physical parameters does it depend on, and how would those differ on a shallow tidal flat (as opposed to a deeper channel)? Play with the sliders in the panel to see what happens to the variability in concentration as you vary T_sed. Do you see more or less variability for large/small T_sed? Where would you expect to see larger differences between the maximum and the minimum concentrations?"
+        }
+    },
+    "Q8c-settling_velocity": {
+        "name": "Q8-26",
+        "type": "multiple_choice",
+        "question": "Start from \u00fb_M2 = 40 cm/s, \u00fb_M4 = 10 cm/s and \u03c6\u2084\u2082 = 3/2 \u03c0 and the same settings for \u03b2 and n as in Part 1. What is the length of the relaxation timescale T_sed beyond which the sediment concentrations do not return to zero anymore during the tidal period (use c = 0.005 1/10\u2075 m\u00b3/m\u00b3 as the threshold).",
+        "options": {
+            "a": "0 s",
+            "b": "200 s (3 mins)",
+            "c": "1600 s (26 mins)",
+            "d": "3200 s (53 mins)",
+            "e": "6400 s (1 hr 46 mins)"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! When the relaxation time exceeds approximately 3200 s (assuming other settings remain as given), it takes too long for all of the sediment to settle out before they are resuspended in the next phase of the tide. In a basin like this with sufficient fine sediment supply, sediment concentrations will be always be non-zero and the water always turbid. See the Advanced Coastal & Estuarine Systems course for more details.",
+            "incorrect": "Incorrect. Try varying T_sed using the sliders and see when the concentration drops below 0.005 1/10\u2075 m\u00b3/m\u00b3."
+        }
+    },
+    "Q8c-importPhases_instantaneous": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Let us consider the typical sedimentation timescale for sand of 200 \u03bcm. For which \u03c6\u2084\u2082 values roughly between 0 to 2\u03c0 (starting at \u03c0/12 with \u03c0/6 increments) do we have an import of sediment? Select all the values for which there is an import of sediment.",
+        "options": {
+            "a": "0.26 rad",
+            "b": "0.79 rad",
+            "c": "1.31 rad",
+            "d": "1.83 rad",
+            "e": "2.36 rad",
+            "f": "2.88 rad",
+            "g": "3.40 rad",
+            "h": "3.93 rad",
+            "i": "4.45 rad",
+            "j": "4.97 rad",
+            "k": "5.50 rad",
+            "l": "6.02 rad"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "189f40034be7a199f1fa9891668ee3ab6049f82d38c68be70f596eab2e1857b7",
+            "8254c329a92850f6d539dd376f4816ee2764517da5e0235514af433164480d7a",
+            "acac86c0e609ca906f632b0e2dacccb2b77d22b0621f20ebece1a4835b93f6f0"
+        ],
+        "feedback": {
+            "correct": "Correct! This is what we would expect based on e.g., Figure 9.29 in the textbook.",
+            "incorrect": "Incorrect. See the table in the notebook for a typical value for T_sed for sand of 200 \u03bcm. Try sliding the \u03c6\u2084\u2082 button to change the M2-M4 phase difference, and look at the ratio between A1 (positive (flood) transport = import) and A2 (negative (ebb) transport = export). If the value of A1/A2 > 1, we have a net import, and if A1/A2 < 1 we have a net export."
+        }
+    },
+    "Q8c-importPhases_lagged": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Now let us consider the typical sedimentation timescale for fines. Start from \u00fb_M2 = 40 cm/s and \u00fb_M4 = 10 cm/s and the same settings for \u03b2 and n as in Part 1. For which \u03c6\u2084\u2082 values roughly between 0 to 2\u03c0 (starting at \u03c0/12 with \u03c0/6 increments) do we have an import of sediment? Select all the values for which there is an import of sediment.",
+        "options": {
+            "a": "0.26 rad",
+            "b": "0.79 rad",
+            "c": "1.31 rad",
+            "d": "1.83 rad",
+            "e": "2.36 rad",
+            "f": "2.88 rad",
+            "g": "3.40 rad",
+            "h": "3.93 rad",
+            "i": "4.45 rad",
+            "j": "4.97 rad",
+            "k": "5.50 rad",
+            "l": "6.02 rad"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "de7d1b721a1e0632b7cf04edf5032c8ecffa9f9a08492152b926f1a5a7e765d7",
+            "189f40034be7a199f1fa9891668ee3ab6049f82d38c68be70f596eab2e1857b7",
+            "8254c329a92850f6d539dd376f4816ee2764517da5e0235514af433164480d7a",
+            "acac86c0e609ca906f632b0e2dacccb2b77d22b0621f20ebece1a4835b93f6f0"
+        ],
+        "feedback": {
+            "correct": "Correct! Because of the settling lag effect, the M2-M4 phase difference yielding net import of sediment shifts.",
+            "incorrect": "Incorrect. See the table in the notebook for a typical value for T_sed for fines. Try sliding the \u03c6\u2084\u2082 button to change the M2-M4 phase difference, and look at the ratio between A1 (positive (flood) transport = import) and A2 (negative (ebb) transport = export). If the value of A1/A2 > 1, we have a net import, and if A1/A2 < 1 we have a net export."
+        }
+    },
+    "Q8c-initial_concentration2": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Now let us turn our attention again to c\u2080, the initial concentration at the start of the simulation. This could represent an initial condition in a numerical model, or in the real world it could be a pulse of sediment (e.g., from a river flood or stirred up by waves during a storm. Let us consider how changing that initial concentration influences the concentration in subsequent tidal cycles. Start from \u00fb_M2 = 40 cm/s, \u00fb_M4 = 10 cm/s and \u03c6\u2084\u2082 = 3/2 \u03c0 and the same settings for \u03b2 and n as in Part 1. Assume T_sed = 12000 s and increase c\u2080 step-wise to a large values like 1*10\u2075 m\u00b3/m\u00b3. How many M2 tidal cycles does it take for the effect of this initial condition to disappear",
+        "options": {
+            "a": "1 cycle",
+            "b": "2 cycles",
+            "c": "3 cycles",
+            "d": "Never"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct! Within 3 M2 tidal cycles, the effects of the initial pulse of sediment gradually disappear.",
+            "incorrect": "Incorrect. Because of the settling timescale involved, the system has 'memory' and takes several tidal cycles before the effect of the initial sediment pulse disappears."
+        }
+    },
+    "Q8d-demand_and_supply1": {
+        "name": "Q8-28",
+        "type": "multiple_choice",
+        "question": "Is the sediment demand of the channels larger or smaller than the sediment supply of the outer delta?",
+        "options": {
+            "a": "Sediment demand of the channels is larger than the supply of the outer delta",
+            "b": "Sediment demand of the channels is smaller than the supply of the outer delta "
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! Due to the closure, the channel volume is too big (inducing a sediment demand) and the ebb-tidal delta will shrink (leaving a sediment surplus), but the supply is insufficient to meet the demand.",
+            "incorrect": "Incorrect. How can we interpret the a and b terms that were computed above?"
+        }
+    },
+    "Q8d-long_term_evolution1": {
+        "name": "Q8-29",
+        "type": "multiple_choice",
+        "question": "What does this imply for the long-term evolution of the coast adjacent to the inlet?",
+        "options": {
+            "a": "Accretion updrift of the inlet",
+            "b": "Erosion updrift of the inlet",
+            "c": "Accretion downdrift of the inlet",
+            "d": "Erosion downdrift of the inlet"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! If the supply of the ebb-tidal delta is insufficient, then the demand must be satisfied by the adjacent coast. The updrift supply will not likely change much (picture a conveyor belt pouring into the inlet), but if that sediment remains in the inlet to fill in the excessively large channels, it will not be exported to the ebb-tidal delta and downdrift coast. Therefore, the downdrift coast will likely erode.",
+            "incorrect": "Incorrect. If supply of the ebb-tidal delta is insufficient, then how will the demand be satisfied? If there is a surplus of sediment, then which parts of the coast will benefit from that? If there is a change, why would the updrift or downdrift (in the direction of net alongshore transport) feel the effect?"
+        }
+    },
+    "Q8d-sensitivity_tidal_prism": {
+        "name": "Q8-30",
+        "type": "multiple_choice",
+        "question": "Which variable is more sensitive to changes in the tidal prism?",
+        "options": {
+            "a": "Channel volume (V\u1d9c)",
+            "b": "Ebb-tidal delta volume (V\u1d52\u1d48)"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! Note that the volume of the channels depends directly on the volume of water that must be conveyed on each tidal cycle. This is somewhat analogous to the concept of bankful discharge in rivers.",
+            "incorrect": "Incorrect. Compare the coefficients again- which has the biggest influence?"
+        }
+    },
+    "Q8d-physics_Cod": {
+        "name": "Q8-31",
+        "type": "multiple_choice",
+        "question": "Variations in the coefficient C\u1d52\u1d48 lead to changes in the equilibrium size of the ebb-tidal delta for a given tidal prism P. What physical process might explain variations in C\u1d52\u1d48?",
+        "options": {
+            "a": "Sediment supply from the updrift coast",
+            "b": "Sediment demand from the downdrift coast",
+            "c": "Tidal asymmetry",
+            "d": "Wave exposure"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! We see from Figure 9.21 that there is a weak relationship between wave exposure and ebb-tidal delta volume for a given tidal prism, in such a way that for the same tidal prism the volume is smaller for more energetic waves. This might be explained by increased landward or downdrift sediment transport from the ebb-tidal delta, or more generally by the dominance of wave-driven transport processes over tide-driven ones.",
+            "incorrect": "Incorrect. Take another look at Chapter 9.4.3, and especially Figure 9.21. Which factors influence ebb-tidal delta size?"
+        }
+    },
+    "Q8d-outer_delta1": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "What happens to the outer delta?",
+        "options": {
+            "a": "The outer delta does not change in size",
+            "b": "The outer delta grows in volume",
+            "c": "The outer delta shrinks in volume"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct! The tidal prism decreases, and so too will the ebb-tidal delta.",
+            "incorrect": "Incorrect. Take another look at how the tidal prism changes. What will that do to the ebb-tidal delta?"
+        }
+    },
+    "Q8d-channels1": {
+        "name": "names",
+        "type": "multiple_choice",
+        "question": "What happens to the channels in the part of the basin that is not closed off by the dam?",
+        "options": {
+            "a": "The channels will expand in volume and supply sediment",
+            "b": "The channels will remain the same size",
+            "c": "The channels will shrink in volume and demand sediment"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct! The channel volume is reduced directly after the closure, since a part of the channels is closed off by the dam (see conceptual diagram above). Further, the tidal prism decreases, so the equilibrium channel volume will get smaller. Right after the closure, the channel volume in the not closed-off part of the basin is larger than the new equilibrium value. Therefore, the channels will shrink in volume and demand sediment.",
+            "incorrect": "Incorrect. Take another look at how the tidal prism changes and at the channel volume in the closed-off part of the basin. What will that do to the channels in the remaining part of the basin?"
+        }
+    },
+    "Q8d-long_term_evolution2": {
+        "name": "Q8-34",
+        "type": "multiple_choice",
+        "question": "What does this imply for the long-term evolution of the coast adjacent to the inlet?",
+        "options": {
+            "a": "Accretion updrift of the inlet",
+            "b": "Erosion updrift of the inlet",
+            "c": "Accretion downdrift of the inlet",
+            "d": "Erosion downdrift of the inlet"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct! The ebb-tidal delta has sufficient supply to feed the channels (a-b<0), so that sediment will instead feed the (probably downdrift) adjacent coast.",
+            "incorrect": "Incorrect. Compare the demand of the channels (a) with the supply from the ebb-tidal delta (b), not forgetting to account for the reduction in channel volume directly due to the closure."
+        }
+    },
+    "Q8d-tidal_signal_closure2": {
+        "name": "Q8-35",
+        "type": "multiple_choice",
+        "question": "In the case of Closure 2, how will the tidal signal change??",
+        "options": {
+            "a": "The tide will become more ebb-dominant, exporting sediment",
+            "b": "The tide will become more flood-dominant, importing sediment",
+            "c": "The tide will move closer to a sinusoidal shape, approaching equilibrium"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct! The demand of the channels will be met by an import of sediment driven by flood-dominant tidal currents that are caused by the too big channels. This holds in the same way for Closure 1.",
+            "incorrect": "Incorrect. How does the tidal signal need to change to meet the sediment demand of the channels?"
+        }
+    },
+    "Q8d-outer_delta_and_channels2": {
+        "name": "Q8-36",
+        "type": "multiple_choice",
+        "question": "What happens to the outer delta and channels?",
+        "options": {
+            "a": "The outer delta will expand and the channels will shrink",
+            "b": "The outer delta will shrink and the channels will expand",
+            "c": "The outer delta will expand and the channels will expand",
+            "d": "The outer delta will shrink and the channels will shrink"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! As with the previous example (Closure 1), the reduction of the tidal prism decreases the equilibrium outer delta volume, making a supply of sediment available. The reduction of the tidal prism also leads to a reduction of the equilibrium channel volume. Even though the channel volume is already reduced as an immediate consequence of the closure, the volume after the closure is still larger than the new equilibrium channel volume, inducing a sediment demand. Which is greater in this case? The supply or the demand?",
+            "incorrect": "Incorrect. Take another look at how the tidal prism and channel volume changes directly after the closure. What will that do to each component of the system?"
+        }
+    },
+    "Q8d-outer_delta_and_channels": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "What happens to the outer delta and channels?",
+        "options": {
+            "a": "The outer delta will expand and the channels will shrink",
+            "b": "The outer delta will shrink and the channels will expand",
+            "c": "The outer delta will expand and the channels will expand",
+            "d": "The outer delta will shrink and the channels will shrink"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! The area of the basin effectively decreases, reducing the tidal prism. This will decrease the outer delta volume, making a supply of sediment available, and decrease the channel volume, inducing a sediment demand. Which is greater in this case? The supply or the demand?",
+            "incorrect": "Incorrect. Take another look at how the tidal prism changes. What will that do to each component of the system?"
+        }
+    },
+    "Q8d-adjacent_coast": {
+        "name": "Q8-37",
+        "type": "multiple_choice",
+        "question": "What happens to adjacent coast?",
+        "options": {
+            "a": "Erosion of the updrift coast",
+            "b": "Accretion of the updrift coast",
+            "c": "Erosion of the downdrift coast",
+            "d": "Accretion of the downdrift coast"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct. All that sediment needed to fill in the channels has to come from somewhere, and the ebb-tidal delta doesn\u2019t have enough! The demand must therefore be met by the adjacent coast. The imported sediment will not be exported back to the coast, and so the downdrift coast will erode.",
+            "incorrect": "Incorrect. Take another look at the balance between sediment supply from the ebb-tidal delta and demand from the channels. Does the ebb-tidal delta have enough supply? If not, where will that sediment come from? Where would the sediment used to meet that demand otherwise end up?"
+        }
+    },
+    "Q8d-tidal_prism_with_SLR": {
+        "name": "Q8-38",
+        "type": "multiple_choice",
+        "question": "Why do we assume that the tidal prism does not change as a result of relative sea level rise?",
+        "options": {
+            "a": "The ebb-tidal delta modifies the tidal prism by an equivalent amount",
+            "b": "The basin area is subsequently reduced",
+            "c": "The tidal flats cannot keep pace with sea level rise",
+            "d": "The tidal flats keep pace with sea level rise"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct! Without adjustment of the tidal flats, the tidal prism can be expected to increase when sea level rises. However, if the flats can keep up with sea level rise (since they respond much faster than the channels), the tidal prism might remain unchanged. This exposes a key assumption, though: what if the tidal flats cannot keep up with sea level rise and the channels in the basin will widen as a consequence? This is a major question facing researchers and engineers in the Wadden Sea. Sensitive habitats will be greatly disrupted if the Wadden Sea drowns. It is also important to note that while the tidal prism influences the size of the ebb-tidal delta, this is a one-way causal relationship: the ebb-tidal delta does not modify the tidal prism (at least not to first order).",
+            "incorrect": "Incorrect. What would sea level rise change? Are the adaptation time scales the same for the flats and for the channels?"
+        }
+    },
+    "Q8d-wrapup": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "In the long term, which elements will supply and demand sediment as a result of sea level rise?",
+        "options": {
+            "a": "Channels will supply sediment",
+            "b": "Channels will demand sediment",
+            "c": "Adjacent coasts will supply sediment",
+            "d": "Adjacent coasts will demand sediment",
+            "e": "Ebb-tidal delta will supply sediment",
+            "f": "Ebb-tidal delta will demand sediment"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct. The tidal prism has not changed, so the channels (effectively enlarged by RSLR) will demand sediment to restore them to their equilibrium with the prism. As the prism did not change, the ebb-tidal volume should remain the same size. All the sediment needed to fill in the channels has to come from somewhere, so the demand must therefore be met by the adjacent coast. The imported sediment will not be exported back to the coast, and so the downdrift coast will erode.",
+            "incorrect": "Incorrect. Which elements change in size after RSLR? Does that change mean a supply or demand of sediment?"
+        }
+    }
+}

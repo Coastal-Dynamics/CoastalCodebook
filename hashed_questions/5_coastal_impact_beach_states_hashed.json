@@ -1,0 +1,365 @@
+{
+    "Q5a-highest_MTR": {
+        "name": "Q5-1",
+        "type": "multiple_choice",
+        "question": "Which of the considered Brazilian states is subject to the highest mean tidal range?",
+        "options": {
+            "a": "Maranhao",
+            "b": "Para",
+            "c": "Santa Catarina",
+            "d": "Rio de Janeiro"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct, the Para beaches indeed experience the largest tidal range. If you look at the satellite imagery, you will notice that their beaches tend to be wide with various intertidal features (ridges and runnels). Furthermore, if you zoom out even further, you will see that many of the Para beaches are surrounded by large funnel-shaped estuaries and deltas, which are suggestive of tide-dominated systems (see Chapter 2.7.3) You can also confirm the large tidal range in Figure 4.10 from the textbook. Also, check the grain diameter and beach slope for the Para beaches. What do you notice?",
+            "incorrect": "Incorrect. Go through the different 'Beach select' options and click on the coloured dots to see the physical characteristics for each site. MTR indicates the mean tidal range. You can make a direct quantitative comparison, but it is also worthwhile to consider: how might you be able to distinguish a site with a large tidal range based on satellite imagery alone?"
+        }
+    },
+    "Q5a-highest_Hs": {
+        "name": "Q5-2",
+        "type": "multiple_choice",
+        "question": "In which state of Brazil is the beach subject to the highest significant wave height located?",
+        "options": {
+            "a": "Para",
+            "b": "Maranhao",
+            "c": "Rio de Janeiro",
+            "d": "Santa Catarina"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct, Santa Catarina state (specifically the Campo Bom beach) indeed experiences the highest significant wave height. If you zoom out, you can see that Campo Bom is relatively less sheltered by headlands or islands, and is directly exposed to swells and storm waves from the South Atlantic and Southern Oceans. These contribute to its relatively high average wave height. The beaches in Brazil's northern states are generally exposed to milder tropical conditions.",
+            "incorrect": "Incorrect. Go through the different 'Beach select' options and click on the coloured dots to see the physical characteristics for each site. Hs indicates the significant wave height. You can make a direct quantitative comparison, but it is also worthwhile to consider: how might you be able to distinguish a site with a large average annual wave heights based on satellite imagery alone?"
+        }
+    },
+    "Q5a-Marambaia_barrier": {
+        "name": "Q5-3",
+        "type": "text",
+        "question": "The Marambaia beach is part of a barrier coast enclosed by two headlands. Just north of it we see a very nice coastal feature extending from the back of the barrier into the bay. What is this feature called?",
+        "answer": "3a7647a8e327e8e462cc2262b3369a57dbd51f37136656ba9504b45de2378c92",
+        "feedback": {
+            "correct": "Correct, this is indeed called a 'spit'. It is a depositional landform that develops as the result of alongshore transport.",
+            "incorrect": "Incorrect. This feature is called a spit. You will learn more about how they form in Chapter 8 of the course and textbook!"
+        }
+    },
+    "Q5a-alongshore_transport": {
+        "name": "Q5-4",
+        "type": "multiple_choice",
+        "question": "The coastal features mentioned in the previous question are often formed due to alongshore transport. Is it more likely that one would come across such a feature for a wave-dominated coast? Or a tide-dominated coast?",
+        "options": {
+            "a": "Wave-dominated",
+            "b": "Tide-dominated"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct, this feature indeed occurs on more wave-dominated coasts. Waves stir sediment and drive the alongshore currents that lead to this transport.",
+            "incorrect": "Incorrect. Think about the most important process forcing the alongshore transport. Is alongshore transport in the nearshore (necessary for formation of this feature) mainly forced by waves or tides?"
+        }
+    },
+    "Q5a-Princesa_Tijucas": {
+        "name": "Q5-5",
+        "type": "multiple_choice",
+        "question": "Use the information about the significant wave height and mean tidal range from the Brazilian beaches viewer, and compare it with Figure 4.13 in the textbook. How would you classify the Princesa and Tijucas beaches, respectively?",
+        "options": {
+            "a": "tide-dominated, tide-dominated",
+            "b": "tide-dominated, wave-dominated",
+            "c": "wave-dominated, tide-dominated",
+            "d": "wave-dominated, wave-dominated"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct! If you didn\u2019t have the tidal and wave data, what visual clues could you have used from the satellite images to arrive at a similar conclusion?",
+            "incorrect": "Incorrect. Use the information from the Brazilian beaches viewer, and see in which category the beaches fall in Figure 4.13."
+        }
+    },
+    "Q5a-Ajuruteua": {
+        "name": "Q5-6",
+        "type": "multiple_selection",
+        "question": "The Ajuruteua beach can be considered tide-dominated (verify this for yourself using Figure 4.13!). How can you see this from the satellite images? You can select multiple answers.",
+        "options": {
+            "a": "Offshore wave breaking",
+            "b": "Wide intertidal beach",
+            "c": "Presence of mangrove swamps",
+            "d": "Nearby funnel-shaped estuaries",
+            "e": "Long spits",
+            "f": "Transverse bar-rip channel systems"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct, these are indeed characteristics of a tide-dominated system in the tropics. In more temperate climates, we would be more likely to see salt marshes than mangrove swamps.",
+            "incorrect": "Incorrect. Remember that wave-dominated systems are quite energetic, and that tide-dominated systems are usually more suitable for more complex ecosystems."
+        }
+    },
+    "Q5a-SaoLuis_DoUbatuba": {
+        "name": "Q5-7",
+        "type": "multiple_selection",
+        "question": "Have a look at the Sao Luis beach. The significant offshore wave height is higher in comparison to the Do Ubatuba beach. Still, we consider the former to be tide-dominated, and the latter to be wave-dominated. Why? You can select multiple answers.",
+        "options": {
+            "a": "The offshore significant wave height is not relevant in the classification",
+            "b": "The Sao Luis beach is located in a more urbanized area, meaning it is likely better protected from waves",
+            "c": "We classify based on relative importance of tides and waves and not their absolute values",
+            "d": "The Do Ubatuba beach is protected by barrier islands"
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct. Looking at Figure 4.13 from the book, it becomes apparent that you can still have a tide-dominated beach in settings with high waves if the tidal range is relatively even larger. Note that in spite of the large tidal influence, the presence of waves means that we do not get a muddy tidal flat developing.",
+            "incorrect": "Incorrect. Have a look at Figure 4.13. How is it possible that a system with higher waves can still be classified as tide-dominated?"
+        }
+    },
+    "Q5a-fluvial_sediment": {
+        "name": "Q5-8",
+        "type": "multiple_choice",
+        "question": "The Atalaia beach is part of the Brazilian Amazon Coast with a large fluvial sediment input. Do you expect a smaller or larger sediment grain size as compared to the Santa Catarina region? And what about the beach slope?",
+        "options": {
+            "a": "small grain size, mild slope",
+            "b": "small grain size, steep slope",
+            "c": "large grain size, mild slope",
+            "d": "large grain size, steep slope"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct, we expect smaller grain sizes and milder slopes for a tide-dominated coast like this one! Santa Catarina is much more energetic, so we expect coarser sediment and steeper slopes there.",
+            "incorrect": "Incorrect. Use Figure 4.13 to see whether this is a wave-dominated or a tide-dominated coast. With this knowledge, try to answer the question again."
+        }
+    },
+    "Q5a-tombolo": {
+        "name": "Q5-9",
+        "type": "multiple_choice",
+        "question": "At the Enseada de Pinheira beach we can see another nice coastal feature: a 'tombolo', which refers to a barrier island connected to the coast. Again, you will learn more about this in Chapter 8 of the book. For now, does this suggest that the beach is tide-dominated or wave-dominated?",
+        "options": {
+            "a": "tide-dominated",
+            "b": "wave-dominated"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct, this beach is indeed wave-dominated. The tombolo forms when wave-driven sediment transport is interrupted by the presence of an obstacle, allowing sediment to accumulate",
+            "incorrect": "Incorrect. Use Figure 4.13 to see whether this is a wave-dominated or a tide-dominated coast, and reason from that."
+        }
+    },
+    "Q5b-grain_size_slope": {
+        "name": "Q5-10",
+        "type": "multiple_choice",
+        "question": "What can be concluded based on the above grain size vs slope figure?",
+        "options": {
+            "a": "The lower the grain-size, the flatter the beach slope",
+            "b": "The lower the grain-size, the steeper the beach slope",
+            "c": "No correlation between grain-size and beach slope"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct, flatter beaches will tend to have smaller grains.",
+            "incorrect": "Incorrect. Pay close attention to the axis. Do you expect a larger sediment size for a larger slope angle? What is the physical relationship between grain size and beach slope?"
+        }
+    },
+    "Q5b-beach_characteristics_error": {
+        "name": "Q5-11",
+        "type": "multiple_choice",
+        "question": "Compare Barra Velha in Figure 7.10 and in our figure showing the same thing. The ranges (\u201derror\u201d bars) in Figure 7.10 show the variability in beach characteristics in time. Nonetheless, our data point is somewhat outside these ranges. What could be the cause of this?",
+        "options": {
+            "a": "Measurements were done at different times.",
+            "b": "We are using regionally averaged data.",
+            "c": "Due to human interventions the natural system was disturbed."
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct. Since we are aggregating data from multiple sources that is relatively coarse and averaged across the region, we do not get a perfect match. Always have a healthy sense of skepticism when interpreting global or regional datasets at a local scale!",
+            "incorrect": "Incorrect. Consider which option is most likely. Do you think that the sediment size has significantly changed on the timescale of a few years?"
+        }
+    },
+    "Q5b-lowest_dimless_fall_velocity": {
+        "name": "Q5-12",
+        "type": "multiple_choice",
+        "question": "Consider the following beaches: Balneario Camboriu, Laguna, Praia do Mocambique, and Marambaia. Which has the lowest dimensionless fall velocity? Does this seem consistent with the type of beach morphology that you see?",
+        "options": {
+            "a": "Balneario Camboriu",
+            "b": "Laguna",
+            "c": "Praia do Mocambique",
+            "d": "Marambaia"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct! Balneario Camboriu appears to have a low tide terrace, a more reflective intermediate beach state. This corresponds to the low dimensionless fall velocity that we calculate for it.",
+            "incorrect": "Incorrect. Remember, a low dimensionless fall velocity implies that a beach is reflective (\u03a9<1). Using the Figure 7.10 plot, which beach has the lowest dimensionless fall velocity? Alternatively, determine the dimensionless fall velocity directly from the data in the Brazilian beaches plot."
+        }
+    },
+    "Q5b-value_fall_velocity_CamboBom": {
+        "name": "Q5-13",
+        "type": "multiple_choice",
+        "question": "What is the value of the dimensionless fall velocity for the Campo Bom beach?",
+        "options": {
+            "a": "<1",
+            "b": "~1",
+            "c": "~2",
+            "d": "~3",
+            "e": "~4",
+            "f": "~5",
+            "g": ">5"
+        },
+        "answer": "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea",
+        "feedback": {
+            "correct": "Correct. Does this seem consistent with the type of beach morphology that you see?",
+            "incorrect": "Incorrect. Use the information from the Brazilian beaches plot to determine the dimensionless fall velocity. What is the beach morphology like? Would you thus expect a higher or lower dimensionless fall velocity?"
+        }
+    },
+    "Q5b-number_of_bars": {
+        "name": "Q5-14",
+        "type": "multiple_choice",
+        "question": "Have a look at the Campo Bom satellite image. How many bars do you see along most of the beach?",
+        "options": {
+            "a": "0",
+            "b": "1",
+            "c": "2",
+            "d": "3"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct. There are three locations of breaking, one of which is the shoreline; the other two suggest the presence of two bars.",
+            "incorrect": "Incorrect. How many locations of breaking can you spot in the satellite image (i.e., white foam)? How many of these are caused by bars?"
+        }
+    },
+    "Q5b-reflective_or_dissipative": {
+        "name": "Q5-15",
+        "type": "multiple_choice",
+        "question": "Is the Cambo Bom beach more reflective or dissipative?",
+        "options": {
+            "a": "Reflective",
+            "b": "Dissipative"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct. Its dimensionless fall velocity suggests that the beach is more dissipative (a higher intermediate state, getting closer to dissipative than the other beaches). Alternatively, the presence of bars from the above question suggests the same.",
+            "incorrect": "Incorrect. Look at the dimensionless fall velocity- does this value suggest a reflective beach? Alternatively, what does the presence of bars (see the previous question) suggest?"
+        }
+    },
+    "Q5b-beach_state": {
+        "name": "Q5-16",
+        "type": "multiple_choice",
+        "question": "Have a look at the Do Ubatuba beach. It is clear that there is no single break point. What beach state do you think is applicable?",
+        "options": {
+            "a": "Reflective",
+            "b": "Intermediate",
+            "c": "Dissipative"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct. From the satellite image we note a highly three-dimensional beach morphology (transverse bar and rip or rhythmic bar and beach, depending on where you look), which suggests this beach is in an intermediate state. This agrees with the calculated dimensionless fall velocity of 3.8.",
+            "incorrect": "Incorrect. From the satellite image we note a large three-dimensionality of the surf zone morphology, due to different points of breaking (alongshore). What beach state does this suggest? What does the calculated dimensionless fall velocity suggest?"
+        }
+    },
+    "Q5b-value_fall_velocity_EnseadaDePinheira": {
+        "name": "Q5-17",
+        "type": "multiple_choice",
+        "question": "The Enseada de Pinheira coast shows a nice pocket beach. What is the value of the dimensionless fall velocity for this beach?",
+        "options": {
+            "a": "<1",
+            "b": "~1",
+            "c": "~2",
+            "d": "~3",
+            "e": "~4",
+            "f": "~5",
+            "g": ">5"
+        },
+        "answer": "252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111",
+        "feedback": {
+            "correct": "Correct. Is this consistent with the beach morphology that you observe? If not, what could be the reason for this? This is quite a long beach and curves greatly over its length, so it is possible to observe multiple beach states along the same beach.",
+            "incorrect": "Incorrect. Use the information from the Brazilian beaches plot with Equation 7.8 from the book to calculate the dimensionless fall velocity."
+        }
+    },
+    "Q5b-characteristics_reflective_beach1": {
+        "name": "Q5-18",
+        "type": "multiple_choice",
+        "question": "In our dataset, Balneario Camboriu is classified as a more reflective beach. The most recent (circa March 2025) imagery does not look like a reflective beach. What is the most likely explanation for the discrepancy?",
+        "options": {
+            "a": "Seasonal oscillations of alongshore transport",
+            "b": "The beach has been nourished",
+            "c": "The average wave conditions have changed",
+            "d": "The image was taken at low tide"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct! See https://www.jandenul.com/projects/beach-replenishment-balneario-camboriu-brazil.",
+            "incorrect": "Incorrect. See https://www.jandenul.com/projects/beach-replenishment-balneario-camboriu-brazil."
+        }
+    },
+    "Q5b-BarraVelha": {
+        "name": "Q5-19",
+        "type": "multiple_choice",
+        "question": "The Barra Velha beach is in intermediate state, as is reflected by its corresponding dimensionless fall velocity (check this for yourself)!. This suggests large three-dimensionality. How can we see this from the satellite images (especially south of the inlet)?",
+        "options": {
+            "a": "Long parallel inlet system along the coast",
+            "b": "Wide surf zone",
+            "c": "Different amount of breaker lines along the coast, at different locations",
+            "d": "Presence of beach cusps"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct. This is an example of large three-dimensionality.",
+            "incorrect": "Incorrect. Have a look at the satellite image and think about the physical meaning of 'large three-dimensionality'."
+        }
+    },
+    "Q5b-compare_dimless_fall_velocity": {
+        "name": "Q5-20",
+        "type": "multiple_choice",
+        "question": "Campo Bom has a higher dimensionless fall velocity than Laguna. What explains the larger value for \u03a9?",
+        "options": {
+            "a": "The grain-size for Campo Bom is larger then for Laguna.",
+            "b": "Campo Bom has a higher wave height.",
+            "c": "The wave period for Campo Bom is smaller.",
+            "d": "There are beach cusps present"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct. Campo Bom is slightly more exposed, leading to a higher wave height.",
+            "incorrect": "Incorrect. The grain-size is indeed slightly larger but this cannot explain the larger non-dimensional fall velocity. The wave period is slightly larger for Campo Bom, which cannot explain the higher dimensionless fall velocity."
+        }
+    },
+    "Q5b-coastal_appreciation": {
+        "name": "Q5-21",
+        "type": "multiple_choice",
+        "question": "It's about time for another coastal appreciation question. Which of the beaches considered in this notebook do you like best?",
+        "options": {
+            "a": "Campo Bom",
+            "b": "Laguna",
+            "c": "Enseada de Pinheira",
+            "d": "Praia do Mocambique",
+            "e": "Tijucas",
+            "f": "Balneario Camboriu",
+            "g": "Do Ubatuba",
+            "h": "Barra Velha",
+            "i": "Sao Luis",
+            "j": "Princesa",
+            "k": "Atalaia",
+            "l": "Ajuruteua",
+            "m": "Marambaia"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Good choice! We hope you enjoyed this notebook, you should now be able to classify your favourite wave-dominated coasts!",
+            "incorrect": "Good choice! We hope you enjoyed this notebook, you should now be able to classify your favourite wave-dominated coasts!"
+        }
+    },
+    "Q5b-characteristics_reflective_beach2": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Which characteristics of a more reflective beach do we see in the satellite image for the Tijucas beach? You can select multiple answers.",
+        "options": {
+            "a": "Narrow beach",
+            "b": "Wide surf zone",
+            "c": "Low-energy wave conditions",
+            "d": "Beach vegetation"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct. These are indeed characteristics of a reflective beach which can be seen in the satellite image.",
+            "incorrect": "Incorrect. Read the part on 'Reflective beaches' from Section 7.3.2 from the book. Which characteristics of a reflective beach can also be seen in the satellite image?"
+        }
+    }
+}

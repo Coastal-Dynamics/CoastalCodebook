@@ -1,0 +1,449 @@
+{
+    "Q1a-earthquakes_diverging_boundaries": {
+        "name": "Q1",
+        "type": "multiple_choice",
+        "question": "At what depth do earthquakes along divergent boundaries generally occur?",
+        "options": {
+            "a": "less than 33 km",
+            "b": "between 33 km and 74 km",
+            "c": "between 74 km and 140 km",
+            "d": "more than 140 km "
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct, earthquakes at divergent boundaries typically occur at shallower depths. Selecting a minimum depth of 33 km in the earthquake panel excludes the earthquakes at divergent boundaries. Note that the tectonic plates move away from each other at divergent boundaries. Magma wells up to (relatively) shallow depths in order to fill the gap. This causes earthquakes at these shallower depths.",
+            "incorrect": "Incorrect. Use Figure 2.2 in the book and the earthquake panel. What is the minimum earthquake depth that you must select in the earthquake panel to exclude the divergent boundaries (try about 33, 74 and 140 km - the values mentioned in the answer options). This comparison should tell you at which depths earthquakes at divergent boundaries generally occur."
+        }
+    },
+    "Q1a-earthquakes_250km": {
+        "name": "Q2",
+        "type": "multiple_selection",
+        "question": "Where do earthquakes with a depth > 250 km typically occur? Multiple answers may be correct.",
+        "options": {
+            "a": "wherever two oceanic plates converge",
+            "b": "at a boundary between an oceanic and continental plate",
+            "c": "at island arcs",
+            "d": "wherever two oceanic plates diverge"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct, indeed very deep earthquakes occur mostly when two oceanic plates converge (hence, at an island arcs). The subduction of an oceanic plate under a continental plate can also be seen to give rise to deep earthquake, but here the earthquake depth is somewhat on average.",
+            "incorrect": "Incorrect. Deep earthquakes occur due to deep processes such as subduction of an oceanic plate at convergent boundaries. This can happen where an oceanic plate and continental plate meet (Figure 2.3 in the book), or where two oceanic plates meet and island arcs may form as a consequence (see Figure 2.9 in the book). Vary the minimal earthquake depth in the earthquake panel. Is there a particular type of convergent boundaries where deeper earthquakes more often occur?"
+        }
+    },
+    "Q1a-earthquakes_divergent_vs_convergent": {
+        "name": "Q3",
+        "type": "multiple_selection",
+        "question": "How can one distinguish convergent boundaries from divergent boundaries using the earthquake information? Multiple answers may be correct. Check all the answer options by using the earthquake panel and Figure 2.6 in the book.",
+        "options": {
+            "a": "width of earthquake zone",
+            "b": "magnitude of earthquakes",
+            "c": "earthquake depth",
+            "d": "frequency of earthquakes"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct. Convergent boundaries typically show more frequent and deeper earthquakes in a wider zone, whereas divergent boundaries tend to have shallower earthquakes in a narrower zone. Large-magnitude earthquakes can be found on both types of boundaries, so magnitude alone is not enough to distinguish the two types.",
+            "incorrect": "Incorrect. Try to use the sliders in the figure to find out at what depth earthquakes typically occur for different boundary types. By adjusting the date range, you can also check the frequency of earthquakes for different boundaries. Finally, look at the width of the earthquake zone and the magnitude of earthquakes for different types of boundaries. What differences do you observe?"
+        }
+    },
+    "Q1a-gold_coast_shelf_width": {
+        "name": "Q11",
+        "type": "multiple_choice",
+        "question": "Compare the shelf width of the Gold Coast with other coasts around Australia. Would you consider the continental shelf width to be relatively large or small for the Gold Coast? (Hint: turn on 'plot isobaths -200 m' to see the edge of the shelf)",
+        "options": {
+            "a": "large",
+            "b": "small"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct. What does this mean for the expected steepness of the coastal profile?",
+            "incorrect": "Incorrect. Compare the Gold Coast with the northern, southern, and western Australian coast. The lighter blue color in the figure shows the shallower part of the ocean, i.e. the continental shelf."
+        }
+    },
+    "Q1a-gold_coast_marginal": {
+        "name": "Q12",
+        "type": "multiple_selection",
+        "question": "Inman and Nordstrom (1971) classify Gold Coast as a marginal sea coast, and yet it bears little resemblance to other marginal sea coasts in e.g., Vietnam. Why might this be?",
+        "options": {
+            "a": "New Zealand and the Polynesian islands completely shelter Gold Coast from large waves",
+            "b": "The east coast of Australia has many large rivers",
+            "c": "Waves from the Southern Ocean can still reach Gold Coast",
+            "d": "The Vietnam coast has a much larger sediment supply",
+            "e": "The Vietnam coast has has a wider shelf"
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct. Gold coast is much more exposed and has a narrower shelf and a lower sediment supply than the Vietnamese coast. ",
+            "incorrect": "Incorrect. What is the wave exposure of Gold Coast? Do you see any major rivers that could supply sediment?"
+        }
+    },
+    "Q1a-wilmington": {
+        "name": "Q4",
+        "type": "multiple_choice",
+        "question": "To which class of coasts does the coast at Wilmington (North Carolina, USA) belong?",
+        "options": {
+            "a": "leading edge",
+            "b": "trailing edge",
+            "c": "marginal sea"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct, this is indeed a trailing edge coast. Can you tell which sub-type of trailing-edge coast it is? What are the corresponding coastal characteristics?",
+            "incorrect": "Incorrect. The coast is not close to a converging boundary, nor is it protected by an island arc. The East American coast is relatively flat, and is home to large river deltas. Which type of coast do these characteristics all suggest?"
+        }
+    },
+    "Q1a-shanghai": {
+        "name": "Q5",
+        "type": "multiple_choice",
+        "question": "To which class of coasts does the coast at Shanghai (China) belong?",
+        "options": {
+            "a": "leading edge",
+            "b": "trailing edge",
+            "c": "marginal sea"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct, this is indeed a marginal sea coast, because it is protected by an island arc, where a plate collision is occurring. Do you think its character is closer to a typical leading-edge or trailing-edge coast?",
+            "incorrect": "Incorrect. The coast is separated from a convergence zone (occurring at an island arc) by an inland sea. Additionally, large river deltas are present (the Yangtze River delta for Shanghai specifically). Which type of coast do these characteristics suggest?"
+        }
+    },
+    "Q1a-maputo": {
+        "name": "Q6",
+        "type": "multiple_choice",
+        "question": "To which class of coasts does the coast at Maputo (Mozambique) belong?",
+        "options": {
+            "a": "afro trailing edge",
+            "b": "amero trailing edge",
+            "c": "marginal sea"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct, this is indeed an afro-trailing-edge coast. What does this tell you about the maturity of the morphological features?",
+            "incorrect": "Incorrect. The coast is neither close to a converging boundary nor protected by an island arc, which suggests what type of coast? Are there any diverging boundaries on the opposite side of the plate?"
+        }
+    },
+    "Q1a-lima": {
+        "name": "Q7",
+        "type": "multiple_choice",
+        "question": "To what class of coasts does the coast at Lima (Peru) belong?",
+        "options": {
+            "a": "leading edge",
+            "b": "trailing edge",
+            "c": "marginal sea"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct, this is indeed a leading edge coast. It is close to a converging boundary.",
+            "incorrect": "Incorrect. The coast is formed near a converging boundary, which suggests what type of coast?"
+        }
+    },
+    "Q1a-large_river_deltas": {
+        "name": "Q8",
+        "type": "multiple_selection",
+        "question": "Where do we find the largest river deltas? You may select multiple answers.",
+        "options": {
+            "a": "southeastern USA",
+            "b": "western Europe",
+            "c": "western Africa",
+            "d": "southeastern Asia",
+            "e": "Brazil",
+            "f": "southern Australia"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+            "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea"
+        ],
+        "feedback": {
+            "correct": "Correct. Deltas like the Mississippi, Mekong, and Amazon all developed on trailing-edge or marginal sea coasts with wide continental shelves and abundant sediment supplies.",
+            "incorrect": "Incorrect. Consider the tectonic plate setting and associated continental shelf width. What influence do those characteristics have on sediment supply and the ability of sediment to accumulate as a delta?"
+        }
+    },
+    "Q1a-amazon_and_mekong": {
+        "name": "Q9",
+        "type": "multiple_selection",
+        "question": "What do you know about the tectonic plate setting for the Amazon and Mekong river systems?",
+        "options": {
+            "a": "The Amazon system is strongly influenced by it being near a divergent boundary",
+            "b": "The large Amazon drainage system is linked to the convergence of a continental and an oceanic plate on the opposite side of the continent.",
+            "c": "The Mekong system is strongly influenced by convergence tectonics",
+            "d": "The Amazon system is further away from a plate boundary than the Mekong system"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct. The Mekong system is a marginal sea coast, and the Amazon a trailing-edge coast. Even though the island arc convergence zone is relatively close to the Mekong system, both systems are far enough from a plate boundary to be unaffected by convergence tectonics. The Amazon system receives its sediment from the drainage basin originating in the mountaineous convergence zone on the opposite side of the continent (i.e., between a continental and oceanic plate).",
+            "incorrect": "Incorrect. Use Figure 2.6 from the book to see the coastal classification for the mentioned systems. Can you recognize the typical plate settings leading to formation of these coastal types (is the coast close to a convergent boundary? is there a convergent boundary on the continent / or on the opposite side of the continent, which leads to large sediment supply)?"
+        }
+    },
+    "Q1a-redfish_pass": {
+        "name": "Q10",
+        "type": "multiple_choice",
+        "question": "The wide continental shelf in front of Redfish Pass (Florida, USA) seems like a suitable place for a large delta to grow. Why does it take the form of a barrier coast instead?",
+        "options": {
+            "a": "High exposure to waves on leading edge of coast",
+            "b": "There are high local rates of isostatic rebound",
+            "c": "The Gulf of Mexico is a macrotidal environment",
+            "d": "It has a limited fluvial sediment supply",
+            "e": "The coast is completely protected from wave action"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct. Florida is almost like a mini afro-trailing coast, without a major convergent boundary on either side of it. As such, there are no major river systems and there is low fluvial sediment supply",
+            "incorrect": "Incorrect. Check the tectonic plate setting again - what might that mean for the development of large rivers?"
+        }
+    },
+    "Q1b-columbia_and_ganges": {
+        "name": "Q1",
+        "type": "multiple_selection",
+        "question": "The Columbia River and Ganges-Brahmaputra systems look very different. Which of these statements are true?",
+        "options": {
+            "a": "Only the Ganges delta is on a trailing edge coast",
+            "b": "The Columbia system has a deep submarine canyon offshore",
+            "c": "Both rivers have a large sediment discharge",
+            "d": "The average annual wave height is smaller offshore of the Columbia River",
+            "e": "Both systems are tide-influenced",
+            "f": "The mouth of the Columbia River and Ganges delta are comparable in size"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea"
+        ],
+        "feedback": {
+            "correct": "Correct. The Ganges has a much larger sediment supply (from the Himalayas and intense monsoonal climate) plus space to grow on a trailing edge coast, whereas the Columbia has a (relatively) smaller sediment supply (partially due to damming) and little room to develop on the leading edge of a coast exposed to high waves. The Ganges delta is also several orders of magnitude larger.",
+            "incorrect": "Incorrect. Look again at the tectonic plate setting and the form of the channels and their surrounding coasts."
+        }
+    },
+    "Q1b-mekong": {
+        "name": "Q2",
+        "type": "multiple_choice",
+        "question": "What are the dominant processes for the Mekong River system?",
+        "options": {
+            "a": "Wave-dominated to the southwest, tide-dominated in the central and northern parts of the delta",
+            "b": "River-dominated in the main central distributary, tide-dominated in the northern branches",
+            "c": "Wave-dominated north branch and river-dominated central branch."
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct. The long, straight channels indicate tide rather than river dominance, while waves become more important as you move away from the channels to the southwest.",
+            "incorrect": "Incorrect. Look at the satellite image and compare it with Figure 2.42. Which process do you think is most important? Pay attention to the shape of the channels."
+        }
+    },
+    "Q1b-wadden_sea": {
+        "name": "Q3",
+        "type": "multiple_choice",
+        "question": "Look at the 'Wadden Sea' system. Which statement is correct?",
+        "options": {
+            "a": "Sandy beaches suggest wave-dominance on the North Sea coast",
+            "b": "Muddy flats and salt marshes suggest river dominance inside the Wadden Sea "
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Correct. The outer parts of the islands (north and west coasts) tend to be wave-dominated and hence sandier, while mud accumulates in the Wadden Sea, which is sheltered by the barrier islands.",
+            "incorrect": "Incorrect. Where are the nearest rivers? What is the exposure to waves on the inside of the Wadden Sea versus on the outer parts of the islands?"
+        }
+    },
+    "Q1b-wax_lake": {
+        "name": "Q4",
+        "type": "multiple_selection",
+        "question": "Look at the 'Wax Lake' system. How can we see that the system is dominated by waves/river/tides, i.e., which characteristics show the dominant process? You can select multiple options.",
+        "options": {
+            "a": "Long funnel-shaped channels",
+            "b": "Wide sandy beaches",
+            "c": "Large sediment deposits",
+            "d": "Continuously bifurcating channels",
+            "e": "Multiple parallel channels",
+            "f": "Extensive tidal flats and/or marshes"
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct. These factors suggest that Wax Lake delta is river-dominated.",
+            "incorrect": "Incorrect. Read Section 2.7.4 from the book and look at Figures 2.42-2.49. The Wax Lake Delta is river-dominated. Which characteristics fit this classification?"
+        }
+    },
+    "Q1b-wadden_sea_vegetation": {
+        "name": "Q5",
+        "type": "multiple_selection",
+        "question": "For the 'Wadden Sea' system, we observe the presence of vegetation. Where is this vegetation mostly located? You can select multiple options.",
+        "options": {
+            "a": "In tidal channels",
+            "b": "On dune systems",
+            "c": "In the surf zone of beaches",
+            "d": "Landward of the intertidal zone",
+            "e": "On top of fluvial deposits"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct. Vegetation tends to develop in calmer areas where it is not regularly exposed to strong hydrodynamic forcing.",
+            "incorrect": "Incorrect. Note that vegetation is unlikely to occur in highly dynamic conditions where it is exposed to high waves or strong tidal currents. There are also no major fluvial deposits in the Wadden Sea."
+        }
+    },
+    "Q1b-st_michel": {
+        "name": "Q6",
+        "type": "multiple_choice",
+        "question": "Consider the 'St Michel' system. Which of these statements are NOT true?",
+        "options": {
+            "a": "Wide flats between the channels and shore suggest tidal dominance",
+            "b": "Abundant salt marshes suggest that there is low wave energy most of the time",
+            "c": "Highly turbid water and large flats suggest that this is a predominantly muddy system",
+            "d": "Sand and wave processes play no role in the evolution of this system"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct. There are still some visible sandy deposits and beaches which suggest that waves may sometimes be important. Seldom is a system ever completely wave/river/tidal dominant. Interestingly, this is a terrific place to build both castle and a tidal energy station - zoom in to find Mont St Michel and La Rance tidal barrage.",
+            "incorrect": "Incorrect. Look more closely around the edges of the bay"
+        }
+    },
+    "Q1b-willapa_bay": {
+        "name": "Q7",
+        "type": "numeric",
+        "question": "Look at the examples of different coastal systems in Figure 2.42 in the book. Then look at the 'Willapa Bay' system. Which example number shows the most resemblance? Enter your answer as an integer.",
+        "answer": "0de7cf39e1e6366122309794e86d197d025a81235881e67ec4f011c9db2df252",
+        "sig_figs": 1,
+        "feedback": {
+            "correct": "Correct. Willapa Bay has a wave-dominated outer coast with tidally influenced channel and lagoon.",
+            "incorrect": "Incorrect. Have a look at the surrounding beaches. What kind of influence do these beaches imply? Which process might dominate in the central channel?"
+        }
+    },
+    "Q1b-dune_du_pilat": {
+        "name": "Q8",
+        "type": "multiple_choice",
+        "question": "Examine the Dune du Pilat system, which is located at the mouth of Arcachon Bay/Inlet in southwest France. Which of the following statements is false?",
+        "options": {
+            "a": "The net southern sediment transport is visible from the development of a large spit north of the inlet",
+            "b": "The net northern sediment transport is visible from the development of a large spit north of the inlet",
+            "c": "A strong tidal influence is visible in the channel-parallel bars and varied bedforms",
+            "d": "Wave breaking suggests the importance of wave-driven sediment transport on the seaward edge of the delta"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct. This statement is false because a spit tends to extend in the direction of net sediment transport, which is in this case going to the south. Extracurricular side note: the Dune du Pilat is one of the coolest coastal landforms that you can visit- it feels a bit like spending time on Tatooine from Star Wars- it is just so gigantic!",
+            "incorrect": "Incorrect. Take a closer look at the large spit to the north and the smaller bars in the inlet\u2019s mouth- in which direction are they pointing? Do you see any breaking waves? What can you see that might indicate the presence of strong tides?"
+        }
+    },
+    "Q1b-engineered_delta": {
+        "name": "Q9",
+        "type": "multiple_choice",
+        "question": "Which is an example of a highly engineered river-dominated delta?",
+        "options": {
+            "a": "Columbia River",
+            "b": "Pearl (Zhujiang River estuary)",
+            "c": "Mississippi",
+            "d": "Amazon"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct. The Missisippi originally formed as a river-dominated (as exemplified by its bird-foot deltas, meandering channels, and branching structure. It also exhibits signs of diking and channelization, and there are several control structures upstream of the delta. ",
+            "incorrect": "Incorrect. River-dominated deltas often split into numerous smaller non-parallel branches, and tend to have parallel banks. Tide-dominated deltas tend to have more of a funnel shape in their channels. Highly engineered deltas often aim to linearize the system in order to make it more suitable for e.g., inland shipping. Look for evidence of dikes or urban development along the channels."
+        }
+    },
+    "Q1b-scale_lagoa_de_albofeira_and_amazon": {
+        "name": "Q10",
+        "type": "multiple_choice",
+        "question": "What is the difference in scale of the mouths of the 'Lagoa de Albofeira' and 'Amazon' systems?",
+        "options": {
+            "a": "about equal",
+            "b": "about a factor 10",
+            "c": "about a factor 100",
+            "d": "about a factor 1000"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct. Why might the Lagoa de Albofeira and Amazon be so different in size? How do the various factors we discussed in class like tectonic plate setting, wave climate, and sediment supply play a role?",
+            "incorrect": "Incorrect. You can use the latitude of the satellite images to approximate the cross-sectional width of the system mouths. What are the differences in scales (approximately)?"
+        }
+    },
+    "Q1b-sandy_and_muddy_sediment": {
+        "name": "Q11",
+        "type": "multiple_selection",
+        "question": "The difference between a system with large sandy sediment supply and large muddy sediment supply can be seen from (you can select multiple answers):",
+        "options": {
+            "a": "Turbid water colour",
+            "b": "Relative tidal influence",
+            "c": "Tectonic plate setting",
+            "d": "Presence of beaches"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct. Brown, chocolatey-coloured water suggests high turbidity (i.e., lots of sediment in suspension), which is usually indicative of muddy sediment. Beaches usually occur in sandier environments.",
+            "incorrect": "Incorrect. Look at the difference between a sandy system (e.g., Columbia River) and a muddy system (e.g., Yellow river). What differences do you observe? Tectonic plate setting can sometimes be indicative of sediment type (you are more likely to find muddy sediment on trailing edge coasts), but is not a guarantee."
+        }
+    },
+    "Q1b-pearl_and_st_michel": {
+        "name": "Q12",
+        "type": "multiple_selection",
+        "question": "Both the 'Pearl (Zhujiang River Estuary)' and 'St Michel' systems can be classified as estuaries. However, only the 'St Michel' system has salt marshes. Select the best fitting reasons for this.",
+        "options": {
+            "a": "The 'St Michel' system has a higher sediment budget.",
+            "b": "The tidal velocities at the 'Pearl' system are too high.",
+            "c": "Coastal vegetation in the 'Pearl' system has been greatly reduced by human interventions.",
+            "d": "The Pearl River Delta has a climate more suited to mangrove development",
+            "e": "The climate at the 'Pearl' system is too cold for salt marshes to form."
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct. The Pearl River delta is one of the most heavily urbanized delta systems in the world (home to 86 million people circa 2020!), and much of its coastal vegetation has been removed or squeezed out. Given its warm climate, most vegetation that develops here is in the form of mangrove forests rather than salt marshes. If you zoom in and look very closely around the edges of the channels you can still find some small forests.",
+            "incorrect": "Incorrect. Think about the latitude of each system, and also compare the degree of urbanization in each area."
+        }
+    },
+    "Q1b-favourite_site": {
+        "name": "Q13",
+        "type": "multiple_choice",
+        "question": "Based on these satellite images, which is the most beautiful site?",
+        "options": {
+            "a": "Lagoa de Albofeira",
+            "b": "Amazon",
+            "c": "Columbia River",
+            "d": "Dune du Pilat",
+            "e": "Ebro Delta",
+            "f": "Ganges-Brahmaputra Delta",
+            "g": "Hangzou Bay",
+            "h": "Jiangsu Coast (north)",
+            "i": "Jiangsu Coast (south)",
+            "j": "Mekong River",
+            "k": "Missisippi",
+            "l": "Pearl (Zhujiang River Estuary)",
+            "m": "Redfish Pass",
+            "n": "Sao Fransisco",
+            "o": "Senegal Delta",
+            "p": "Severn Estuary",
+            "q": "St Michel",
+            "r": "Wadden Sea",
+            "s": "Wax Lake",
+            "t": "Willapa Bay",
+            "u": "Yangtze River",
+            "v": "Yellow River"
+        },
+        "answer": "8e35c2cd3bf6641bdb0e2050b76932cbb2e6034a0ddacc1d9bea82a6ba57f7cf",
+        "feedback": {
+            "correct": "Good choice! Taking a moment to appreciate the beauty of these natural systems is an important part of your job as coastal engineers.",
+            "incorrect": "Good choice! Taking a moment to appreciate the beauty of these natural systems is an important part of your job as coastal engineers."
+        }
+    }
+}

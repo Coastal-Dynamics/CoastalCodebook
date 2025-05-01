@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+source "$(dirname "${BASH_SOURCE[0]}")/refresh_deps"
+
+notebooks=(
+)
+
+users=$(getent passwd | grep "jupyter-" | cut -d: -f1)
+
+echo "skel"
+for nb in "${notebooks[@]}"
+do
+  echo "notebook: $nb"
+  rm "/etc/skel/notebooks/$nb"
+
+done
+
+for user in $users
+do
+  echo "user: $user"
+
+  for nb in "${notebooks[@]}"
+  do
+    echo "notebook: $nb"
+    rm "/home/$user/notebooks/$nb"
+    rm "/home/$user/updated/$nb"
+  done
+done

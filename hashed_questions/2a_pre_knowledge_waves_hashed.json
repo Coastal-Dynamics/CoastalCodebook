@@ -1,0 +1,319 @@
+{
+    "Q2a-3methods": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Which two methods do you expect to yield values that are closest to each other?",
+        "options": {
+            "a": "1: Table",
+            "b": "2: Fenton",
+            "c": "3: Iterative approach"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Well done, this is correct! Method 1 and 3 get very close to the exact solution. Method 2 is an approximation (but a very good one!)",
+            "incorrect": "Oops, there seems to be a mistake. Which of the three methods is an approximation? "
+        }
+    },
+    "Q2a-iterative_deepwater_L0": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "What is the deep water wavelength (L0)?",
+        "answer": "814ed67f994391ff7bebf38f92cb4f01e36cfa36a65630807478bccf7152d9fb",
+        "sig_figs": 3,
+        "feedback": {
+            "correct": "Indeed, the deep water wavelength is in this way related to the wave period.",
+            "incorrect": "There is a mistake, the only variable is the wave period."
+        }
+    },
+    "Q2a-iterative_wavelength": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "If you use the dispersion relation expressed in the wavelength, what is the wavelength in the first iteration?",
+        "answer": "be293da5be477078cbeee7feef7b384f879f730ef26f51a674ce59f6ee0251d4",
+        "sig_figs": 3,
+        "feedback": {
+            "correct": "That is correct.",
+            "incorrect": "Try to fill in the deep water wavelength for the first iteration."
+        }
+    },
+    "Q2a-iterative_converge_wavelength": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "To what wavelength does this iteration converge?",
+        "answer": "4918d4e05218ac860241eaa4933422bbcda72bd6dde1b937902e13ed2f433d9f",
+        "sig_figs": 3,
+        "feedback": {
+            "correct": "That is correct.",
+            "incorrect": "There is a mistake."
+        }
+    },
+    "Q2a-table_ratio_hL0": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the ratio of h/L0? Provide your answer in three significant figures.",
+        "answer": "a9ec7864cee5064b6a1bc232d6811cb188df3d096b4d07f0fef8b2ccf580fdf4",
+        "sig_figs": 3,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-table_ratio_hL": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the ratio of h/L? Provide your answer in three significant figures.",
+        "answer": "b29786f78b91cf2844a5941140c30e1a065659430bdbc5c77cc50ef0c755e2e8",
+        "sig_figs": 3,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-table_wavelength": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the wave length (in meters)? Provide your answer in four significant figures.",
+        "answer": "37f2104b1bfdb449b7fb95d60294840cbbf07d021708562507b44137b4bb54fc",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-table_wavecelerity": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the wave celerity (in m/s)? Provide your answer in four significant figures.",
+        "answer": "5083ef98b549a2fc9f9dcccd8be9f168e51913d1092d8f84056d5a0c808c85cf",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-table_groupvelocity": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the group velocity (in m/s)? Provide your answer in four significant figures.",
+        "answer": "86a826f93f18144b776a1df260906cc3d17ebbd2eb0979612d81218d019d65bc",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-table_tanh_kh": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the value tanh(kh), you can linearly interpolate. Provide your answer in four significant figures.",
+        "answer": "74cfd9da7da863db3cfd092a702102d4a83862fdfc862f5e7490b5c2ed968d70",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-explicit_wavelength": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the wavelength (m), following the explicit formula of Fenton? Provide your answer in four significant figures.",
+        "answer": "b9ff2e25f8e34beef1e630d55782c46724d8b7f921e3671d2ee819f1fc9beb24",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-explicit_wavecelerity": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the wave celerity (m/s), following the explicit formula of Fenton? Provide your answer in four significant figures.",
+        "answer": "7906186aef2078a230e0abc99c899187977bafa82b8430713c0383ca819c6f84",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-explicit_groupvelocity": {
+        "name": "name",
+        "type": "numeric",
+        "question": "What is the group velocity (m/s), following the explicit formula of Fenton? Provide your answer in four significant figures.",
+        "answer": "d811bc042ed36f3648b11d8be3eac9b86df31434f7d76319955a75f63fb38abc",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-dispersion_Th_propagationspeed": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "What is the propagation speed of a tsunami wave train with a period (T) of 33.0 minutes in the deep ocean with a depth (h) of 6.0 km? Provide your answer in km/h.",
+        "answer": "47aea94b9974fad180eb7a21a0c977177a6bc110de73b7a9d6cfb746fe9af9e8",
+        "sig_figs": 3,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-dispersion_Lh_value_n": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "What is the value of n when the water depth (h) is 4.8 m, and the wavelength (L) is 77.7 m?",
+        "answer": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-dispersion_Lh_propagationspeed": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "What is the propagation speed (c) of a tsunami wave train with (L) of 500 km in the deep ocean with a depth (h) of 6.1 km? Provide your answer in km/h.",
+        "answer": "ddfac2b009300067db09a77f44d7e6178258ddebb1b20ac68c65f15ea554986a",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-dispersion_Th_wavelength": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "What is the wavelength (L) for a wave with a period (T) of 6.6 seconds when the depth (h) is 1.3 meters? Provide your answer in meters.",
+        "answer": "d5ad3bfb804557ea5b0fcf45802019000d9b7a90efabc76d1d05ae4896c3a6f7",
+        "sig_figs": 3,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-dispersion_Lh_waveperiod": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "What is the wave period (T) for a wave with a length (L) of 29.3 meter when the depth (h) is 3.6 meters? Provide your answer in seconds.",
+        "answer": "96b9eb6b674a9bb50ac65c0bc22892e967a16cacd7f655e8fb59b2e79ed04d85",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-dispersion_Lh_wavecelerity": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "What is the wave celerity (c) for waves with a length (L) of 24.4 meter when the depth (h) is 1.8 meters? Provide your answer in m/s.",
+        "answer": "e979952da01e58fd4bfe9684a16ab22397e28f92ceed1c6bb16f93520a3e2134",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-dispersion_Th_groupvelocity": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "What is the group velocity (cg) when the water depth (h) is 3.8 m, and the wave period (T) is 6.0 s? Provide your answer in m/s.",
+        "answer": "5ecf21708e12d2b3762b9341be022380e87c3a5cd570a424962c37d3391c90dd",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-dispersion_Lh_speed_waveenergy": {
+        "name": "on hold",
+        "type": "numeric",
+        "question": "At which speed does the wave energy propagate when the water depth (h) is 5.5 m, and the wavelength (L) is 38.7 m? Provide your answer in m/s.",
+        "answer": "f54f1e8b9a3810596ef045f25d69c96911a0f3bf616071e97262ed9c55462aff",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q2a-depth1": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Does wave 1 experience shallow, intermediate, or deep water?",
+        "options": {
+            "a": "Shallow",
+            "b": "Intermediate",
+            "c": "Deep"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake. What is the value for H/L0? Compare this with Table A.1"
+        }
+    },
+    "Q2a-depth2": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Does wave 2 experience shallow, intermediate, or deep water?",
+        "options": {
+            "a": "Shallow",
+            "b": "Intermediate",
+            "c": "Deep"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake. What is the value for H/L0? Compare this with Table A.1"
+        }
+    },
+    "Q2a-depth3": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Does wave 3 experience shallow, intermediate, or deep water?",
+        "options": {
+            "a": "Shallow",
+            "b": "Intermediate",
+            "c": "Deep"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake. What is the value for H/L? Compare this with Table A.1"
+        }
+    },
+    "Q2a-depth4": {
+        "name": "name",
+        "type": "multiple_choice",
+        "question": "Does wave 4 experience shallow, intermediate, or deep water?",
+        "options": {
+            "a": "Shallow",
+            "b": "Intermediate",
+            "c": "Deep"
+        },
+        "answer": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake. What is the value for H/L? Compare this with Table A.1"
+        }
+    },
+    "Q2a-depth5": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "For which wave is the group velocity given by g*T/(4\u03c0)?",
+        "options": {
+            "a": "1",
+            "b": "2",
+            "c": "3",
+            "d": "4",
+            "e": "None of these waves"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+        ],
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    }
+}

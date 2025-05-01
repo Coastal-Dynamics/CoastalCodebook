@@ -1,0 +1,33 @@
+name: coastalcodebook
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python version, pip, and other very generic libraries
+  - python
+  - jupyterlab
+  - pip
+  - pip:
+      - coastal-dynamics
+      - uptide
+      - utide
+      - numpy
+      - pandas
+      - pooch
+      - geopandas
+      - panel
+      - bokeh
+      - colorcet
+      - holoviews
+      - hvplot
+      - ipykernel
+      - adlfs
+      - dask
+      - dask[dataframe]
+      - jupyter_bokeh
+      - cartopy
+      - geoviews
+      - scipy
+      - python-dotenv
+      - pre-commit

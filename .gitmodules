@@ -1,0 +1,3 @@
+[submodule "CoastalCodebookSecrets"]
+	path = CoastalCodebookSecrets
+	url = git@github.com:Coastal-Dynamics/CoastalCodebookSecrets.git

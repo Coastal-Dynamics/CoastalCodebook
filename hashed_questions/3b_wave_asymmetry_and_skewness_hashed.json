@@ -1,0 +1,131 @@
+{
+    "Q3b-second_order_wave_5.13-eta1": {
+        "name": "Q1",
+        "type": "numeric",
+        "question": "What are the values of a\u2081, a\u2082 and \u03c6\u2082 to reproduce \ud835\uddd9\ud835\uddf6\ud835\uddf4\ud835\ude02\ud835\uddff\ud835\uddf2 \ud835\udff1.\ud835\udfed\ud835\udfef of the book, if we assume \u03c6\u2081 = 0 \u03c0 rad and a cosinus function, as in Equation 1? Give the value for a\u2081 [m]:",
+        "answer": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+        "sig_figs": 1,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake"
+        }
+    },
+    "Q3b-second_order_wave_5.13-eta2": {
+        "name": "Q2",
+        "type": "numeric",
+        "question": "What are the values of a\u2081, a\u2082 and \u03c6\u2082 to reproduce \ud835\uddd9\ud835\uddf6\ud835\uddf4\ud835\ude02\ud835\uddff\ud835\uddf2 \ud835\udff1.\ud835\udfed\ud835\udfef of the book, if we assume \u03c6\u2081 = 0 \u03c0 rad and a cosinus function, as in Equation 1? Give the value for a\u2082 [m]:",
+        "answer": "44896b09365746b5f7167ee4d64988a38f7f4628803cbf86224e74eeb7c69e9d",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake"
+        }
+    },
+    "Q3b-second_order_wave_5.13-phi2": {
+        "name": "Q3",
+        "type": "numeric",
+        "question": "What are the values of a\u2081, a\u2082 and \u03c6\u2082 to reproduce \ud835\uddd9\ud835\uddf6\ud835\uddf4\ud835\ude02\ud835\uddff\ud835\uddf2 \ud835\udff1.\ud835\udfed\ud835\udfef of the book, if we assume \u03c6\u2081 = 0 \u03c0 rad and a cosinus function, as in Equation 1? Give the value for \u03c6\u2082 [\u03c0 rad]. For the sake of grading, choose \u03c6\u2082 in the range between -1 [\u03c0 rad] and 1 [\u03c0 rad]:",
+        "answer": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "sig_figs": 1,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake"
+        }
+    },
+    "Q3b-second_order_wave_5.16-eta1": {
+        "name": "Q4",
+        "type": "numeric",
+        "question": "What are the values of a\u2081, a\u2082 and \u03c6\u2082 to reproduce \ud835\uddd9\ud835\uddf6\ud835\uddf4\ud835\ude02\ud835\uddff\ud835\uddf2 \ud835\udff1.\ud835\udfed\ud835\udff2 of the book, if we assume \u03c6\u2081 = 0 \u03c0 rad and a cosinus function, as in Equation 1? Give the value for a\u2081 [m]:",
+        "answer": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+        "sig_figs": 1,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake"
+        }
+    },
+    "Q3b-second_order_wave_5.16-eta2": {
+        "name": "Q5",
+        "type": "numeric",
+        "question": "What are the values of a\u2081, a\u2082 and \u03c6\u2082 to reproduce \ud835\uddd9\ud835\uddf6\ud835\uddf4\ud835\ude02\ud835\uddff\ud835\uddf2 \ud835\udff1.\ud835\udfed\ud835\udff2 of the book, if we assume \u03c6\u2081 = 0 \u03c0 rad and a cosinus function, as in Equation 1? Give the value for a\u2082 [m]:",
+        "answer": "44896b09365746b5f7167ee4d64988a38f7f4628803cbf86224e74eeb7c69e9d",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake"
+        }
+    },
+    "Q3b-second_order_wave_5.16-phi2": {
+        "name": "Q6",
+        "type": "numeric",
+        "question": "What are the values of a\u2081, a\u2082 and \u03c6\u2082 to reproduce \ud835\uddd9\ud835\uddf6\ud835\uddf4\ud835\ude02\ud835\uddff\ud835\uddf2 \ud835\udff1.\ud835\udfed\ud835\udff2 of the book, if we assume \u03c6\u2081 = 0 \u03c0 rad and a cosinus function, as in Equation 1? Give the value for \u03c6\u2082 [\u03c0 rad]. For the sake of grading, choose \u03c6\u2082 in the range between -1 [\u03c0 rad] and 1 [\u03c0 rad]:",
+        "answer": "1b07b0cffa0b3f596b5e048b0115168886cc5183dd518655b5515ee5dddac6d1",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Well done, this is correct!",
+            "incorrect": "Oops, there seems to be a mistake."
+        }
+    },
+    "Q3b-third_moment_left": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Assume a fixed location. For the left panel, which of the below statement(s) (is)are true?",
+        "options": {
+            "a": "The time-averaged value of \u03b7\u00b3 is zero",
+            "b": "The time-averaged value of \u03b7\u00b3 is smaller than zero",
+            "c": "The time-averaged value of \u03b7\u00b3 is larger than zero",
+            "d": "As a best guess, there is a wave-averaged transport in the direction of wave propagation.",
+            "e": "As a best guess, there is a wave-averaged transport against wave propagation.",
+            "f": "As a best guess, there is no wave-averaged transport."
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111"
+        ],
+        "feedback": {
+            "correct": "Correct. Note that we have assumed here that the skewness of the orbital velocity and surface elevation are qualitatively similar and that the skewness is a good predictor for sediment transport. More on this later in this course!",
+            "incorrect": "Incorrect."
+        }
+    },
+    "Q3b-third_moment_right": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Assume a fixed location. For the right panel, which of the below statement(s) (is)are true?",
+        "options": {
+            "a": "The time-averaged value of \u03b7\u00b3 is zero",
+            "b": "The time-averaged value of \u03b7\u00b3 is smaller than zero",
+            "c": "The time-averaged value of \u03b7\u00b3 is larger than zero",
+            "d": "As a best guess, there is a wave-averaged transport in the direction of wave propagation.",
+            "e": "As a best guess, there is a wave-averaged transport against wave propagation.",
+            "f": "As a best guess, there is no wave-averaged transport."
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111"
+        ],
+        "feedback": {
+            "correct": "Correct. Note that we have assumed here that the skewness of the orbital velocity and surface elevation are qualitatively similar and that the skewness is a good predictor for sediment transport. More on this later in this course!",
+            "incorrect": "Incorrect."
+        }
+    },
+    "Q3b-third_moment_middle": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "Assume a fixed location. For the middle panel, which of the below statement(s) (is)are true?",
+        "options": {
+            "a": "The time-averaged value of \u03b7\u00b3 is zero",
+            "b": "The time-averaged value of \u03b7\u00b3 is smaller than zero",
+            "c": "The time-averaged value of \u03b7\u00b3 is larger than zero",
+            "d": "As a best guess, there is a wave-averaged transport in the direction of wave propagation.",
+            "e": "As a best guess, there is a wave-averaged transport against wave propagation.",
+            "f": "As a best guess, there is no wave-averaged transport."
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct. Note that we have assumed here that the skewness of the orbital velocity and surface elevation are qualitatively similar and that the skewness is a good predictor for sediment transport. More on this later in this course!",
+            "incorrect": "Incorrect."
+        }
+    }
+}

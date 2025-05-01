@@ -1,0 +1,285 @@
+{
+    "Q7-breaking_wave_height": {
+        "name": "Q1",
+        "type": "multiple_choice",
+        "question": "Can the wave height at breaking be smaller than the deep water wave height? Use physical reasoning to get to your answer and then verify it from the table.",
+        "options": {
+            "a": "No, since there will always be shoaling",
+            "b": "Yes, for larger wave angles",
+            "c": "Yes, for smaller wave angles",
+            "d": "Yes, for normally incident waves"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct. This happens when refraction becomes increasingly important reducing the wave heights.",
+            "incorrect": "Incorrect. Have a look at the table and check the breaking wave height for different \u03c6\u2080. What is(are) the physical processes that determine the wave height at breaking"
+        }
+    },
+    "Q7-parameters_monotonically_decrease": {
+        "name": "Q2",
+        "type": "multiple_selection",
+        "question": "For which parameter(s) do the values monotonically decrease if the deep water wave angle increases from 0\u00b0 to 90\u00b0? Verify your answer from the table and try to understand why.",
+        "options": {
+            "a": "hb",
+            "b": "Hb",
+            "c": "cb",
+            "d": "\u03c6b",
+            "e": "S",
+            "f": "sin(2\u03c6\u2080)"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct. Note that \u03c6b first increases and then decreases. Can you explain this from Snell's law?",
+            "incorrect": "Incorrect. Verify your answer from the table."
+        }
+    },
+    "Q7-variation_ub": {
+        "name": "Q3",
+        "type": "multiple_choice",
+        "question": "What is the approximate range of variation of \u03c6b?",
+        "options": {
+            "a": "-90\u00b0 to 90\u00b0",
+            "b": "-45\u00b0 to 45\u00b0",
+            "c": "-35\u00b0 to 35\u00b0",
+            "d": "-20\u00b0 to 20\u00b0"
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct. The angle of incidence at breaking is approximately in the range -20\u00b0 to -20\u00b0 due to refraction.",
+            "incorrect": "Incorrect. Check the table."
+        }
+    },
+    "Q7-angle_max_transport": {
+        "name": "Q4",
+        "type": "numeric",
+        "question": " In our computation, for what deep water angle of incidence \u03c6\u2080 (in \u00b0) is the transport maximum? Give your answer in three significant figures and as a positive angle.",
+        "answer": "b9904bc8f385597f707791f956d51d2b55e617aeccd77a76c79ee3021b246c4a",
+        "sig_figs": 3,
+        "feedback": {
+            "correct": "Correct. The maximum transport is found for a value slightly smaller than 45\u00b0 (in our computation 42.6\u00b0).",
+            "incorrect": "Incorrect. Use the cell that computes S for a single wave angle and try multiple wave angles, using sufficient accuracy, around the value for which the maximum is to be expected."
+        }
+    },
+    "Q7-symmetrical_transport": {
+        "name": "Q5",
+        "type": "multiple_selection",
+        "question": "The transport is not symmetrical around 45\u00b0; not only is the maximum shifted but we can also see, for instance, that the transport for a deep water angle of 20\u00b0 is slightly larger than for 70\u00b0. Because of which parameter in Equation 8.10 do we obtain this slight asymmetry?",
+        "options": {
+            "a": "hb",
+            "b": "Hb",
+            "c": "cb",
+            "d": "\u03c6b",
+            "e": "sin(2\u03c6\u2080)"
+        },
+        "answer": [
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct. It is due to the decrease of cb with \u03c6\u2080.",
+            "incorrect": "Incorrect. Check Equation 8.10. Which parameters play a role?"
+        }
+    },
+    "Q7-CERC_grain-size": {
+        "name": "Q6",
+        "type": "multiple_selection",
+        "question": "According to the CERC formula, what happens to the transport if the grain-size increases?",
+        "options": {
+            "a": "Stays the same",
+            "b": "Becomes larger",
+            "c": "Becomes smaller",
+            "d": "Depends on the wave height"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+        ],
+        "feedback": {
+            "correct": "Correct. The grain-size is not found in Equation 8.10. This can be seen as a shortcoming of the formula.",
+            "incorrect": "Incorrect. Check Equation 8.10. Which parameters play a role? Do you see the grain-size?"
+        }
+    },
+    "Q7-transport_errr_angle": {
+        "name": "Q7",
+        "type": "numeric",
+        "question": "What is the relative error in S for a deep water angle of incidence of 10\u00b0, if one would approximate sin(2\u03c6\u2080) by 2\u03c6\u2080? Give your answer as a positive percentage with one significant figure.",
+        "answer": "d84bdb34d4eeef4034d77e5403f850e35bc4a51b1143e3a83510e1aaad839748",
+        "sig_figs": 1,
+        "feedback": {
+            "correct": "Correct. For small wave angles we can use this approximation.",
+            "incorrect": "Incorrect. Compute the relative error using the values in the table as (absolute error)/(true value)*100%"
+        }
+    },
+    "Q7-increase_alongshore_transport": {
+        "name": "Q8",
+        "type": "multiple_selection",
+        "question": "Which circumstances would always lead to an increase of the alongshore transport S?",
+        "options": {
+            "a": "Increased porosity",
+            "b": "Increased sediment density",
+            "c": "Increased offshore wave height",
+            "d": "Increased wave period",
+            "e": "Angle of incidence increases from 20\u00b0 to 80\u00b0"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct. Can you explain why porosity is part of the CERC formula? You have probably found that the effect of the wave period is not very large. It is also difficult to predict in absolute terms; it can either go up or down (try T in the range of 5 to 12 s and see what happens to the different parameters).",
+            "incorrect": "Incorrect. Verify the effect of all variables from the CERC equation and the code. For the period you may have to try quite a range of values (try T in the range of 5 to 12 s)."
+        }
+    },
+    "Q7-breaking_wave_height2": {
+        "name": "Notused",
+        "type": "numeric",
+        "question": "Rerun the code for an offshore wave height of 0.5 m (still with a period of 7 s and an incident angle of 5\u00b0). What is the new predicted wave height at breaking (in meters)? Give your answer with two significant figures.",
+        "answer": "973b372a514f91db8219fef585cdf81b09196afd7948f5fb1e29c2016dd995a0",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Correct.",
+            "incorrect": "Incorrect."
+        }
+    },
+    "Q7-breaking_wave_transport": {
+        "name": "Notused",
+        "type": "numeric",
+        "question": "And for this same wave height of 0.5 m, what is the value for the transport S [m3/s]? Either compute your answer, or read it from the plot. Give your answer with two significant figures.",
+        "answer": "35782b78a0797777db54310383e35bda9b81df48cc380eb2901ae8a063dea6fa",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Correct.",
+            "incorrect": "Incorrect."
+        }
+    },
+    "Q7-accretion_length_and_ROI": {
+        "name": "Q9",
+        "type": "multiple_choice",
+        "question": "How do the accretion length L and region of influence X vary with time? They are proportional with:",
+        "options": {
+            "a": "t",
+            "b": "1/t\u00b2",
+            "c": "\u221at",
+            "d": "t\u00b2"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct. You can see this from the  \u221at in Equation 8.25.",
+            "incorrect": "Incorrect. Check this in the plot of L(t) and X(t). Also verify this from Equation 8.25 and Figure 8.2."
+        }
+    },
+    "Q7-outward_growth": {
+        "name": "Q10",
+        "type": "multiple_choice",
+        "question": "After how many years is the outward growth of the shoreline at the breakwater equal to 150 m?",
+        "options": {
+            "a": "3",
+            "b": "5",
+            "c": "7",
+            "d": "9"
+        },
+        "answer": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+        "feedback": {
+            "correct": "Correct.",
+            "incorrect": "Incorrect. Check this in the plot of L(t)."
+        }
+    },
+    "Q7-angle_at_breakwater": {
+        "name": "Q11",
+        "type": "numeric",
+        "question": "The angle of the coastline right at the breakwater seems constant throughout the years. Determine this angle. Give your answer as a positve number with two significant figures.",
+        "answer": "f1e42019aecc858ffbcca7fddec511b761b474916fde37b1a6ff321a9b459330",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Correct. For this coastline rotation the waves are effectively normally incident, leading to the zero transport imposed by the breakwater.",
+            "incorrect": "Incorrect. You can estimate it from the figure and verify it from the boundary condition at the breakwater. How large should the local angle of incidence be to satisfy the boundary condition of S = 0 at the breakwater? What does this mean for the shoreline rotation?"
+        }
+    },
+    "Q7-yearly_transport": {
+        "name": "Q12",
+        "type": "numeric",
+        "question": "How large is the yearly transport (m\u00b3/year) in the region where the coastline orientation has not changed yet. Hint: we have seen this value before! Give your answer with (at least) 4 significant figures.",
+        "answer": "5162dcd74d0c9f8b53cdd8fe55e5022cf0e8334bdde823294cdd4d8a286bcd0f",
+        "sig_figs": 4,
+        "feedback": {
+            "correct": "Correct.",
+            "incorrect": "Incorrect. Check the computation of S aboven"
+        }
+    },
+    "Q7-depth_of_closure": {
+        "name": "Q13",
+        "type": "multiple_choice",
+        "question": "Imagine the depth of closure (DOC) is 9 m instead of 7 m. What would change with respect to the evolution of the coastal morphology?",
+        "options": {
+            "a": "The shoreline angle close to the breakwater will increase.",
+            "b": "The accretion will extend further updrift.",
+            "c": "The accretion will reach the tip of the breakwater faster.",
+            "d": "The accretion shape will look similar but will develop slower."
+        },
+        "answer": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+        "feedback": {
+            "correct": "Correct. The development will slow down and after some time the outward growth L and the region of influence X are smaller. This makes sense since a larger part of the profile follows the coastline changes and, hence, larger volumes are involved.",
+            "incorrect": "Incorrect. Hint: have a look at Equation 8.16. What happens to dY/dt?. Also look at the role of d in the analytical equations for the outward growth L and the region of influence X."
+        }
+    },
+    "Q7-shadow_effects": {
+        "name": "Q14",
+        "type": "multiple_selection",
+        "question": "Say we want to include waves from other directions also, including wave directions for which the breakwater introduces shadow effects. How could we mimick shadow effects in our numerical model? Select the appropriate strategies from the options below.",
+        "options": {
+            "a": "Reduce wave height for part of the grid depending on the angle of incidence",
+            "b": "Increase depth of closure close to the breakwater",
+            "c": "Manually decrease transport values close to the breakwater irrespective of the angle of incidence",
+            "d": "Reduce wave height for the entire grid"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+        ],
+        "feedback": {
+            "correct": "Correct. The sheltering of waves is dependent on whether or not the waves can reach the zone near the breakwater and, hence, on the angle of incidence ",
+            "incorrect": "Incorrect. What do we have to reduce? And for which wave angles?"
+        }
+    },
+    "Q7-bypass_effect": {
+        "name": "Q15",
+        "type": "multiple_selection",
+        "question": "Say we want to include bypass effects in our numerical model, e.g. when the accretion reaches the tip of the breakwater. Select the appropriate strategies from the options below.",
+        "options": {
+            "a": "Use a conditional boundary condition which changes after accretion at the breakwater has reached a certain length",
+            "b": "Mirror the updrift solution and use that as a downdrift solution",
+            "c": "Implicitly include bypass effects by including shadow zone effects",
+            "d": "Calculate the transport twice (with and without breakwater), and use the average value for transport at the breakwater"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+        ],
+        "feedback": {
+            "correct": "Correct. The transport at the breakwater is zero until bypass and becomes non-zero after bypass.",
+            "incorrect": "Incorrect."
+        }
+    },
+    "Q7-yearly_transport2": {
+        "name": "Q16",
+        "type": "numeric",
+        "question": "What is the yearly transport for the initial or reference coastline orientation? Give your answer with (at least) 3 significant figures.",
+        "answer": "a3514d7d0f13c51e4a3ad2adf11556ae28e5cb961a00b7549d1083a0b8957f74",
+        "sig_figs": 3,
+        "feedback": {
+            "correct": "Correct. You can read this transport from the plot as well as compute it from the provided cell.",
+            "incorrect": "Incorrect. What is the coastline orientation that you should use? Read the corresponding transport from the plot as well as compute it from the provided cell."
+        }
+    },
+    "Q7-angle_zero_transport": {
+        "name": "Q17",
+        "type": "numeric",
+        "question": "What is the angle over which the coast has to rotate for the transport to become zero? Give your answer as a positive number with (at least) 2 significant figures.",
+        "answer": "65cebb6f370f68502d4af051143fcd0def5afa569cf0176964bdf95bdf1ce5f1",
+        "sig_figs": 2,
+        "feedback": {
+            "correct": "Correct. You can read the coastline orientation that gives a zero transport from the plot or compute it by iteration using the provided cell.",
+            "incorrect": "Incorrect. Read the coastline orientation from the plot as well as compute it by iteration using the provided cell."
+        }
+    }
+}

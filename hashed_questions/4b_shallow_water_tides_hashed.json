@@ -1,0 +1,161 @@
+{
+    "Q4b-period-6h": {
+        "name": "Q1",
+        "type": "multiple_selection",
+        "question": "Select components whose period is around 6 hours. Validate your choice from the time signals and the spectral plot from notebook 2d_tidal_constituents (Tidal Amplitudes part).",
+        "options": {
+            "a": "M2",
+            "b": "S2",
+            "c": "N2",
+            "d": "K2",
+            "e": "O1",
+            "f": "P1",
+            "g": "Q1",
+            "h": "M3",
+            "i": "M4",
+            "j": "M6",
+            "k": "M8",
+            "l": "S4",
+            "m": "MN4",
+            "n": "MS4"
+        },
+        "answer": [
+            "de7d1b721a1e0632b7cf04edf5032c8ecffa9f9a08492152b926f1a5a7e765d7",
+            "acac86c0e609ca906f632b0e2dacccb2b77d22b0621f20ebece1a4835b93f6f0",
+            "62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a",
+            "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q4b-main_overtide": {
+        "name": "Q2",
+        "type": "multiple_choice",
+        "question": "What is the main overtide that is generated as a consequence of the friction depending non-linearly on the tidal velocity?",
+        "options": {
+            "a": "M3",
+            "b": "M4",
+            "c": "M6",
+            "d": "M8",
+            "e": "S4"
+        },
+        "answer": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please read Section 5.7.5. in the book and try again. Note that we are not just asking for the main overtide, but the main overtide due to the non-linearity of friction."
+        }
+    },
+    "Q4b-Scheveningen-main": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "For Scheveningen, which are the higher harmonics with significant amplitudes (say, larger than 10-15% of the M2 amplitude)?",
+        "options": {
+            "a": "M2",
+            "b": "S2",
+            "c": "N2",
+            "d": "K2",
+            "e": "O1",
+            "f": "P1",
+            "g": "Q1",
+            "h": "M3",
+            "i": "M4",
+            "j": "M6",
+            "k": "M8",
+            "l": "S4",
+            "m": "MN4",
+            "n": "MS4"
+        },
+        "answer": [
+            "de7d1b721a1e0632b7cf04edf5032c8ecffa9f9a08492152b926f1a5a7e765d7",
+            "189f40034be7a199f1fa9891668ee3ab6049f82d38c68be70f596eab2e1857b7",
+            "62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a",
+            "1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please select the respective components in the figure to determine your answer and try again."
+        }
+    },
+    "Q4b-shallowwatertides": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "For which of the locations are shallow-water tides significant?",
+        "options": {
+            "a": "Scheveningen",
+            "b": "Jakarta",
+            "c": "Valparaiso",
+            "d": "Galveston"
+        },
+        "answer": [
+            "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done.",
+            "incorrect": "Incorrect, please try again. Per location, select all astronomical components and compare the two signals in the middle plot."
+        }
+    },
+    "Q4b-overtides": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "For Scheveningen, select all astronomical components. Now compare the two signals in the middle panel. What combined effects of the shallow-water tides can you identify?",
+        "options": {
+            "a": "Additional spring-neap tide cycle",
+            "b": "Higher high waters",
+            "c": "Lower high waters",
+            "d": "Higher low waters",
+            "e": "Lower low waters",
+            "f": "The signals look different during rising and falling tide (there seems to be a tilt)",
+            "g": "There is a brief rise of the water level during low water",
+            "h": "There is a brief dip of the water level during high water"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+            "252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111",
+            "cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a64aced233c9afe29"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done. Note that the brief rise of the water level during low water is called 'agger' in Dutch. In the signal, we can identify asymmetries about both the horizontal and vertical axes.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q4b-M2_M4_Scheveningen": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "For Scheveningen, select components M2 and M4. Are these components in phase? Compare the combined signal with the three panels of Figure 5.71 in the book. Do you recognize aspects of one or more of the three panels in the combined signal for Scheveningen?",
+        "options": {
+            "a": "No",
+            "b": "Yes, panel 1",
+            "c": "Yes, panel 2",
+            "d": "Yes, panel 3"
+        },
+        "answer": [
+            "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+            "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done. The effect of the addition of M4 for Scheveningen to the main component M2 is to create a positively skewed signal that leans backward in time.",
+            "incorrect": "Incorrect, please try again."
+        }
+    },
+    "Q4b-M2_M4_Jakarta": {
+        "name": "name",
+        "type": "multiple_selection",
+        "question": "For Jakarta, select components M2 and M4 (even though these components are relatively small and unimportant for this location). Are the components in phase? Compare the combined signal with the three panels of Figure 5.71 in the book. Do you recognize aspects of one or more of the three panels in the combined signal for Jakarta?",
+        "options": {
+            "a": "No",
+            "b": "Yes, panel 1",
+            "c": "Yes, panel 2",
+            "d": "Yes, panel 3"
+        },
+        "answer": [
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+        ],
+        "feedback": {
+            "correct": "Correct! Well done. Since the two components are out of phase, the total signal becomes negatively skewed.",
+            "incorrect": "Incorrect, please try again."
+        }
+    }
+}

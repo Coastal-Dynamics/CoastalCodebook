@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+source "$(dirname "${BASH_SOURCE[0]}")/refresh_deps"
+
+notebooks=(
+  "1a_tectonic_classification.ipynb"
+  "1b_process-based_classification.ipynb"
+)
+
+users=$(getent passwd | grep "jupyter-" | cut -d: -f1)
+
+echo "skel"
+rsync -r --del "./notebooks/" "/etc/skel/notebooks/"
+
+for user in $users
+do
+  echo "user: $user"
+  rsync -r --ignore-existing --chown="$user:$user" "./notebooks/" "/home/$user/notebooks/"
+done

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+source "$(dirname "${BASH_SOURCE[0]}")/refresh_deps"
+
+notebooks=(
+)
+
+users=$(getent passwd | grep "jupyter-" | cut -d: -f1)
+
+echo "skel"
+rsync -r --del "./notebooks/" "/etc/skel/notebooks/"
+
+for user in $users
+do
+  echo "user: $user"
+  rsync -r --del --chown="$user:$user" "./notebooks/" "/home/$user/updated/"
+done
+
