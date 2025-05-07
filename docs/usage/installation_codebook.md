@@ -159,4 +159,4 @@ we will create this environment.
 
 Having successfully installed all necessary content and software on your computer, you're
 ready to move forward. The [following section](getting_started.md) will guide you through
-running thenotebooks!
+running the notebooks!
