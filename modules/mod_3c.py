@@ -327,14 +327,12 @@ def pop_wave_transformation():
                 hv.Curve((x_rev, wave1[key]), label=f"{key}₁").opts(
                     ylabel=ylabels[key],
                     xlabel="cross-shore location [m]",
-                    aspect=1.3,
                     responsive=True,
                     padding=((0, 0.05), 0.1),
                 )
                 * hv.Curve((x_rev, wave2[key]), label=f"{key}₂").opts(
                     ylabel=ylabels[key],
                     xlabel="cross-shore location [m]",
-                    aspect=1.3,
                     responsive=True,
                     padding=((0, 0.05), 0.1),
                 )
@@ -683,7 +681,6 @@ def pop_radiation_stresses():
             padding=((0, 0.05), 0.1),
         )
         plot0 = hv.Overlay([bed_lvl, water_lvl]).opts(
-            aspect=1.7,
             responsive=True,
             legend_position="bottom_right",
             ylabel="z = -h [m]",
@@ -717,14 +714,12 @@ def pop_radiation_stresses():
                 hv.Curve((x_rev, wave1[key]), label=f"{key}₁").opts(
                     ylabel=ylabels[key],
                     xlabel="Cross-shore location (x) [m]",
-                    aspect=1.3,
                     responsive=True,
                     padding=((0, 0.05), 0.1),
                 )
                 * hv.Curve((x_rev, wave2[key]), label=f"{key}₂").opts(
                     ylabel=ylabels[key],
                     xlabel="Cross-shore location (x) [m]",
-                    aspect=1.3,
                     responsive=True,
                     padding=((0, 0.05), 0.1),
                 )
