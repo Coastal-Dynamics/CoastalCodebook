@@ -11,21 +11,12 @@ For those interested in the set-up of this course, please have a look at the [co
 Detailed usage instructions are provided in the following documents:
 
 1. [Installation instructions](./docs/usage/installation_codebook.md): a step-by-step guide to set up your coastal computing environment
-2. [Getting started](./docs/usage/getting_started.md): this guide will help you get up and running with the course notebooks using JupyterLab, assuming you’ve already installed the necessary software as per our [installation instructions](./docs/usage/installation.md).
+2. [Getting started](./docs/usage/getting_started.md): this guide will help you get up and running with the course notebooks using JupyterLab, assuming you’ve already installed the necessary software as per our [installation instructions](./docs/usage/installation_codebook.md).
 3. [Troubleshooting](./docs/usage/troubleshooting.md)
-
-## For the development team only
-
-For use within TU Delft, the Codebook runs on a TU Delft [Jupyter hub](https://coastal.citg.tudelft.nl/codebook/hub).
-
-Detailed instructions are provided in the following documents:
-1. [Deployment](./docs/private/deployment.md): to deploy or update notebooks, follow these steps.
-2. [Updating the database](./docs/private/update_database.md): to update the database on the hub
 
 ## Questions
 
-If you have a question about the installation process or notebooks, feel free to open an issue in the [GitHub repository](https://github.com/Coastal-Dynamics/CoastalCodebook). If
-that's your first time, have a look at [these instructions](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). We choose to use the GitHub issue-tracker because your fellow students probably have similar problems. We will probably not troubleshoot the tutorial notebooks by email!
+If you have a question about the installation process or notebooks, feel free to open an issue in the [GitHub repository](https://github.com/Coastal-Dynamics/CoastalCodebook). If that's your first time, have a look at [these instructions](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). We choose to use the GitHub issue-tracker because your fellow students probably have similar problems. We will probably not troubleshoot the tutorial notebooks by email!
 
 ## Contributing (advanced)
 
