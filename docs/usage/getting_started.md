@@ -1,3 +1,5 @@
+[Back to main README.md](../../README.md)
+
 # Getting Started
 
 This guide will help you get up and running with the course notebooks using JupyterLab, assuming you've already installed the necessary software as per our [installation instructions](installation_codebook.md).
@@ -57,3 +59,5 @@ Follow these steps to start exploring the course content through interactive Jup
 ## New to JupyterLab?
 If JupyterLab is new to you, or you'd like a refresher, consider browsing through [this
 introductory guide](https://earth-env-data-science.github.io/lectures/environment/intro_to_jupyterlab.html). It provides a comprehensive overview of the JupyterLab interface and features.
+
+The [following section](troubleshooting.md) will help you troubleshooting!
