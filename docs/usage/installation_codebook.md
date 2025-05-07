@@ -1,3 +1,5 @@
+[Back to main README.md](../../README.md)
+
 # Installation Guide
 
 Welcome to the installation guide for the CoastalCodebook! This document provides a
