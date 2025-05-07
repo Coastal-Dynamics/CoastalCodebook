@@ -1,3 +1,5 @@
+[Back to main README.md](../../README.md)
+
 # Troubleshooting
 
 Do you run into an issue with the installation or notebook execution? Don't worry, it's
