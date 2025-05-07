@@ -36,7 +36,7 @@ Follow these steps to start exploring the course content through interactive Jup
 3. **Activate Your Environment**: Activate your coastal environment with the command below. This environment contains all the packages you'll need.
 
    ```bash
-   mamba activate coastal
+   mamba activate coastalcodebook
    ```
 
 4. **Start JupyterLab**: JupyterLab is an interactive development environment that allows you to work with
@@ -49,7 +49,7 @@ Follow these steps to start exploring the course content through interactive Jup
 
 5. **Open a Notebook**: Within JupyterLab, navigate to the notebooks directory, and open a notebook, such as [1a_tectonic_classification.ipynb](../notebooks/1a_tectonic_classification.ipynb).
 
-6. **Select the Right Kernel**: Before running the notebook, ensure the coastal environment is selected as the kernel. You can change this in the upper-right corner by selecting Python [conda env:coastal] from the kernel dropdown menu.
+6. **Select the Right Kernel**: Before running the notebook, ensure the coastal environment is selected as the kernel. You can change this in the upper-right corner by selecting Python [conda env:coastalcodebook] from the kernel dropdown menu. Update: we have now set it up so that the kernel display name is "Python 3 (ipykernel)".
 
 6. **Interact with the Notebook**: You're now ready to execute the notebook cells and
    engage with the interactive coastal computational notebooks!
