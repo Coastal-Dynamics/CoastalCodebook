@@ -126,7 +126,7 @@ we will create this environment.
    list of all files and directories. You can also see this in the file explorer by
    navigating to this directory.
 3. The directory contains
-   [environment.yml](https://github.com/coastal-dynamics/coastalcodebook/environment.yml),
+   [environment.yml](https://github.com/Coastal-Dynamics/CoastalCodebook/environment.yml),
    which is a file that describes the software dependencies. Now create the software
    environment by running the following command in the terminal/Miniforge prompt:
 
@@ -145,7 +145,7 @@ we will create this environment.
 2. You can navigate the terminal using `cd`, which stands for "change directory". So you
    would do something like `cd ~/path/to/cloned/repository`
 3. The repository contains
-   [environment.yml](https://github.com/coastal-dynamics/coastalcodebook/environment.yml),
+   [environment.yml](https://github.com/Coastal-Dynamics/CoastalCodebook/environment.yml),
    which is a file that describes the software dependencies. Now create the software environment by running the following command in the terminal/Miniforge prompt:
 
    ```bash
