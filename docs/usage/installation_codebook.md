@@ -156,8 +156,11 @@ we will create this environment.
 
 </details>
 
+## 4. Downloading the database
 
-## 4. Running the notebooks
+Next to the folders with notebooks, hashed_questions and modules, you also need a database folder. You can download this database [here](https://coastal.citg.tudelft.nl/resources/database.tar.gz). Extract the file and copy the database folder on the same level as the folders with notebooks, hashed_questions and modules.
+
+## 5. Running the notebooks
 
 Having successfully installed all necessary content and software on your computer, you're
 ready to move forward. The [following section](getting_started.md) will guide you through
