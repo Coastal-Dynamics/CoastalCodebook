@@ -57,7 +57,7 @@
         "name": "Q4",
         "type": "numeric",
         "question": " In our computation, for what deep water angle of incidence \u03c6\u2080 (in \u00b0) is the transport maximum? Give your answer in three significant figures and as a positive angle.",
-        "answer": "b9904bc8f385597f707791f956d51d2b55e617aeccd77a76c79ee3021b246c4a",
+        "answer": "457a963a813c0963d0661e888ecf53b80354035cb3b6a740ada5e7e4cd5eb0b1",
         "sig_figs": 3,
         "feedback": {
             "correct": "Correct. The maximum transport is found for a value slightly smaller than 45\u00b0 (in our computation 42.6\u00b0).",
@@ -189,7 +189,7 @@
     "Q7-angle_at_breakwater": {
         "name": "Q11",
         "type": "numeric",
-        "question": "The angle of the coastline right at the breakwater seems constant throughout the years. Determine this angle. Give your answer as a positve number with two significant figures.",
+        "question": "The angle of the coastline right at the breakwater seems constant throughout the years. Determine this angle. Give your answer as a positive number with two significant figures.",
         "answer": "f1e42019aecc858ffbcca7fddec511b761b474916fde37b1a6ff321a9b459330",
         "sig_figs": 2,
         "feedback": {
@@ -201,7 +201,7 @@
         "name": "Q12",
         "type": "numeric",
         "question": "How large is the yearly transport (m\u00b3/year) in the region where the coastline orientation has not changed yet. Hint: we have seen this value before! Give your answer with (at least) 4 significant figures.",
-        "answer": "5162dcd74d0c9f8b53cdd8fe55e5022cf0e8334bdde823294cdd4d8a286bcd0f",
+        "answer": "ef2473b3b66773f49c4b07fea4ae4f7c536de615e01a18e65198c0b9a63bf63a",
         "sig_figs": 4,
         "feedback": {
             "correct": "Correct.",
@@ -264,7 +264,7 @@
         "name": "Q16",
         "type": "numeric",
         "question": "What is the yearly transport for the initial or reference coastline orientation? Give your answer with (at least) 3 significant figures.",
-        "answer": "a3514d7d0f13c51e4a3ad2adf11556ae28e5cb961a00b7549d1083a0b8957f74",
+        "answer": "c348d5a250127b434798dcf4929736d33ffb8a3ab8ada9d440274fcf8d1afef6",
         "sig_figs": 3,
         "feedback": {
             "correct": "Correct. You can read this transport from the plot as well as compute it from the provided cell.",
