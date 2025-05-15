@@ -5,6 +5,22 @@ source "$(dirname "${BASH_SOURCE[0]}")/refresh_deps"
 notebooks=(
   "1a_tectonic_classification.ipynb"
   "1b_process-based_classification.ipynb"
+  "2a_pre_knowledge_waves.ipynb"
+  "2b_wave_dispersion_and_grouping.ipynb"
+  "2c_generation_tide.ipynb"
+  "2d_tidal_constituents.ipynb"
+  "3a_tidal_environments.ipynb"
+  "3b_wave_asymmetry_and_skewness.ipynb"
+  "3c_radiation_stresses_and_wave_forces.ipynb"
+  "4a_bound_long_wave.ipynb"
+  "4b_shallow_water_tides.ipynb"
+  "5_coastal_classification_and_beach_states.ipynb"
+  "6_cross_shore_transport.ipynb"
+  "7_alongshore_transport.ipynb"
+  "8a_escoffier_curve.ipynb"
+  "8b_kreeke_robaczewska.ipynb"
+  "8c_equillibrium_concentration.ipynb"
+  "8d_interventions.ipynb"
 )
 
 users=$(getent passwd | grep "jupyter-" | cut -d: -f1)

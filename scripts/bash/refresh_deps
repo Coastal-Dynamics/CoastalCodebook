@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
 
-rsync -r --del "./questions/hashed_questions/" "/var/hashed_questions/"
+mkdir /var/codebook
+rsync -r --del "./hashed_questions/" "/var/codebook/hashed_questions/"
+rsync -r --del "./modules/" "/var/codebook/modules/"
+rsync -r --del "./images/" "/var/codebook/images/"
 
-mkdir "/etc/skel/questions"
-ln -s "/var/hashed_questions/" "/etc/skel/questions"
-ln -s "/var/database/" "/etc/skel"
-rsync -r --del "./modules/" "/etc/skel/modules/"
-rsync -r --del "./images/" "/etc/skel/images/"
+ln -s "/var/codebook/hashed_questions/" "/etc/skel"
+ln -s "/var/codebook/database/" "/etc/skel"
+ln -s "/var/codebook/modules/" "/etc/skel"
+ln -s "/var/codebook/images/" "/etc/skel"
 
 users=$(getent passwd | grep "jupyter-" | cut -d: -f1)
 
 for user in $users
 do
-  mkdir "/home/$user/questions"
-  ln -s "/var/hashed_questions/" "/home/$user/questions"
-  ln -s "/var/database/" "/home/$user"
-  rsync -r --del "./modules/" "/home/$user/modules/"
-  rsync -r --del "./images/" "/home/$user/images/"
+  ln -s "/var/codebook/hashed_questions/" "/home/$user"
+  ln -s "/var/codebook/database/" "/home/$user"
+  ln -s "/var/codebook/modules/" "/home/$user"
+  ln -s "/var/codebook/images/" "/home/$user"
 done
 
