@@ -21,7 +21,7 @@ Over the years various TU Delft educators and teaching assistants (MSc and PhD s
 - Lisa Kleinveld (MSc student)
 - Stuart Pearson (Assistant professor)
 - Mia Pupić Vurilj (PhD student)
-- Valentijn Sessink (Exernal open source expert)
+- Valentijn Sessink (External open source expert)
 
 ## Contributors
 
