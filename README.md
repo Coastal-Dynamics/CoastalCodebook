@@ -24,4 +24,4 @@ Would you like to propose changes or additions? We welcome pull requests!
 
 ## Acknowledgements
 
-[Many people](./docs/about/acknowledgements.md) have contributed to this project over the years. Thank you all!
+[Many people](./docs/about/acknowledgements_codebook.md) have contributed to this project over the years. Thank you all!
