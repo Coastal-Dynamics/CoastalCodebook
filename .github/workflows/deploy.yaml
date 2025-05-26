@@ -39,6 +39,11 @@ jobs:
           python -m ipykernel install --user --name conda-env-coastal-py --display-name "conda-env-coastal-py"
 
       # Copy notebooks to book notebooks directory
+      - name: Copy hashed questions
+        run: |
+          rsync -av --delete hashed_questions/ book/hashed_questions/
+
+      # Copy notebooks to book notebooks directory
       - name: Prepare notebooks for book
         run: |
           rsync -av --delete notebooks/ book/notebooks/
