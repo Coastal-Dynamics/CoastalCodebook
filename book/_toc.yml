@@ -1,0 +1,62 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: About this book
+    chapters:
+      - file: about/introduction
+      - file: about/structure.md
+      - file: about/overview.md      
+      - file: about/acknowledgements
+
+  - caption: Usage
+    chapters:
+      - file: usage/installation
+      - file: usage/getting_started
+      - file: usage/troubleshooting
+      - file: usage/contributing
+
+  - caption: Week 1
+    chapters:
+      - file: notebooks/1a_tectonic_classification
+      - file: notebooks/1b_process-based_classification
+
+  - caption: Week 2
+    chapters:
+      - file: notebooks/2a_pre_knowledge_waves
+      - file: notebooks/2b_wave_dispersion_and_grouping
+      - file: notebooks/2c_generation_tide
+      - file: notebooks/2d_tidal_constituents
+
+  - caption: Week 3
+    chapters:
+      - file: notebooks/3a_tidal_environments
+      - file: notebooks/3b_wave_asymmetry_and_skewness
+      - file: notebooks/3c_radiation_stresses_and_wave_forces
+
+  - caption: Week 4
+    chapters:
+      - file: notebooks/4a_bound_long_wave
+      - file: notebooks/4b_shallow_water_tides
+
+  - caption: Week 5
+    chapters:
+      - file: notebooks/5_coastal_classification_and_beach_states
+
+  - caption: Week 6
+    chapters:
+      - file: notebooks/6_cross_shore_transport
+
+  - caption: Week 7
+    chapters:
+      - file: notebooks/7_alongshore_transport
+
+  - caption: Week 8
+    chapters:
+      - file: notebooks/8a_escoffier_curve
+      - file: notebooks/8b_kreeke_robaczewska
+      - file: notebooks/8c_equillibrium_concentration
+      - file: notebooks/8d_interventions
+      
