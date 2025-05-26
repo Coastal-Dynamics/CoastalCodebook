@@ -9,6 +9,7 @@ dependencies:
   - python=3.13.1
   - jupyterlab=4.3.4
   - pip=24.3.1
+  - jupyter-book=1.0.4
   - pip:
       - coastal-dynamics==1.0.0
       - uptide==1.1
