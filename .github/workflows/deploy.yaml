@@ -9,6 +9,10 @@ on:
       - "ci/envs/environment.yaml"
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  pages: write
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
