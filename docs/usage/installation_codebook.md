@@ -84,7 +84,7 @@ page to download the software, so that's where we will download the software as 
 <details>
 <summary><strong>Windows Users</strong></summary>
 
-1. Download and install Mambaforge from the [Miniforge GitHub page](https://github.com/conda-forge/miniforge#mambaforge). Make sure you download the Windows binaries.
+1. Download and install Mambaforge from the [Miniforge GitHub page](https://github.com/conda-forge/miniforge#Install). Make sure you download the Windows binaries.
 2. You may install miniforge by double-clicking and just using its default settings.
 3. Access and verify Mamba by opening a Miniforge Prompt from the Start menu. You can
    test if Mamba was installed by running `mamba --version`
@@ -104,8 +104,8 @@ sure to temporarily disable your firewall.
 2. The commands to install the package manager are copied from their documentation ---
    double check to see if they are still the correct!
    ```bash
-   curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
-   bash Mambaforge-$(uname)-$(uname -m).sh
+   curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+   bash Miniforge3-$(uname)-$(uname -m).sh
    ```
 3. Accept the user agreements, and allow the installation script to edit your profile
    file because it ensures that the mamba command becomes available in your profile.
