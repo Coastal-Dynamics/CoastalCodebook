@@ -31,4 +31,4 @@ dependencies:
       - geoviews==1.14.0
       - scipy==1.14.1
       - python-dotenv==1.0.1
-      - pre-commit==4.0.1
+      - pre-commit
