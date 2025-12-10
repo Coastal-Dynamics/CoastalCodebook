@@ -1,28 +1,79 @@
 #!/usr/bin/env bash
 
+# This script removes selected notebooks (or entire directories) from:
+#   1. Existing jupyter-* users' notebooks/ and updated/ directories
+#
+# It also removes notebooks from /etc/skel/notebooks/ so new users will not
+# receive them. The optional directory-removal feature applies ONLY to
+# existing users.
+#
+# It sources refresh_deps first to ensure shared recources are consistent.
+#
+# To use it, add notebook filenames to the `notebooks` array below or enable
+# the optional directory-removal block. Files or directories that do not exist
+# will simply be skipped.
+#
+# Load shared resource setup before performing deletions.
 source "$(dirname "${BASH_SOURCE[0]}")/refresh_deps"
 
+# List of notebook filenames to delete.
+# Add filenames here EXACTLY as they appear in the notebooks/ directory.
+#
+# Example syntax:
+# notebooks=(
+#   "1a_tectonic_classification.ipynb"
+#   "2b_wave_dispersion_and_grouping.ipynb"
+#   "8d_interventions.ipynb"
+# )
+#
+# Currently empty, meaning nothing will be deleted unless notebooks are added.
 notebooks=(
 )
 
+# OPTIONAL: Remove an entire directory for all existing users.
+# This directory is NOT inside notebooks/, but at the same level as notebooks/.
+#
+# Example (removes "/home/<user>/2024-2025-q3"):
+# DIR_TO_DELETE="2024-2025-q3"
+# It can also be used to delete "/home/<user>/update" or "/home/<user>/notebooks"
+# This can be handy if followed by a clean deploy
+#
+# Leave this commented-out when not in use.
+# DIR_TO_DELETE=""
+
+# Identify all existing Jupyter users.
 users=$(getent passwd | grep "jupyter-" | cut -d: -f1)
 
+# --- Delete notebooks from /etc/skel (future users) -------------------------
 echo "skel"
+
 for nb in "${notebooks[@]}"
 do
   echo "notebook: $nb"
-  rm "/etc/skel/notebooks/$nb"
-
+  rm -f "/etc/skel/notebooks/$nb"
 done
 
+# NOTE:
+# The optional directory deletion does NOT apply to /etc/skel,
+# We assume the directory does not exist there or does not need to be deleted.
+
+# --- Delete notebooks and optional directory from each existing user --------
 for user in $users
 do
   echo "user: $user"
 
+  # Delete individual notebooks
   for nb in "${notebooks[@]}"
   do
     echo "notebook: $nb"
-    rm "/home/$user/notebooks/$nb"
-    rm "/home/$user/updated/$nb"
+    rm -f "/home/$user/notebooks/$nb"
+    rm -f "/home/$user/updated/$nb"
   done
+
+  # Delete full directory, if enabled.
+  # Directory is at the same level as notebooks/, not inside it.
+  if [[ -n "${DIR_TO_DELETE:-}" ]]; then
+    echo "deleting directory for $user: $DIR_TO_DELETE"
+    rm -rf "/home/$user/$DIR_TO_DELETE"
+  fi
 done

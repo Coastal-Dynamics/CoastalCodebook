@@ -1,22 +1,95 @@
 #!/usr/bin/env bash
 
-mkdir /var/codebook
+# =====================================================================
+#  CODEBOOK REFRESH_DEPS SCRIPT
+# =====================================================================
+#
+# This script updates shared Codebook resources and distributes them to:
+#   1. /etc/skel   → ensuring all *future* users receive the symlinks.
+#   2. Existing jupyter-* user accounts → ensuring consistency for current users.
+#
+# The local directories (hashed_questions, modules, images, etc.) are mirrored
+# into /var/codebook using rsync. This keeps /var/codebook synchronized with
+# the current repository state.
+#
+# The script then creates symlinks in /etc/skel and in each user’s home
+# directory. To avoid “File exists” errors, symlink creation is handled by a
+# helper function that only creates the link if it does NOT already exist.
+#
+# =====================================================================
+
+
+# ---------------------------------------------------------------------
+# Create the main shared directory. mkdir -p prevents errors
+# if the directory already exists.
+# ---------------------------------------------------------------------
+mkdir -p /var/codebook
+
+
+# ---------------------------------------------------------------------
+# Sync (mirror) local directories into /var/codebook.
+#   -r    = recursive copy
+#   --del = delete files in destination that no longer exist in source
+# This ensures /var/codebook always matches the current repository state.
+# ---------------------------------------------------------------------
 rsync -r --del "./hashed_questions/" "/var/codebook/hashed_questions/"
 rsync -r --del "./modules/" "/var/codebook/modules/"
 rsync -r --del "./images/" "/var/codebook/images/"
 
-ln -s "/var/codebook/hashed_questions/" "/etc/skel"
-ln -s "/var/codebook/database/" "/etc/skel"
-ln -s "/var/codebook/modules/" "/etc/skel"
-ln -s "/var/codebook/images/" "/etc/skel"
 
+# ---------------------------------------------------------------------
+# Helper: create a symlink only if the exact link_path does NOT exist.
+#
+# We detect whether the final path (directory/name) already exists to avoid
+# errors (e.g., "File exists") when re-running the script.
+#
+# The caller specifies the final explicit link path, e.g.:
+#   safe_link /var/codebook/hashed_questions/ /etc/skel/hashed_questions
+# This avoids ambiguity and makes linking behavior easier to read.
+# ---------------------------------------------------------------------
+safe_link() {
+  local target="$1"      # full target directory (existing source)
+  local link_path="$2"   # full final symlink path
+
+  # If the path already exists (as file, dir, or symlink), skip creation.
+  [ -e "$link_path" ] && return
+
+  # Create symlink
+  ln -s "$target" "$link_path"
+}
+
+
+# ---------------------------------------------------------------------
+# Create symlinks for new users (in /etc/skel).
+# /etc/skel is the template for new user home directories.
+# Any *new* user account will automatically get these links.
+# ---------------------------------------------------------------------
+safe_link "/var/codebook/hashed_questions/" "/etc/skel/hashed_questions"
+safe_link "/var/codebook/database/"         "/etc/skel/database"
+safe_link "/var/codebook/modules/"          "/etc/skel/modules"
+safe_link "/var/codebook/images/"           "/etc/skel/images"
+
+
+# ---------------------------------------------------------------------
+# Identify existing users whose usernames begin with "jupyter-".
+#
+# getent passwd → list of users
+# grep jupyter- → select Jupyter accounts
+# cut -d: -f1   → extract only the username field
+# ---------------------------------------------------------------------
 users=$(getent passwd | grep "jupyter-" | cut -d: -f1)
 
+
+# ---------------------------------------------------------------------
+# For each existing Jupyter user, create explicit symlinks in their home.
+# The safe_link helper ensures the script can run repeatedly without errors.
+# ---------------------------------------------------------------------
 for user in $users
 do
-  ln -s "/var/codebook/hashed_questions/" "/home/$user"
-  ln -s "/var/codebook/database/" "/home/$user"
-  ln -s "/var/codebook/modules/" "/home/$user"
-  ln -s "/var/codebook/images/" "/home/$user"
-done
+  home="/home/$user"
 
+  safe_link "/var/codebook/hashed_questions/" "$home/hashed_questions"
+  safe_link "/var/codebook/database/"         "$home/database"
+  safe_link "/var/codebook/modules/"          "$home/modules"
+  safe_link "/var/codebook/images/"           "$home/images"
+done

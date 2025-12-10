@@ -1,7 +1,22 @@
 #!/usr/bin/env bash
 
+# This script deploys Jupyter notebooks to both new and existing users.
+# It first updates shared resources by sourcing refresh_deps.
+# Then it:
+#   1. Updates /etc/skel/notebooks/ so all future users automatically receive
+#      the latest notebooks.
+#   2. Copies notebooks into each existing jupyter-* user's home directory,
+#      but without overwriting any notebooks they already have (using
+#      --ignore-existing). New or missing notebooks are added, but modified
+#      user notebooks are preserved.
+
+# Source the refresh_deps script
+# This ensures shared directories and symlinks are updated before deployment.
 source "$(dirname "${BASH_SOURCE[0]}")/refresh_deps"
 
+# List of notebook filenames.
+# NOTE: This array is currently unused in the script and has no effect.
+#       The script instead syncs the entire notebooks/ directory.
 notebooks=(
   "1a_tectonic_classification.ipynb"
   "1b_process-based_classification.ipynb"
@@ -23,11 +38,18 @@ notebooks=(
   "8d_interventions.ipynb"
 )
 
+# Identify all existing users whose usernames start with "jupyter-".
+# These represent active Jupyter user accounts that need updated notebooks.
 users=$(getent passwd | grep "jupyter-" | cut -d: -f1)
 
+# Sync the entire notebooks directory into /etc/skel.
+# This ensures future users automatically get the latest notebooks.
 echo "skel"
 rsync -r --del "./notebooks/" "/etc/skel/notebooks/"
 
+# Sync notebooks into each existing user's home directory.
+#   --ignore-existing prevents overwriting notebooks users may have modified.
+#   --chown ensures the copied files belong to the correct user.
 for user in $users
 do
   echo "user: $user"

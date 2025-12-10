@@ -1,18 +1,85 @@
 #!/usr/bin/env bash
 
+# =====================================================================
+#  NOTEBOOK UPDATE SCRIPT
+# =====================================================================
+#
+# This script updates notebooks for all existing jupyter-* users by copying
+# the latest versions into each user's ~/updated/ directory.
+# New users will also receive the updated notebooks.
+#
+# Key points:
+#   • User notebooks in ~/notebooks/ are left untouched.
+#   • Overwrites files inside ~/updated/ so users always receive the newest version.
+#   • Selected notebooks (listed in the `notebooks` array) are updated.
+#	• If the array is empty, *all* notebooks in ./notebooks/ are used.
+#   • /etc/skel/notebooks/ also receives updated copies, but only selected
+#     notebooks are overwritten; nothing is deleted.
+#
+# =====================================================================
+
+# Refresh the shared resources and symlinks
 source "$(dirname "${BASH_SOURCE[0]}")/refresh_deps"
 
-notebooks=(
-)
+# ---------------------------------------------------------------------------
+# Notebook selection
+# ---------------------------------------------------------------------------
+# If you want to update only specific notebooks, list them here:
+# notebooks=(
+#   "1a_tectonic_classification.ipynb"
+#   "3b_wave_asymmetry_and_skewness.ipynb"
+# )
+# Leave the array empty to update ALL notebooks in ./notebooks/
+
+notebooks=( )
+
+# If no notebooks are listed → update ALL notebooks in ./notebooks/
+if [[ ${#notebooks[@]} -eq 0 ]]; then
+  mapfile -t notebooks < <(find "./notebooks" -maxdepth 1 -type f -name "*.ipynb" -printf "%f\n")
+fi
+
+echo "Updating notebooks:"
+printf "  %s\n" "${notebooks[@]}"
+
+# ---------------------------------------------------------------------------
+# Update /etc/skel/notebooks/
+# Overwrite only the selected notebooks; do not delete anything.
+# ---------------------------------------------------------------------------
+
+echo "skel"
+mkdir -p "/etc/skel/notebooks/"
+
+for nb in "${notebooks[@]}"; do
+  src="./notebooks/$nb"
+  if [[ -f "$src" ]]; then
+    cp "$src" "/etc/skel/notebooks/$nb"
+  else
+    echo "Warning: notebook not found: $nb"
+  fi
+done
+
+# ---------------------------------------------------------------------------
+# Update each user's ~/updated/ directory
+# This overwrites only the selected notebooks.
+# ---------------------------------------------------------------------------
 
 users=$(getent passwd | grep "jupyter-" | cut -d: -f1)
 
-echo "skel"
-rsync -r --del "./notebooks/" "/etc/skel/notebooks/"
-
-for user in $users
-do
+for user in $users; do
   echo "user: $user"
-  rsync -r --del --chown="$user:$user" "./notebooks/" "/home/$user/updated/"
+  user_updated="/home/$user/updated/"
+  mkdir -p "$user_updated"
+
+  for nb in "${notebooks[@]}"; do
+    src="./notebooks/$nb"
+    if [[ -f "$src" ]]; then
+      target="$user_updated$nb"
+      cp "$src" "$target"
+      chown "$user:$user" "$target"
+      echo "  updated: $nb"
+    else
+      echo "  missing source: $nb"
+    fi
+  done
 done
 

@@ -160,7 +160,7 @@ we will create this environment.
 
 Next to the folders with notebooks, hashed_questions and modules, you also need a database folder. You can download this database [here](https://coastal.citg.tudelft.nl/resources/database.tar.gz). Extract the file and copy the database folder on the same level as the folders with notebooks, hashed_questions and modules. On Linux:
 ```bash
-cd CoastalCodebook  
+cd CoastalCodebook
 curl https://coastal.citg.tudelft.nl/resources/database.tar.gz|tar -zx
 ```
 
