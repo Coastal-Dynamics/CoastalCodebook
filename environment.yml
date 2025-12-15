@@ -1,4 +1,4 @@
-# fixed version at end 2024 siutation but with coastal-dynamics v1.0
+# fixed version at end 2024 siutation but with coastal-dynamics v1.0.1
 name: coastalcodebook
 channels:
   - conda-forge
@@ -11,7 +11,7 @@ dependencies:
   - pip=24.3.1
   - jupyter-book=1.0.4
   - pip:
-      - coastal-dynamics==1.0.0
+      - coastal-dynamics==1.0.1
       - uptide==1.1
       - utide==0.3.0
       - numpy==2.2.1
