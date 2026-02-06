@@ -77,11 +77,12 @@
             "b": "The east coast of Australia has many large rivers",
             "c": "Waves from the Southern Ocean can still reach Gold Coast",
             "d": "The Vietnam coast has a much larger sediment supply",
-            "e": "The Vietnam coast has has a wider shelf"
+            "e": "The Vietnam coast has a wider shelf"
         },
         "answer": [
             "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6",
-            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
+            "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4",
+            "3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea"
         ],
         "feedback": {
             "correct": "Correct. Gold coast is much more exposed and has a narrower shelf and a lower sediment supply than the Vietnamese coast. ",
