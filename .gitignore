@@ -148,6 +148,7 @@ dist*
 *.ruff_cache*
 
 # don't add data to github, because of large files
+database
 database/*
 notebooks/database/*
 
