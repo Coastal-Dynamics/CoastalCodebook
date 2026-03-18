@@ -60,7 +60,7 @@
         "answer": "457a963a813c0963d0661e888ecf53b80354035cb3b6a740ada5e7e4cd5eb0b1",
         "sig_figs": 3,
         "feedback": {
-            "correct": "Correct. The maximum transport is found for a value slightly smaller than 45\u00b0 (in our computation 42.6\u00b0).",
+            "correct": "Correct. The maximum transport is found for a value slightly smaller than 45\u00b0 (in our computation 43.5\u00b0).",
             "incorrect": "Incorrect. Use the cell that computes S for a single wave angle and try multiple wave angles, using sufficient accuracy, around the value for which the maximum is to be expected."
         }
     },
@@ -97,7 +97,7 @@
             "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
         ],
         "feedback": {
-            "correct": "Correct. The grain-size is not found in Equation 8.10. This can be seen as a shortcoming of the formula.",
+            "correct": "Correct. The grain-size is not found in Equation 8.10. This can be seen as a shortcoming of the formula, although field data do not show a strong dependency on grain size.",
             "incorrect": "Incorrect. Check Equation 8.10. Which parameters play a role? Do you see the grain-size?"
         }
     },
