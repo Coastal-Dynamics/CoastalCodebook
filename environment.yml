@@ -1,4 +1,7 @@
-# fixed version at end 2024 siutation but with coastal-dynamics v1.0.1
+# fixed versions to correspons with working 2025 situation but with coastal-dynamics v1.0.2
+# utide requires setuptools<81
+# param 3.2.1 breaks panel name widgets (lower or higher is ok)
+# consider fixing python=3.11((wngrade from 3.13 for stability)
 name: coastalcodebook
 channels:
   - conda-forge
@@ -7,11 +10,14 @@ channels:
 dependencies:
   # Python version, pip, and other very generic libraries
   - python=3.13.1
+  - setuptools <81
   - jupyterlab=4.3.4
   - pip=24.3.1
   - jupyter-book=1.0.4
+  - param >=2.3.2
+
   - pip:
-      - coastal-dynamics==1.0.1
+      - coastal-dynamics==1.0.2
       - uptide==1.1
       - utide==0.3.0
       - numpy==2.2.1
