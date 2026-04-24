@@ -1,9 +1,9 @@
 Acknowledgements
 =======================
 
-## Funding  
+## Funding
 
-The Coastal Codebook project was initiated by Judith Bosboom, José Álvarez Antolínez and Floris Calkoen. Funding was provided by the TU Delft Open Stimulation Fund. 
+The Coastal Codebook project was initiated by Judith Bosboom, José Álvarez Antolínez and Floris Calkoen. Funding was provided by the TU Delft Open Stimulation Fund.
 
 ## Development team
 
@@ -20,7 +20,7 @@ Over the year various TU Delft educators and teaching assistants (MSc and PhD st
 - Stuart Pearson (Assistant professor)
 - Mia Pupić Vurilj (PhD student)
 - Valentijn Sessink (Exernal open source expert)
-  
+
 ## Contributors
 
 We welcome and recognize all contributions. You can see a list of current contributors in

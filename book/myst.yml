@@ -1,0 +1,64 @@
+version: 1
+project:
+  title: CoastalCodeBook
+  authors:
+    - name: The Coastal Dynamics Education Team
+  copyright: 2022-2025
+  github: Coastal-Dynamics/CoastalCodeBook
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: intro.md
+    - title: About this book
+      children:
+        - file: about/introduction.md
+        - file: about/structure.md
+        - file: about/overview.md
+        - file: about/acknowledgements.md
+    - title: Usage
+      children:
+        - file: usage/installation.md
+        - file: usage/getting_started.md
+        - file: usage/troubleshooting.md
+        - file: usage/contributing.md
+    - title: Week 1
+      children:
+        - file: notebooks/1a_tectonic_classification.ipynb
+        - file: notebooks/1b_process-based_classification.ipynb
+    - title: Week 2
+      children:
+        - file: notebooks/2a_pre_knowledge_waves.ipynb
+        - file: notebooks/2b_wave_dispersion_and_grouping.ipynb
+        - file: notebooks/2c_generation_tide.ipynb
+        - file: notebooks/2d_tidal_constituents.ipynb
+    - title: Week 3
+      children:
+        - file: notebooks/3a_tidal_environments.ipynb
+        - file: notebooks/3b_wave_asymmetry_and_skewness.ipynb
+        - file: notebooks/3c_radiation_stresses_and_wave_forces.ipynb
+    - title: Week 4
+      children:
+        - file: notebooks/4a_bound_long_wave.ipynb
+        - file: notebooks/4b_shallow_water_tides.ipynb
+    - title: Week 5
+      children:
+        - file: notebooks/5_coastal_classification_and_beach_states.ipynb
+    - title: Week 6
+      children:
+        - file: notebooks/6_cross_shore_transport.ipynb
+    - title: Week 7
+      children:
+        - file: notebooks/7_alongshore_transport.ipynb
+    - title: Week 8
+      children:
+        - file: notebooks/8a_escoffier_curve.ipynb
+        - file: notebooks/8b_kreeke_robaczewska.ipynb
+        - file: notebooks/8c_equillibrium_concentration.ipynb
+        - file: notebooks/8d_interventions.ipynb
+site:
+  options:
+    logo: logo.png
+    folders: true
+  template: book-theme

@@ -1,0 +1,8 @@
+# MyST build outputs
+_build
+# modules, hashed_questions, images, database
+modules
+hashed_questions
+images
+database
+notebooks/saved_answers.json
