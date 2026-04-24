@@ -7,23 +7,23 @@ repos:
     rev: v6.0.0
     hooks:
       - id: trailing-whitespace
-        exclude: ^book/(?!assignments/)
+#        exclude: ^book/(?!assignments/)
       - id: debug-statements
-        exclude: ^book/(?!assignments/)
+#        exclude: ^book/(?!assignments/)
       - id: check-yaml
-        exclude: ^book/(?!assignments/)
+#        exclude: ^book/(?!assignments/)
       - id: check-added-large-files
-        exclude: ^book/(?!assignments/)
+#        exclude: ^book/(?!assignments/)
         args: ["--maxkb=1000"]
 
   - repo: https://github.com/psf/black
     rev: 23.7.0
     hooks:
       - id: black
-        exclude: ^book/(?!assignments/)
+#        exclude: ^book/(?!assignments/)
 
   - repo: https://github.com/kynan/nbstripout
     rev: 0.6.1
     hooks:
       - id: nbstripout
-        exclude: ^book/(?!assignments/)
+ #       exclude: ^book/(?!assignments/)
