@@ -1,6 +1,7 @@
 project:
   type: website
   preview:
+# set to true to automatically open a browser after running quarto preview
     browser: false
   post-render:
     - cp -r ../images _site/
@@ -31,7 +32,7 @@ website:
 
   navbar:
     title: "CoastalCodeBook"
-    logo: logo.png
+    logo: logo_dashboard.png
 
   sidebar:
     style: docked
@@ -107,15 +108,10 @@ format:
       margin-width: 0px
     filters:
       - fix-paths.lua
-    include-after-body:
-      text: |
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          /* 1. RESTORE TAB PREFIX (e.g., 1a_) */
-          var path = window.location.pathname;
-          var fileName = path.split("/").pop().replace(".html", "");
-          if (fileName && fileName !== "" && fileName !== "index") {
-            document.title = fileName + " - CoastalCodeBook";
-          }
-        });
-        </script>
+include-after-body:
+  text: |
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.title = "Preview of Coastal Codebook";
+    });
+    </script>
