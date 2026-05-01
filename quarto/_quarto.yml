@@ -1,0 +1,121 @@
+project:
+  type: website
+  preview:
+    browser: false
+  post-render:
+    - cp -r ../images _site/
+  render:
+    - intro.qmd
+    - about/*.md
+    - usage/*.md
+    - 1*.ipynb
+    - 2a_*.ipynb
+    - 2c_*.ipynb
+    - 2d_*.ipynb
+    - 3b_*.ipynb
+    - 3c_*.ipynb
+    - 4*.ipynb
+    - 5*.ipynb
+    - 6*.ipynb
+    - 7*.ipynb
+    - 8*.ipynb
+
+# maybe needed on the hub?
+# jupyter: python3
+
+website:
+  title: "CoastalCodeBook"
+
+  page-navigation: true
+  repo-url: https://github.com/Coastal-Dynamics/CoastalCodeBook
+
+  navbar:
+    title: "CoastalCodeBook"
+    logo: logo.png
+
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - text: "Introduction"
+        file: intro.qmd
+
+      - section: "About this book"
+        contents:
+          - about/introduction.md
+          - about/structure.md
+          - about/overview.md
+          - about/acknowledgements.md
+
+      - section: "Usage"
+        contents:
+          - usage/installation.md
+          - usage/getting_started.md
+          - usage/troubleshooting.md
+          - usage/contributing.md
+
+      - section: "Week 1"
+        contents:
+          - 1a_tectonic_classification.ipynb
+          - 1b_process-based_classification.ipynb
+
+      - section: "Week 2"
+        contents:
+          - 2a_pre_knowledge_waves.ipynb
+          - 2b_wave_dispersion_and_grouping.ipynb
+          - 2c_generation_tide.ipynb
+          - 2d_tidal_constituents.ipynb
+
+      - section: "Week 3"
+        contents:
+          - 3a_tidal_environments.ipynb
+          - 3b_wave_asymmetry_and_skewness.ipynb
+          - 3c_radiation_stresses_and_wave_forces.ipynb
+
+      - section: "Week 4"
+        contents:
+          - 4a_bound_long_wave.ipynb
+          - 4b_shallow_water_tides.ipynb
+
+      - section: "Week 5"
+        contents:
+          - 5_coastal_classification_and_beach_states.ipynb
+
+      - section: "Week 6"
+        contents:
+          - 6_cross_shore_transport.ipynb
+
+      - section: "Week 7"
+        contents:
+          - 7_alongshore_transport.ipynb
+
+      - section: "Week 8"
+        contents:
+          - 8a_escoffier_curve.ipynb
+          - 8b_kreeke_robaczewska.ipynb
+          - 8c_equillibrium_concentration.ipynb
+          - 8d_interventions.ipynb
+
+format:
+  html:
+    theme: cosmo
+    toc: false
+    page-layout: full
+    grid:
+      sidebar-width: 300px
+      body-width: 1000px
+      margin-width: 0px
+    filters:
+      - fix-paths.lua
+    include-after-body:
+      text: |
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          /* 1. RESTORE TAB PREFIX (e.g., 1a_) */
+          var path = window.location.pathname;
+          var fileName = path.split("/").pop().replace(".html", "");
+          if (fileName && fileName !== "" && fileName !== "index") {
+            document.title = fileName + " - CoastalCodeBook";
+          }
+        });
+        </script>
