@@ -1,0 +1,9 @@
+# Quarto site outputs
+_site/
+.quarto
+_freeze/
+*_files/
+*_cache/
+
+/.quarto/
+**/*.quarto_ipynb

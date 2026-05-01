@@ -153,4 +153,4 @@ database/*
 notebooks/database/*
 
 # don't add saved question answers to github
-notebooks/saved_answers.json
+saved_answers.json
