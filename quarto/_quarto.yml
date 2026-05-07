@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: _site
   preview:
 # set to true to automatically open a browser after running quarto preview
     browser: false
