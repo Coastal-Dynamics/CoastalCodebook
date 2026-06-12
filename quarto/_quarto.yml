@@ -5,7 +5,7 @@ project:
 # set to true to automatically open a browser after running quarto preview
     browser: false
   post-render:
-    - cp -r ../images _site/
+    - /usr/bin/env bash ./post-render.sh
   render:
     - intro.qmd
     - about/*.md

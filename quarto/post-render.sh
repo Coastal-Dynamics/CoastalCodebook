@@ -1,0 +1,1 @@
+cp -r ../images $QUARTO_PROJECT_OUTPUT_DIR
