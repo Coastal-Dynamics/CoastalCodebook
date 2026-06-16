@@ -1,5 +1,5 @@
 # fixed versions to correspond with working 2025 situation but with coastal-dynamics v1.0.3
-# utide requires setuptools<81
+# utide requires setuptools < 81
 # param higher than 2.2.0 breaks panel name widgets
 # fixed python to 3.12 (downgrade from 3.13 for stability)
 name: coastalcodebook
