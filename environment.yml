@@ -10,16 +10,14 @@ channels:
 dependencies:
   # Python version, pip, and other very generic libraries
   - python=3.12
-  - setuptools<81
   - jupyterlab=4.3.4
   - pip=24.3.1
-  - jupyter-book=2.1.2
-  - param<=2.2.0
 
   - pip:
       - coastal-dynamics==1.0.3
       - uptide==1.1
       - utide==0.3.0
+      - setuptools<81
       - numpy==2.2.1
       - pandas==2.2.3
       - pooch==1.8.2
@@ -28,6 +26,7 @@ dependencies:
       - bokeh==3.6.2
       - colorcet==3.1.0
       - holoviews==1.20.0
+      - param<=2.2.0
       - hvplot==0.11.2
       - ipykernel==6.29.5
       - adlfs==2024.12.0
