@@ -133,9 +133,13 @@ we will create this environment.
    environment by running the following command in the terminal/Miniforge prompt:
 
    ```bash
-      mamba env create -f environment.yml
+   mamba env create -f environment.yml
    ```
-
+4. Register the environment as a Jupyter kernel:
+	```bash
+	mamba activate coastalcodebook
+	python -m ipykernel install --sys-prefix --name coastalcodebook --display-name "coastalcodebook"
+	```
 </details>
 
 <details>
@@ -151,8 +155,12 @@ we will create this environment.
    which is a file that describes the software dependencies. Now create the software environment by running the following command in the terminal/Miniforge prompt:
 
    ```bash
-      mamba env create -f environment.yml
+   mamba env create -f environment.yml
    ```
+4. Register the environment as a Jupyter kernel:
+	```bash
+	mamba activate coastalcodebook
+	python -m ipykernel install --sys-prefix --name coastalcodebook --display-name "coastalcodebook"
 
 </details>
 
@@ -167,5 +175,4 @@ curl https://coastal.citg.tudelft.nl/resources/database.tar.gz|tar -zx
 ## 5. Running the notebooks
 
 Having successfully installed all necessary content and software on your computer, you're
-ready to move forward. The [following section](getting_started.md) will guide you through
-running the notebooks!
+ready to move forward. The [following section](getting_started.md) will guide you through running the notebooks!

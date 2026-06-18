@@ -51,7 +51,7 @@ Follow these steps to start exploring the course content through interactive Jup
 
 5. **Open a Notebook**: Within JupyterLab, navigate to the notebooks directory, and open a notebook, such as [1a_tectonic_classification.ipynb](../../notebooks/1a_tectonic_classification.ipynb).
 
-6. **Select the Right Kernel**: Before running the notebook, ensure the coastal environment is selected as the kernel. You can change this in the upper-right corner by selecting Python [conda env:coastalcodebook] from the kernel dropdown menu. Update: we have now set it up so that the kernel display name is "Python 3 (ipykernel)".
+6. **Select the Right Kernel**: Before running the notebook, ensure the coastal environment is selected as the kernel. You can change this in the upper-right corner by selecting ¨coastalcodebook¨ from the kernel dropdown menu. Note: if you did not explicitly register the kernel, you may see a kernel display name  "Python 3 (ipykernel)".
 
 6. **Interact with the Notebook**: You're now ready to execute the notebook cells and
    engage with the interactive coastal computational notebooks!
