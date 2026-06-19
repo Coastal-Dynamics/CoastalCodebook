@@ -1,9 +1,11 @@
 Course structure
 =======================
 
-## Brightspace
+## MSc course Coastal systems
 
-The course structure of CIEM3110-U1 is explained in detail in the syllabus and weekly information on Brightspace. Below you will find a brief summary of the weekly textbook content and assignments. The full schedule is on Brightspace.
+The TU Delft MSc course Coastal and Estuarine Systems (CIEM3110-U1) spans eight weeks. It uses the Coastal Dynamics Open Textbook. Below you will find a brief summary of the weekly course content and the accompanying quizbook assignments and notebooks.
+
+For TU Delft students, further details are found in the syllabus and weekly information on Brightspace.
 
 ## Weekly schedule
 

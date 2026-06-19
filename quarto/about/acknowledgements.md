@@ -8,6 +8,7 @@ The Coastal Codebook project was initiated by Judith Bosboom, José Álvarez Ant
 ## Development team
 
 Over the year various TU Delft educators and teaching assistants (MSc and PhD students) have contributed to the development of these notebooks:
+
 - Mario van den Berg (PhD student)
 - Judith Bosboom (Senior lecturer)
 - Kevin de Bruijn (MSc student and later PhD student)
@@ -23,11 +24,10 @@ Over the year various TU Delft educators and teaching assistants (MSc and PhD st
 
 ## Contributors
 
-We welcome and recognize all contributions. You can see a list of current contributors in
-the [contributorstab](https://github.com/Coastal-Dynamics/CoastalCodebook/graphs/contributors).
+We welcome and recognize all contributions. You can see a list of current contributors in the [contributorstab](https://github.com/Coastal-Dynamics/CoastalCodebook/graphs/contributors).
 
 ## Credits
 
-This project is created using the excellent open source [Jupyter Book
-project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book
-template](https://github.com/executablebooks/cookiecutter-jupyter-book).
+The CoastalCodebook documentation is built and published using Quarto.
+
+The project builds upon a wide range of open-source scientific Python tools for interactive computing, data analysis, visualization, and geospatial workflows. We gratefully acknowledge the communities and contributors who develop and maintain these projects.

@@ -1,16 +1,10 @@
 # Installation Guide
 
-Welcome to the installation guide for the CoastalCodebook! This document provides a
-step-by-step guide to set up your coastal computing environment; that will mostly use the Jupyter
-ecosystem combined with other packages maintained by the [NumFOCUS](https://numfocus.org)
-project to
-provide you with an interactive learning experience. Please follow these steps to
-ensure a smooth start with the tutorial sessions.
+Welcome to the installation guide for the CoastalCodebook! This document provides a step-by-step guide to set up your coastal computing environment, which will mostly use the Jupyter ecosystem combined with a range of open-source scientific Python libraries for data analysis, visualization, and geospatial computing. Please follow these steps to ensure a smooth start with the notebooks.
 
 ## 1. Setting up Git
 
-Git is a version control system that we use for managing the course materials. If you're
-new to Git, we recommend you to start with [this
+Git is a version control system that we use for managing the course materials. If you're new to Git, we recommend you to start with [this
 introduction](https://earth-env-data-science.github.io/lectures/environment/intro_to_git.html).
 
 1. **Install Git software**:
@@ -26,10 +20,8 @@ introduction](https://earth-env-data-science.github.io/lectures/environment/intr
    to install git on your machine.
    </details>
 
-
    <details>
    <summary><strong>By command line</strong></summary>
-
 
    Follow [these instructions](https://github.com/git-guides/install-git) to install git using the
    command line.
@@ -62,12 +54,10 @@ introduction](https://earth-env-data-science.github.io/lectures/environment/intr
 
    </details>
 
-
 Following these steps, the repository's files from GitHub are cloned to your machine.
 Verify this by navigating to the cloned directory's path using a file explorer; the
 contents should mirror those found in the [CoastalCodebook repository](https://github.com/Coastal-Dynamics/CoastalCodebook). However, to interact with and execute the
 code, we need appropriate software, which we will cover during the installation of a package manager.
-
 
 ## 2. Installing Mamba Package Manager
 
@@ -76,7 +66,7 @@ environments --- if you're not familiar with managing Python environments, pleas
 look at this
 [introduction](https://earth-env-data-science.github.io/lectures/environment/python_environments.html?highlight=conda)
 first. Detailed installation instructions for Mamba are available in [the Mamba
-documentation](https://mamba.readthedocs.io/en/latest/installation.html), but here we
+documentation](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html), but here we
 will share the most important links. In their docs,
 they refer to the [Conda Forge GitHub](https://github.com/conda-forge/miniforge#mambaforge)
 page to download the software, so that's where we will download the software as well.
@@ -84,7 +74,7 @@ page to download the software, so that's where we will download the software as 
 <details>
 <summary><strong>Windows Users</strong></summary>
 
-1. Download and install Mambaforge from the [Miniforge GitHub page](https://github.com/conda-forge/miniforge#mambaforge). Make sure you download the Windows binaries.
+1. Download and install Mambaforge from the [Miniforge GitHub page](https://github.com/conda-forge/miniforge#Install). Make sure you download the Windows binaries.
 2. You may install miniforge by double-clicking and just using its default settings.
 3. Access and verify Mamba by opening a Miniforge Prompt from the Start menu. You can
    test if Mamba was installed by running `mamba --version`
@@ -104,8 +94,8 @@ sure to temporarily disable your firewall.
 2. The commands to install the package manager are copied from their documentation ---
    double check to see if they are still the correct!
    ```bash
-   curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
-   bash Mambaforge-$(uname)-$(uname -m).sh
+   curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+   bash Miniforge3-$(uname)-$(uname -m).sh
    ```
 3. Accept the user agreements, and allow the installation script to edit your profile
    file because it ensures that the mamba command becomes available in your profile.
@@ -133,9 +123,13 @@ we will create this environment.
    environment by running the following command in the terminal/Miniforge prompt:
 
    ```bash
-      mamba env create -f environment.yml
+   mamba env create -f environment.yml
    ```
-
+4. Register the environment as a Jupyter kernel:
+	```bash
+	mamba activate coastalcodebook
+	python -m ipykernel install --sys-prefix --name coastalcodebook --display-name "coastalcodebook"
+	```
 </details>
 
 <details>
@@ -151,14 +145,23 @@ we will create this environment.
    which is a file that describes the software dependencies. Now create the software environment by running the following command in the terminal/Miniforge prompt:
 
    ```bash
-      mamba env create -f environment.yml
+   mamba env create -f environment.yml
    ```
+4. Register the environment as a Jupyter kernel:
+	```bash
+	mamba activate coastalcodebook
+	python -m ipykernel install --sys-prefix --name coastalcodebook --display-name "coastalcodebook"
 
 </details>
 
+## 4. Downloading the database
 
-## 4. Running the notebooks
+Next to the folders with notebooks, hashed_questions and modules, you also need a database folder. You can download this database [here](https://coastal.citg.tudelft.nl/resources/database.tar.gz). Extract the file and copy the database folder on the same level as the folders with notebooks, hashed_questions and modules. On Linux:
+```bash
+cd CoastalCodebook
+curl https://coastal.citg.tudelft.nl/resources/database.tar.gz|tar -zx
+```
 
-Having successfully installed all necessary content and software on your computer, you're
-ready to move forward. The [following section](getting_started.md) will guide you through
-running the notebooks!
+## 5. Running the notebooks
+
+Having successfully installed all necessary content and software on your computer, you're ready to move forward. The [following section](getting_started.md) will guide you through running the notebooks!

@@ -7,6 +7,7 @@ project:
   post-render:
     - /usr/bin/env bash ./post-render.sh
   render:
+# not all notebooks included yet due to some quarto specific bugs
     - intro.qmd
     - about/*.md
     - usage/*.md
@@ -21,9 +22,6 @@ project:
     - 6*.ipynb
     - 7*.ipynb
     - 8*.ipynb
-
-# maybe needed on the hub?
-# jupyter: python3
 
 website:
   title: "CoastalCodeBook"
@@ -42,7 +40,7 @@ website:
       - text: "Introduction"
         file: intro.qmd
 
-      - section: "About this book"
+      - section: "About the Codebook"
         contents:
           - about/introduction.md
           - about/structure.md
@@ -54,7 +52,7 @@ website:
           - usage/installation.md
           - usage/getting_started.md
           - usage/troubleshooting.md
-          - usage/contributing.md
+          - usage/building_book.md
 
       - section: "Week 1"
         contents:
@@ -113,6 +111,6 @@ include-after-body:
   text: |
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-      document.title = "Preview of Coastal Codebook";
+      document.title = "Documentation Coastal Codebook";
     });
     </script>

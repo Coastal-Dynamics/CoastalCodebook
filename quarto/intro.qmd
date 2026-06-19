@@ -1,8 +1,10 @@
 # Welcome to the Coastal Codebook
 
-Welcome to the Coastal Dynamics Open Codebook. The Coastal Codebook consists of a series of jupyter notebooks, supplementing the [Coastal Dynamics Open Textbook](https://books.open.tudelft.nl/home/catalog/book/202). The interactive exercises of the Coastal Codebook help students interact with and reflect on the textbook material.
+Welcome to the Coastal Dynamics Open Codebook. The Coastal Codebook consists of a series of Jupyter notebooks, supplementing the [Coastal Dynamics Open Textbook](https://doi.org/10.5074/T.2021.001). The interactive exercises of the Coastal Codebook help students interact with and reflect on the textbook material.
 
-At TU Delft, The Coastal Textbook and Coastal Codebook supplement the MSc course Coastal and Estuarine Systems (CIEM3110-U1). This course discusses the interrelation between physical wave, flow, and sediment transport phenomena and the resulting morphodynamics of a wide variety of coastal systems. The objective is to provide insights into the phenomenological and theoretical as well as applied aspects for civil engineering MSc students.
+This book contains the documentation of the CoastalCodebook. It gives background information on the CoastalCodebook project, practical guidance for working with the CoastalCodebook materials, and notebook previews.
+
+**Warning**: The notebook previews are **static** previews of the notebooks, allowing users to explore the notebook content, structure, and learning materials directly in a web browser. These previews are intended as a reference and overview of the notebooks. To access the full interactive functionality and work through the exercises as intended, the CoastalCodebook environment must be installed and the notebooks must be run locally.
 
 ```{tableofcontents}
 ```

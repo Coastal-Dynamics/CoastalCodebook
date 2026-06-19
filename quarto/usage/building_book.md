@@ -1,6 +1,9 @@
-# Contributing (Advanced)
+# Building the book
 
-## Building the book
+## Running Quarto locally
+
+** this needs to be revised to explain the local book building with quarto**
+** also  check in installation instructions the kernel registratio in the environment versus the below system-wide kernel registration.
 
 If you'd like to build the book yourself you should:
 
@@ -20,7 +23,3 @@ workaround is to add the environments manually to the kernselspec:
 1. Run `mamba activate coastal`
 2. Run `python -m ipykernel install --user --name conda-env-coastal-py --display-name
    "conda-env-coastal-py"`
-
-## Propose changes
-
-We welcome pull requests!
