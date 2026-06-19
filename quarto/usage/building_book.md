@@ -2,8 +2,8 @@
 
 ## Running Quarto locally
 
-** this needs to be revised to explain the local book building with quarto**
-** also  check in installation instructions the kernel registratio in the environment versus the below system-wide kernel registration.
+- **@ this needs to be revised to explain the local book building with quarto**
+- **@ also  check in installation instructions the kernel registration in the environment versus the below system-wide kernel registration**
 
 If you'd like to build the book yourself you should:
 

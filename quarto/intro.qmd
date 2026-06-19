@@ -6,5 +6,7 @@ This book contains the documentation of the CoastalCodebook. It gives background
 
 **Warning**: The notebook previews are **static** previews of the notebooks, allowing users to explore the notebook content, structure, and learning materials directly in a web browser. These previews are intended as a reference and overview of the notebooks. To access the full interactive functionality and work through the exercises as intended, the CoastalCodebook environment must be installed and the notebooks must be run locally.
 
+**@ No previews of notebook 2b and 3a yet, they will follow soon**
+
 ```{tableofcontents}
 ```

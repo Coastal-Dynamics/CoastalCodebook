@@ -1,5 +1,5 @@
 📖 **Looking for installation instructions, tutorials, troubleshooting, or notebook previews?**
-Visit the online documentation: https://coastal.citg.tudelft.nl/book
+Visit the online documentation: https://coastal.citg.tudelft.nl/book/
 
 # Coastal Dynamics Open Codebook
 
@@ -9,7 +9,7 @@ Welcome to the Coastal Dynamics Open Codebook. The Coastal Codebook consists of 
 
 The full CoastalCodebook documentation is available online at:
 
-**https://coastal.citg.tudelft.nl/book**
+**https://coastal.citg.tudelft.nl/book/**
 
 The documentation is maintained as a Quarto book and serves as the primary source of information for users and contributors. It contains:
 
