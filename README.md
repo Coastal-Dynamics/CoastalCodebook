@@ -39,7 +39,7 @@ Please note that these previews are **not** interactive. To use the notebooks as
 
 ## Questions
 
-If you have a question about the installation process or notebooks, feel free to open an issue in the [GitHub repository](https://github.com/Coastal-Dynamics/CoastalCodebook). If that's your first time, have a look at [these instructions](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). We choose to use the GitHub issue-tracker because your fellow students probably have similar problems. We will not troubleshoot the notebooks by email!
+If you have a question about the installation process or notebooks, feel free to [open an issue](https://github.com/Coastal-Dynamics/CoastalCodebook/issues). If that's your first time, have a look at [these instructions](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). We choose to use the GitHub issue-tracker because your fellow students probably have similar problems. We will not troubleshoot the notebooks by email!
 
 ## Contributing
 
