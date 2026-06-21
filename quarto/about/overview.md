@@ -1,7 +1,7 @@
 Notebook overview
 =======================
 
-For each of the eight weeks of the course, there are one or multiple notebooks available.
+The Coastal Codebook consists of a series of Jupyter notebooks, supplementing the [Coastal Dynamics Open Textbook](https://doi.org/10.5074/T.2021.001). Below you will find an overview of all notebooks.
 
 ## Topics per notebook
 

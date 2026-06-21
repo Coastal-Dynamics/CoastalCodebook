@@ -3,7 +3,7 @@ Course structure
 
 ## MSc course Coastal systems
 
-The TU Delft MSc course Coastal and Estuarine Systems (CIEM3110-U1) spans eight weeks. It uses the Coastal Dynamics Open Textbook. Below you will find a brief summary of the weekly course content and the accompanying quizbook assignments and notebooks.
+The TU Delft MSc course Coastal and Estuarine Systems (CIEM3110-U1) spans eight weeks. It uses the [Coastal Dynamics Open Textbook](https://doi.org/10.5074/T.2021.001). Below you will find a brief summary of the weekly course content and the accompanying quizbook assignments and notebooks.
 
 For TU Delft students, further details are found in the syllabus and weekly information on Brightspace.
 
@@ -19,4 +19,6 @@ Week      | Topic of lectures and book chapter (Ch) | Quizzes | Notebooks     |
 | 6   | Cross-shore transport and profile development (Ch7), Longshore transport and coastline changes (Ch8) | Quiz Ch7, Mock exam question detached breakwater Q3,5,6,7 | Notebook week 6   |
 | 7   | Longshore transport and coastline changes (Ch8), Coastal protection (Ch10)    | Quizzes Ch8 and Ch10, Trial exam Humboldt Bay, Mock exam Tangier | Notebook week 7   |
 | 8   | Coastal inlets and tidal basins (Ch9)   | Quiz Ch9, Trial exam Dutch basins, Mock exam Zuiderzee | Notebooks week 8  |
+
+ The [next page](overview.md) gives an overview of the content of the notebooks.
 

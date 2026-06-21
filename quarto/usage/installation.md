@@ -4,8 +4,7 @@ Welcome to the installation guide for the CoastalCodebook! This document provide
 
 ## 1. Setting up Git
 
-Git is a version control system that we use for managing the course materials. If you're new to Git, we recommend you to start with [this
-introduction](https://earth-env-data-science.github.io/lectures/environment/intro_to_git.html).
+Git is a version control system that we use for managing the course materials. If you're new to Git, we recommend you to start with [this introduction](https://earth-env-data-science.github.io/lectures/environment/intro_to_git.html).
 
 1. **Install Git software**:
 
@@ -66,10 +65,8 @@ environments --- if you're not familiar with managing Python environments, pleas
 look at this
 [introduction](https://earth-env-data-science.github.io/lectures/environment/python_environments.html?highlight=conda)
 first. Detailed installation instructions for Mamba are available in [the Mamba
-documentation](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html), but here we
-will share the most important links. In their docs,
-they refer to the [Conda Forge GitHub](https://github.com/conda-forge/miniforge#mambaforge)
-page to download the software, so that's where we will download the software as well.
+documentation](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html), but here we will share the most important links. In their docs,
+they refer to the [Conda Forge GitHub](https://github.com/conda-forge/miniforge#mambaforge) page to download the software, so that's where we will download the software as well.
 
 <details>
 <summary><strong>Windows Users</strong></summary>
@@ -80,8 +77,7 @@ page to download the software, so that's where we will download the software as 
    test if Mamba was installed by running `mamba --version`
 
 **Known issue**: Some users have their firewalls configured in such way that the
-mambaforge installation is blocked. If you have trouble installing mambaforge, please make
-sure to temporarily disable your firewall.
+mambaforge installation is blocked. If you have trouble installing mambaforge, please make sure to temporarily disable your firewall.
 
 </details>
 

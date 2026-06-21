@@ -7,7 +7,7 @@ The Coastal Codebook project was initiated by Judith Bosboom, José Álvarez Ant
 
 ## Development team
 
-Over the year various TU Delft educators and teaching assistants (MSc and PhD students) have contributed to the development of these notebooks:
+Over the years various TU Delft educators and teaching assistants (MSc and PhD students) have contributed to the development of these notebooks:
 
 - Mario van den Berg (PhD student)
 - Judith Bosboom (Senior lecturer)
@@ -20,7 +20,7 @@ Over the year various TU Delft educators and teaching assistants (MSc and PhD st
 - Lisa Kleinveld (MSc student)
 - Stuart Pearson (Assistant professor)
 - Mia Pupić Vurilj (PhD student)
-- Valentijn Sessink (Exernal open source expert)
+- Valentijn Sessink (External open source expert)
 
 ## Contributors
 
