@@ -94,9 +94,17 @@ def plot_brazilian_coast(gdf):
 
 def fig413(gdf):
     # Make the plot with background
-    fp = Path("../images/5_coastal_impact_beach_states/5_fig413_bg.jpg")
+    fp = Path("../images/5_coastal_impact_beach_states/4_graph_relationship-mean-tidal-range-wave-height.png")
 
+    # bg = hv.RGB.load_image(fp, bounds=(-0.23, -0.65, 2.5, 6)).opts(alpha=0.5)
     bg = hv.RGB.load_image(fp, bounds=(0, 0, 2.5, 6)).opts(alpha=0.5)
+
+    width, height, _ = bg.data.shape
+
+    plot_width = 1000
+    plot_height=850
+
+    # plot_height = int(height/width * (plot_width - legend_width))
 
     # create the points
     points = gdf.hvplot.points(
@@ -111,8 +119,8 @@ def fig413(gdf):
     )
 
     fig = (bg * points).opts(
-        width=700,
-        height=600,
+        width=plot_width,
+        height=plot_height,
         show_grid=True,
         active_tools=[],
         toolbar=None,
@@ -124,7 +132,6 @@ def fig413(gdf):
     )
 
     return fig
-
 
 def fig710(df):
     title_para = pn.pane.Markdown("**Pará**", align=("start", "end"))
