@@ -1,7 +1,6 @@
 def custom_css(font_size="16px"):
-
-    css=[
-    f"""
+    css = [
+        f"""
     .bk-btn {{
         font-size: {font_size};
     }}

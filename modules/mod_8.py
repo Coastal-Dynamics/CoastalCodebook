@@ -546,15 +546,14 @@ def velocity_concentration_app():
             5: "⁵",
         }
 
-     
         # Update and Force-Refresh the UI
         with param.edit_constant(beta_slider):
             beta_slider.name = (
                 f"β [m{superscript_dic[int(1-n)]} s{superscript_dic[int(n-1)]}]"
             )
-     
+
         # Explicitly trigger the 'name' parameter so the sliders update visually
-        beta_slider.param.trigger('name')
+        beta_slider.param.trigger("name")
 
         # actual concentration
         c = np.zeros(c_eq.shape)
@@ -770,20 +769,20 @@ def intermezzo_app():
 
         Vc = (Cv * 10**-6) * P**power_c
         Vod = (Cod * 10**-4) * P**power_od
-        
+
         # 1. Calculate the new units
         Cv_units = 3 - 3 * power_c_slider.value
         Cod_units = 3 - 3 * power_od_slider.value
-        
+
         # 2. Update and Force-Refresh the UI
         with param.edit_constant(Cv_slider):
             Cv_slider.name = f"Cᵛ [10⁻⁶ m^{Cv_units:,.2f}]"
         with param.edit_constant(Cod_slider):
             Cod_slider.name = f"Cᵒᵈ [10⁻⁴ m^{Cod_units:,.2f}]"
-     
+
         # 3. Explicitly trigger the 'name' parameter so the sliders update visually
-        Cv_slider.param.trigger('name')
-        Cod_slider.param.trigger('name')
+        Cv_slider.param.trigger("name")
+        Cod_slider.param.trigger("name")
 
         # Cv_slider.name = f"Cᵛ [10⁻⁶ m^{Cv_units:,.2f}]"
         # Cod_slider.name = f"Cᵒᵈ [10⁻⁴ m^{Cod_units:,.2f}]"

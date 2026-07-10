@@ -292,18 +292,12 @@ def W2_tsunami_c_cg(c1, c2, c3, c4, cg1, cg2, cg3, cg4):
     filterwarnings("ignore")
     return display(figure.opts())
 
-def hv_W2_Q7():
 
+def hv_W2_Q7():
     # Panel widgets
-    T1 = pn.widgets.FloatSlider(
-        name="T1 [s]", value=4, start=1, end=20, step=0.01
-    )
-    T2 = pn.widgets.FloatSlider(
-        name="T2 [s]", value=7, start=1, end=20, step=0.01
-    )
-    T3 = pn.widgets.FloatSlider(
-        name="T3 [s]", value=25, start=1, end=30, step=0.01
-    )
+    T1 = pn.widgets.FloatSlider(name="T1 [s]", value=4, start=1, end=20, step=0.01)
+    T2 = pn.widgets.FloatSlider(name="T2 [s]", value=7, start=1, end=20, step=0.01)
+    T3 = pn.widgets.FloatSlider(name="T3 [s]", value=25, start=1, end=30, step=0.01)
 
     slope = pn.widgets.FloatSlider(
         name="slope 1:...", value=75, start=50, end=200, step=0.1
@@ -345,7 +339,6 @@ def hv_W2_Q7():
 
 
 def hv_W2_Q7_graph(T1, T2, T3, slope_in, d0):
-
     slope = 1.0 / slope_in
 
     x_max = round((d0 + 2) / slope)
@@ -379,34 +372,19 @@ def hv_W2_Q7_graph(T1, T2, T3, slope_in, d0):
     c2 = [calc_c(T2, depth) for depth in h_water]
     c3 = [calc_c(T3, depth) for depth in h_water]
 
-
     # -------------------------
     # Bed profile
     # -------------------------
 
     bed_curve = hv.Curve(
-        (x_shift_rev, -h_water),
-        label=f"bed (1:{round(slope_in,2)})"
+        (x_shift_rev, -h_water), label=f"bed (1:{round(slope_in,2)})"
     ).opts(color="black")
 
-    still_water = hv.HLine(
-        0,
-        label="still water"
-    ).opts(color="grey")
+    still_water = hv.HLine(0, label="still water").opts(color="grey")
 
-    shoreline = hv.VLine(
-        0,
-        label="shoreline"
-    ).opts(
-        color="grey",
-        line_dash="dashed"
-    )
+    shoreline = hv.VLine(0, label="shoreline").opts(color="grey", line_dash="dashed")
 
-    plot0 = (
-        bed_curve *
-        still_water *
-        shoreline
-    ).opts(
+    plot0 = (bed_curve * still_water * shoreline).opts(
         height=300,
         xlabel="cross-shore location x [m]",
         ylabel="z [m]",
@@ -415,16 +393,15 @@ def hv_W2_Q7_graph(T1, T2, T3, slope_in, d0):
         responsive=True,
     )
 
-
     # -------------------------
     # Wavelength
     # -------------------------
 
     plot1 = (
-        hv.Curve((x_shift_rev, L1), label="wave 1") *
-        hv.Curve((x_shift_rev, L2), label="wave 2") *
-        hv.Curve((x_shift_rev, L3), label="wave 3") *
-        shoreline
+        hv.Curve((x_shift_rev, L1), label="wave 1")
+        * hv.Curve((x_shift_rev, L2), label="wave 2")
+        * hv.Curve((x_shift_rev, L3), label="wave 3")
+        * shoreline
     ).opts(
         height=300,
         xlabel="cross-shore location x [m]",
@@ -434,16 +411,15 @@ def hv_W2_Q7_graph(T1, T2, T3, slope_in, d0):
         responsive=True,
     )
 
-
     # -------------------------
     # Celerity
     # -------------------------
 
     plot2 = (
-        hv.Curve((x_shift_rev, c1), label="wave 1") *
-        hv.Curve((x_shift_rev, c2), label="wave 2") *
-        hv.Curve((x_shift_rev, c3), label="wave 3") *
-        shoreline
+        hv.Curve((x_shift_rev, c1), label="wave 1")
+        * hv.Curve((x_shift_rev, c2), label="wave 2")
+        * hv.Curve((x_shift_rev, c3), label="wave 3")
+        * shoreline
     ).opts(
         height=300,
         xlabel="cross-shore location x [m]",
@@ -453,19 +429,22 @@ def hv_W2_Q7_graph(T1, T2, T3, slope_in, d0):
         responsive=True,
     )
 
-
     filterwarnings("ignore", category=FutureWarning)
 
-    return hv.Layout(
-        [
-            plot1,
-            plot2,
-            plot0,
-            plot0,
-        ]
-    ).cols(2).opts(
-        title="Cross-shore distribution of wave length and wave celerity",
-        shared_axes=False,
+    return (
+        hv.Layout(
+            [
+                plot1,
+                plot2,
+                plot0,
+                plot0,
+            ]
+        )
+        .cols(2)
+        .opts(
+            title="Cross-shore distribution of wave length and wave celerity",
+            shared_axes=False,
+        )
     )
 
 
@@ -1145,8 +1124,9 @@ def W2_Wave_animation():
     discrete_player.param.watch(update_line, "value")
     display(discrete_player)
 
+
 # DEPRECATED
-    
+
 # def hv_W2_Q7_graph_old(T1, T2, T3, slope_in, d0):
 #     # bed profile
 

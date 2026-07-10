@@ -348,7 +348,11 @@ def pop_wave_transformation():
             .opts(shared_axes=False, legend_position="left")
         )
 
-    app = pn.Column(widgets, pn.Row(interactiveplot_wave_transformation, sizing_mode="stretch_width"), width_policy="max")
+    app = pn.Column(
+        widgets,
+        pn.Row(interactiveplot_wave_transformation, sizing_mode="stretch_width"),
+        width_policy="max",
+    )
 
     return app
 
@@ -738,6 +742,10 @@ def pop_radiation_stresses():
             .opts(shared_axes=False, legend_position="left")
         )
 
-    app = pn.Column(widgets, pn.Row(interactiveplot_radiation_stress, sizing_mode="stretch_width"), width_policy="max")
+    app = pn.Column(
+        widgets,
+        pn.Row(interactiveplot_radiation_stress, sizing_mode="stretch_width"),
+        width_policy="max",
+    )
 
     return app

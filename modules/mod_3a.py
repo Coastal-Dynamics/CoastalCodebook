@@ -190,14 +190,18 @@ def FES_tidal_signal(DATA_DIR, start_date, end_date, responsive=True):
             scheveningen = ftide
         if loc == "Valparaiso":
             valparaiso = ftide
-            
+
     total_signal = hv.Layout(galveston + jakarta + scheveningen + valparaiso).cols(2)
 
     return total_signal, scheveningen, galveston, jakarta, valparaiso
 
 
 def plot_4timeseries_with_interactive_controls(
-    data_dir, locs, comps, start_date, end_date,
+    data_dir,
+    locs,
+    comps,
+    start_date,
+    end_date,
 ):
     # filterwarnings("ignore", category=FutureWarning)
     # filterwarnings("ignore", category=UserWarning)
@@ -258,7 +262,9 @@ def plot_4timeseries_with_interactive_controls(
     galveston = []
 
     for comp in comps:
-        shev = tide["Scheveningen"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
+        shev = (
+            tide["Scheveningen"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
+        )
         valp = tide["Valparaiso"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
         jaka = tide["Jakarta"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
         galv = tide["Galveston"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
@@ -277,15 +283,17 @@ def plot_4timeseries_with_interactive_controls(
     }
 
     # Get FES tidal signal data
-    __, FES1, FES2, FES3, FES4 = FES_tidal_signal(data_dir, start_date, end_date, responsive=False)
+    __, FES1, FES2, FES3, FES4 = FES_tidal_signal(
+        data_dir, start_date, end_date, responsive=False
+    )
     # FES1, FES2, FES3, FES4 = None, None, None, None
 
     fes_data = {
-            "Scheveningen": FES1,
-            "Galveston": FES2,
-            "Jakarta": FES3,
-            "Valparaiso": FES4,
-        }
+        "Scheveningen": FES1,
+        "Galveston": FES2,
+        "Jakarta": FES3,
+        "Valparaiso": FES4,
+    }
     # # ------------------------------------------------------------------
     # # Widgets
     # # ------------------------------------------------------------------
@@ -310,30 +318,22 @@ def plot_4timeseries_with_interactive_controls(
     @pn.depends(
         date_slider.param.value_start,
         date_slider.param.value_end,
-        component_selector.param.value
+        component_selector.param.value,
     )
-    def make_plot(
-        date_start, 
-        date_end, 
-        selected_components
-        ):
-
+    def make_plot(date_start, date_end, selected_components):
         # print('hello world')
         # print(date_start, date_end)
         # print(selected_components)
 
-
         start, end = pd.Timestamp(date_start), pd.Timestamp(date_end)
 
         selected_idx = [
-            i for i, comp in enumerate(comps)
-            if comp in selected_components
+            i for i, comp in enumerate(comps) if comp in selected_components
         ]
 
         figures = []
 
         for loc in locs[:2]:
-
             location = location_data[loc]
 
             curves = [
@@ -362,7 +362,6 @@ def plot_4timeseries_with_interactive_controls(
         # --------------------------------------------------------------
 
         for loc in locs[:2]:
-
             location = location_data[loc]
 
             if selected_idx:
@@ -378,10 +377,7 @@ def plot_4timeseries_with_interactive_controls(
                 line_width=0.8,
             )
 
-            overlay = (
-                fes_data[loc]
-                * selected_curve
-            ).opts(
+            overlay = (fes_data[loc] * selected_curve).opts(
                 title="FES: sum of selected components and total signal",
                 xlabel="Time",
                 ylabel="Sea level [m]",
@@ -392,10 +388,14 @@ def plot_4timeseries_with_interactive_controls(
             )
 
             figures.append(overlay)
-        
-        return hv.Layout(figures).cols(2).opts(
-            # width=1000,
-            height=800,
+
+        return (
+            hv.Layout(figures)
+            .cols(2)
+            .opts(
+                # width=1000,
+                height=800,
+            )
         )
 
         # layout = (hv.Curve([]) + hv.Curve([])).cols(1).opts()  # Placeholder for now, replace with actual layout when ready
@@ -404,12 +404,12 @@ def plot_4timeseries_with_interactive_controls(
         # return layout
 
     app = pn.Column(
-            component_selector,
-            date_slider,
-            # pn.Row(hv.Curve([1, 2, 3]))
-            pn.Row(make_plot, sizing_mode="stretch_width"),
-            width_policy="max",
-        )
+        component_selector,
+        date_slider,
+        # pn.Row(hv.Curve([1, 2, 3]))
+        pn.Row(make_plot, sizing_mode="stretch_width"),
+        width_policy="max",
+    )
 
     return app
 
