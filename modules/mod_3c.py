@@ -328,12 +328,14 @@ def pop_wave_transformation():
                     ylabel=ylabels[key],
                     xlabel="cross-shore location [m]",
                     responsive=True,
+                    height=200,
                     padding=((0, 0.05), 0.1),
                 )
                 * hv.Curve((x_rev, wave2[key]), label=f"{key}₂").opts(
                     ylabel=ylabels[key],
                     xlabel="cross-shore location [m]",
                     responsive=True,
+                    height=200,
                     padding=((0, 0.05), 0.1),
                 )
             ).opts(legend_position=legend_pos[key], legend_cols=2)
@@ -346,7 +348,7 @@ def pop_wave_transformation():
             .opts(shared_axes=False, legend_position="left")
         )
 
-    app = pn.Column(widgets, interactiveplot_wave_transformation)
+    app = pn.Column(widgets, pn.Row(interactiveplot_wave_transformation, sizing_mode="stretch_width"), width_policy="max")
 
     return app
 
@@ -682,6 +684,7 @@ def pop_radiation_stresses():
         )
         plot0 = hv.Overlay([bed_lvl, water_lvl]).opts(
             responsive=True,
+            height=300,
             legend_position="bottom_right",
             ylabel="z = -h [m]",
         )
@@ -714,12 +717,14 @@ def pop_radiation_stresses():
                 hv.Curve((x_rev, wave1[key]), label=f"{key}₁").opts(
                     ylabel=ylabels[key],
                     xlabel="Cross-shore location (x) [m]",
+                    height=300,
                     responsive=True,
                     padding=((0, 0.05), 0.1),
                 )
                 * hv.Curve((x_rev, wave2[key]), label=f"{key}₂").opts(
                     ylabel=ylabels[key],
                     xlabel="Cross-shore location (x) [m]",
+                    height=300,
                     responsive=True,
                     padding=((0, 0.05), 0.1),
                 )
@@ -733,6 +738,6 @@ def pop_radiation_stresses():
             .opts(shared_axes=False, legend_position="left")
         )
 
-    app = pn.Column(widgets, interactiveplot_radiation_stress)
+    app = pn.Column(widgets, pn.Row(interactiveplot_radiation_stress, sizing_mode="stretch_width"), width_policy="max")
 
     return app
