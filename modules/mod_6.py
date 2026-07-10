@@ -477,7 +477,7 @@ def h_hb_transport(tinker_functions):
 
     # add hb slider
     hb_slider = pn.widgets.RangeSlider(
-        name="Range of hb [m] values to plot", start=0, end=2.5, value=(0, 2.5)
+        name="Range of hb [m] values to plot", start=0.01, end=2.5, value=(0.01, 2.5)
     )
 
     # add switches

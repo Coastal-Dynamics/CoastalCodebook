@@ -12,16 +12,16 @@ project:
     - about/*.md
     - usage/*.md
     - 1*.ipynb
-    - 2a_*.ipynb
-    - 2c_*.ipynb
-    - 2d_*.ipynb
-    - 3b_*.ipynb
-    - 3c_*.ipynb
+    - 2*.ipynb
+    - 3*.ipynb
     - 4*.ipynb
     - 5*.ipynb
     - 6*.ipynb
     - 7*.ipynb
-    - 8*.ipynb
+    - 8a*.ipynb
+    - 8b*.ipynb
+    - 8c*.ipynb
+    - 8d*.ipynb
 
 website:
   title: "CoastalCodeBook"
