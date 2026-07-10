@@ -17,6 +17,7 @@ import pickle
 import uptide
 from datetime import datetime, timedelta
 import numpy as np
+import panel as pn
 
 hv.extension("bokeh")
 
@@ -92,7 +93,7 @@ def tidal_characters(F_data):
     return plt.show()
 
 
-def FES_tidal_signal(DATA_DIR, start_date, end_date):
+def FES_tidal_signal(DATA_DIR, start_date, end_date, responsive=True):
     locs = ["Galveston", "Jakarta", "Scheveningen", "Valparaiso"]
 
     tide = {}
@@ -174,8 +175,9 @@ def FES_tidal_signal(DATA_DIR, start_date, end_date):
             title=f"Location {i+1}",
             color="grey",
             show_legend=True,
-            aspect=2,
-            responsive=True,
+            height=300,
+            max_width=800,
+            responsive=responsive,
             line_width=0.7,
             ylabel="Elevation [m]",
             xlabel="Time",
@@ -188,230 +190,452 @@ def FES_tidal_signal(DATA_DIR, start_date, end_date):
             scheveningen = ftide
         if loc == "Valparaiso":
             valparaiso = ftide
+            
     total_signal = hv.Layout(galveston + jakarta + scheveningen + valparaiso).cols(2)
 
     return total_signal, scheveningen, galveston, jakarta, valparaiso
 
 
-data_dir = Path("../database/2_wind_waves_tides/")
-
-scheveningen_fp = os.path.join(data_dir, "tide_scheveningen.p")
-galveston_fp = os.path.join(data_dir, "tide_galveston.p")
-jakarta_fp = os.path.join(data_dir, "tide_jakarta.p")
-valparaiso_fp = os.path.join(data_dir, "tide_valparaiso.p")
-
-with open(scheveningen_fp, "rb") as pickle_file:
-    scheveningen_f = pickle.load(pickle_file)
-with open(galveston_fp, "rb") as pickle_file:
-    galveston_f = pickle.load(pickle_file)
-with open(jakarta_fp, "rb") as pickle_file:
-    jakarta_f = pickle.load(pickle_file)
-with open(valparaiso_fp, "rb") as pickle_file:
-    valparaiso_f = pickle.load(pickle_file)
-
-tide = {
-    "Scheveningen": scheveningen_f,
-    "Valparaiso": valparaiso_f,
-    "Jakarta": jakarta_f,
-    "Galveston": galveston_f,
-}
-
-dates_range = np.array(
-    [
-        datetime(2000, 1, 1, 0, 0, 0) + timedelta(seconds=item * 3600)
-        for item in range(24 * 365)  # 1 year
-    ]
-)
-
-comps = [
-    "M2",
-    "S2",
-    "N2",
-    "K2",  # semi-diurnal
-    "K1",
-    "O1",
-    "P1",
-    "Q1",  # diurnal
-    "MF",
-    "MM",
-    "SSA",  # long period
-    "M4",
-    "M6",
-    "S4",
-    "MN4",
-]
-
-locas = ["Scheveningen", "Valparaiso", "Jakarta", "Galveston"]
-
-scheveningen = []
-valparaiso = []
-jakarta = []
-galveston = []
-
-for comp in comps:
-    shev = tide["Scheveningen"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
-    valp = tide["Valparaiso"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
-    jaka = tide["Jakarta"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
-    galv = tide["Galveston"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
-
-    scheveningen.append(shev)
-    valparaiso.append(valp)
-    jakarta.append(jaka)
-    galveston.append(galv)
-
-
 def plot_4timeseries_with_interactive_controls(
-    locs, comps, start_date, end_date, FES1, FES2, FES3, FES4
+    data_dir, locs, comps, start_date, end_date,
 ):
-    days = end_date - start_date
-    dates = np.array(
-        [start_date + timedelta(seconds=item * 3600) for item in range(24 * days.days)]
+    # filterwarnings("ignore", category=FutureWarning)
+    # filterwarnings("ignore", category=UserWarning)
+
+    scheveningen_fp = os.path.join(data_dir, "tide_scheveningen.p")
+    galveston_fp = os.path.join(data_dir, "tide_galveston.p")
+    jakarta_fp = os.path.join(data_dir, "tide_jakarta.p")
+    valparaiso_fp = os.path.join(data_dir, "tide_valparaiso.p")
+
+    with open(scheveningen_fp, "rb") as pickle_file:
+        scheveningen_f = pickle.load(pickle_file)
+    with open(galveston_fp, "rb") as pickle_file:
+        galveston_f = pickle.load(pickle_file)
+    with open(jakarta_fp, "rb") as pickle_file:
+        jakarta_f = pickle.load(pickle_file)
+    with open(valparaiso_fp, "rb") as pickle_file:
+        valparaiso_f = pickle.load(pickle_file)
+
+    # print(scheveningen_f["m2"])
+
+    tide = {
+        "Scheveningen": scheveningen_f,
+        "Valparaiso": valparaiso_f,
+        "Jakarta": jakarta_f,
+        "Galveston": galveston_f,
+    }
+
+    dates_range = np.array(
+        [
+            datetime(2000, 1, 1, 0, 0, 0) + timedelta(seconds=item * 3600)
+            for item in range(24 * 365)  # 1 year
+        ]
     )
 
-    # locs = ["Scheveningen", "Valparaiso", "Jakarta", "Galveston"]
-
-    # Define a list of checkboxes for component selection and put them in one row
-    checkboxes = [
-        widgets.Checkbox(
-            value=(comp in ["M2", "S2", "K1", "O1"]),
-            description=comp,
-            layout=widgets.Layout(width="auto"),
-        )
-        for comp in comps
+    comps = [
+        "M2",
+        "S2",
+        "N2",
+        "K2",  # semi-diurnal
+        "K1",
+        "O1",
+        "P1",
+        "Q1",  # diurnal
+        "MF",
+        "MM",
+        "SSA",  # long period
+        "M4",
+        "M6",
+        "S4",
+        "MN4",
     ]
-    # ["N2", "K2", "K1", "O1", "P1", "Q1"]
-    checkbox_row = widgets.HBox(
-        checkboxes, layout=widgets.Layout(display="flex", flex_flow="row wrap")
+
+    locas = ["Scheveningen", "Valparaiso", "Jakarta", "Galveston"]
+
+    scheveningen = []
+    valparaiso = []
+    jakarta = []
+    galveston = []
+
+    for comp in comps:
+        shev = tide["Scheveningen"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
+        valp = tide["Valparaiso"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
+        jaka = tide["Jakarta"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
+        galv = tide["Galveston"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
+
+        scheveningen.append(shev)
+        valparaiso.append(valp)
+        jakarta.append(jaka)
+        galveston.append(galv)
+
+    # Mapping of names to datasets
+    location_data = {
+        "Scheveningen": scheveningen,
+        "Valparaiso": valparaiso,
+        "Jakarta": jakarta,
+        "Galveston": galveston,
+    }
+
+    # Get FES tidal signal data
+    __, FES1, FES2, FES3, FES4 = FES_tidal_signal(data_dir, start_date, end_date, responsive=False)
+    # FES1, FES2, FES3, FES4 = None, None, None, None
+
+    fes_data = {
+            "Scheveningen": FES1,
+            "Galveston": FES2,
+            "Jakarta": FES3,
+            "Valparaiso": FES4,
+        }
+    # # ------------------------------------------------------------------
+    # # Widgets
+    # # ------------------------------------------------------------------
+
+    date_slider = pn.widgets.DateRangeSlider(
+        name="Date range",
+        start=pd.Timestamp("2000-01-01 12:00"),
+        end=pd.Timestamp("2000-12-31 12:00"),
+        value=(start_date, end_date),
     )
 
-    # Plot with interactive slider and checkboxes
-    date_range_selector = widgets.SelectionRangeSlider(
-        options=[(date.strftime("%d/%m %Hh"), date) for date in dates],
-        index=(0, len(dates) - 1),
-        description="Dates",
-        orientation="horizontal",
-        layout={"width": "700px"},
-        continuous_update=False,
-        readout=True,
+    component_selector = pn.widgets.CheckBoxGroup(
+        name="Components",
+        options=comps,
+        value=["M2", "S2", "K1", "O1"],
+        inline=True,
     )
 
-    def hv_plot_timeseries(date_range, **kwargs):
-        start_date, end_date = date_range
-        Scheveningen = FES1
-        Valparaiso = FES4
-        Jakarta = FES3
-        Galveston = FES2
+    # ------------------------------------------------------------------
+    # Plot callback
+    # ------------------------------------------------------------------
+    @pn.depends(
+        date_slider.param.value_start,
+        date_slider.param.value_end,
+        component_selector.param.value
+    )
+    def make_plot(
+        date_start, 
+        date_end, 
+        selected_components
+        ):
 
-        # Filter selected components
-        selected_components = [comp for comp, value in kwargs.items() if value]
-        components = [i for i in range(len(comps)) if comps[i] in selected_components]
+        # print('hello world')
+        # print(date_start, date_end)
+        # print(selected_components)
 
-        # Plot the first location with the selected components
-        location1 = globals()[locs[0].lower()]
-        curves1 = [
-            hv.Curve(location1[comp][start_date:end_date], label=comps[comp]).opts(
-                line_width=0.5, show_legend=True
-            )
-            for comp in components
+
+        start, end = pd.Timestamp(date_start), pd.Timestamp(date_end)
+
+        selected_idx = [
+            i for i, comp in enumerate(comps)
+            if comp in selected_components
         ]
-        figure1 = hv.Overlay(curves1)
-        figure1.opts(
-            title=locs[0],
-            xlabel="Time",
-            ylabel="Sea level [m]",
-            legend_cols=2,
-            show_legend=True,
-            aspect=2,
-            responsive=True,
-            legend_position="right",
-        )
 
-        # Plot the second location with the selected components
-        location2 = globals()[locs[1].lower()]
-        curves2 = [
-            hv.Curve(location2[comp][start_date:end_date], label=comps[comp]).opts(
-                line_width=0.5, show_legend=True
+        figures = []
+
+        for loc in locs[:2]:
+
+            location = location_data[loc]
+
+            curves = [
+                hv.Curve(
+                    location[idx][start:end],
+                    label=comps[idx],
+                ).opts(line_width=0.5)
+                for idx in selected_idx
+            ]
+
+            overlay = hv.Overlay(curves).opts(
+                title=loc,
+                xlabel="Time",
+                ylabel="Sea level [m]",
+                legend_cols=2,
+                legend_position="right",
+                responsive=True,
+                height=300,
+                max_width=800,
             )
-            for comp in components
-        ]
-        figure2 = hv.Overlay(curves2)
-        figure2.opts(
-            title=locs[1],
-            xlabel="Time",
-            ylabel="Sea level [m]",
-            legend_cols=2,
-            show_legend=True,
-            aspect=2,
-            responsive=True,
-            legend_position="right",
+
+            figures.append(overlay)
+
+        # --------------------------------------------------------------
+        # FES comparison plots
+        # --------------------------------------------------------------
+
+        for loc in locs[:2]:
+
+            location = location_data[loc]
+
+            if selected_idx:
+                summed = sum(location[idx][start:end] for idx in selected_idx)
+            else:
+                summed = pd.Series(index=location[0][start:end].index, data=0.0)
+
+            selected_curve = hv.Curve(
+                summed,
+                label="Sum sel.",
+            ).opts(
+                color="red",
+                line_width=0.8,
+            )
+
+            overlay = (
+                fes_data[loc]
+                * selected_curve
+            ).opts(
+                title="FES: sum of selected components and total signal",
+                xlabel="Time",
+                ylabel="Sea level [m]",
+                legend_position="right",
+                responsive=True,
+                height=300,
+                max_width=800,
+            )
+
+            figures.append(overlay)
+        
+        return hv.Layout(figures).cols(2).opts(
+            # width=1000,
+            height=800,
         )
 
-        # Calculate and plot the sum
-        sum_loc1 = sum([location1[comp][start_date:end_date] for comp in components])
-        sum_loc2 = sum([location2[comp][start_date:end_date] for comp in components])
-        curves3 = hv.Curve(sum_loc1, label="Sum sel.")
-        curves3.opts(
-            color="red",
-            line_width=0.5,
-            xlabel="Time",
-            ylabel="Sea level [m]",
-            show_legend=True,
-            aspect=2,
-            responsive=True,
-        )
-        fes_loc1 = locals()[locs[0]]
-        figure3 = hv.Overlay(fes_loc1 * curves3)
-        figure3.opts(
-            title="FES: sum of selected components and total signal",
-            xlabel="Time",
-            ylabel="Sea level [m]",
-            show_legend=True,
-            aspect=2,
-            responsive=True,
-            legend_position="right",
+        # layout = (hv.Curve([]) + hv.Curve([])).cols(1).opts()  # Placeholder for now, replace with actual layout when ready
+        # print("bye world")
+
+        # return layout
+
+    app = pn.Column(
+            component_selector,
+            date_slider,
+            # pn.Row(hv.Curve([1, 2, 3]))
+            pn.Row(make_plot, sizing_mode="stretch_width"),
+            width_policy="max",
         )
 
-        curves4 = hv.Curve(sum_loc2, label="Sum sel.")
-        curves4.opts(
-            color="red",
-            line_width=0.5,
-            xlabel="Time",
-            ylabel="Sea level [m]",
-            show_legend=True,
-            aspect=2,
-            responsive=True,
-        )
-        fes_loc2 = locals()[locs[1]]
-        figure4 = hv.Overlay(fes_loc2 * curves4)
-        figure4.opts(
-            title="FES: sum of selected components and total signal",
-            xlabel="Time",
-            ylabel="Sea level [m]",
-            show_legend=True,
-            aspect=2,
-            responsive=True,
-            legend_position="right",
-        )
+    return app
 
-        final = (
-            hv.Layout(figure1 + figure2 + figure3 + figure4)
-            .cols(2)
-            .opts(width=1000, height=3000)
-        )
-        filterwarnings("ignore", category=FutureWarning)
-        return display(final)
 
-    filterwarnings("ignore", category=FutureWarning)
-    filterwarnings("ignore", category=UserWarning)
+# DEPRECATED
 
-    # Create an interactive widget with checkboxes
-    figure = widgets.interactive(
-        hv_plot_timeseries,
-        date_range=date_range_selector,
-        **{checkbox.description: checkbox for checkbox in checkboxes},
-    )
 
-    # Create a new container for arranging controls
-    controls = widgets.VBox([checkbox_row, figure.children[-1]])
-    controls.layout.height = "100%"
-    display(controls)
+# data_dir = Path("../database/2_wind_waves_tides/")
+
+# scheveningen_fp = os.path.join(data_dir, "tide_scheveningen.p")
+# galveston_fp = os.path.join(data_dir, "tide_galveston.p")
+# jakarta_fp = os.path.join(data_dir, "tide_jakarta.p")
+# valparaiso_fp = os.path.join(data_dir, "tide_valparaiso.p")
+
+# with open(scheveningen_fp, "rb") as pickle_file:
+#     scheveningen_f = pickle.load(pickle_file)
+# with open(galveston_fp, "rb") as pickle_file:
+#     galveston_f = pickle.load(pickle_file)
+# with open(jakarta_fp, "rb") as pickle_file:
+#     jakarta_f = pickle.load(pickle_file)
+# with open(valparaiso_fp, "rb") as pickle_file:
+#     valparaiso_f = pickle.load(pickle_file)
+
+# tide = {
+#     "Scheveningen": scheveningen_f,
+#     "Valparaiso": valparaiso_f,
+#     "Jakarta": jakarta_f,
+#     "Galveston": galveston_f,
+# }
+
+# dates_range = np.array(
+#     [
+#         datetime(2000, 1, 1, 0, 0, 0) + timedelta(seconds=item * 3600)
+#         for item in range(24 * 365)  # 1 year
+#     ]
+# )
+
+# comps = [
+#     "M2",
+#     "S2",
+#     "N2",
+#     "K2",  # semi-diurnal
+#     "K1",
+#     "O1",
+#     "P1",
+#     "Q1",  # diurnal
+#     "MF",
+#     "MM",
+#     "SSA",  # long period
+#     "M4",
+#     "M6",
+#     "S4",
+#     "MN4",
+# ]
+
+# locas = ["Scheveningen", "Valparaiso", "Jakarta", "Galveston"]
+
+# scheveningen = []
+# valparaiso = []
+# jakarta = []
+# galveston = []
+
+# for comp in comps:
+#     shev = tide["Scheveningen"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
+#     valp = tide["Valparaiso"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
+#     jaka = tide["Jakarta"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
+#     galv = tide["Galveston"][comp.lower()][dates_range[0] : dates_range[-1]] / 100
+
+#     scheveningen.append(shev)
+#     valparaiso.append(valp)
+#     jakarta.append(jaka)
+#     galveston.append(galv)
+
+
+# def plot_4timeseries_with_interactive_controls(
+#     locs, comps, start_date, end_date, FES1, FES2, FES3, FES4
+# ):
+#     days = end_date - start_date
+#     dates = np.array(
+#         [start_date + timedelta(seconds=item * 3600) for item in range(24 * days.days)]
+#     )
+
+#     # locs = ["Scheveningen", "Valparaiso", "Jakarta", "Galveston"]
+
+#     # Define a list of checkboxes for component selection and put them in one row
+#     checkboxes = [
+#         widgets.Checkbox(
+#             value=(comp in ["M2", "S2", "K1", "O1"]),
+#             description=comp,
+#             layout=widgets.Layout(width="auto"),
+#         )
+#         for comp in comps
+#     ]
+#     # ["N2", "K2", "K1", "O1", "P1", "Q1"]
+#     checkbox_row = widgets.HBox(
+#         checkboxes, layout=widgets.Layout(display="flex", flex_flow="row wrap")
+#     )
+
+#     # Plot with interactive slider and checkboxes
+#     date_range_selector = widgets.SelectionRangeSlider(
+#         options=[(date.strftime("%d/%m %Hh"), date) for date in dates],
+#         index=(0, len(dates) - 1),
+#         description="Dates",
+#         orientation="horizontal",
+#         layout={"width": "700px"},
+#         continuous_update=False,
+#         readout=True,
+#     )
+
+#     def hv_plot_timeseries(date_range, **kwargs):
+#         start_date, end_date = date_range
+#         Scheveningen = FES1
+#         Valparaiso = FES4
+#         Jakarta = FES3
+#         Galveston = FES2
+
+#         # Filter selected components
+#         selected_components = [comp for comp, value in kwargs.items() if value]
+#         components = [i for i in range(len(comps)) if comps[i] in selected_components]
+
+#         # Plot the first location with the selected components
+#         location1 = globals()[locs[0].lower()]
+#         curves1 = [
+#             hv.Curve(location1[comp][start_date:end_date], label=comps[comp]).opts(
+#                 line_width=0.5, show_legend=True
+#             )
+#             for comp in components
+#         ]
+#         figure1 = hv.Overlay(curves1)
+#         figure1.opts(
+#             title=locs[0],
+#             xlabel="Time",
+#             ylabel="Sea level [m]",
+#             legend_cols=2,
+#             show_legend=True,
+#             aspect=2,
+#             responsive=True,
+#             legend_position="right",
+#         )
+
+#         # Plot the second location with the selected components
+#         location2 = globals()[locs[1].lower()]
+#         curves2 = [
+#             hv.Curve(location2[comp][start_date:end_date], label=comps[comp]).opts(
+#                 line_width=0.5, show_legend=True
+#             )
+#             for comp in components
+#         ]
+#         figure2 = hv.Overlay(curves2)
+#         figure2.opts(
+#             title=locs[1],
+#             xlabel="Time",
+#             ylabel="Sea level [m]",
+#             legend_cols=2,
+#             show_legend=True,
+#             aspect=2,
+#             responsive=True,
+#             legend_position="right",
+#         )
+
+#         # Calculate and plot the sum
+#         sum_loc1 = sum([location1[comp][start_date:end_date] for comp in components])
+#         sum_loc2 = sum([location2[comp][start_date:end_date] for comp in components])
+#         curves3 = hv.Curve(sum_loc1, label="Sum sel.")
+#         curves3.opts(
+#             color="red",
+#             line_width=0.5,
+#             xlabel="Time",
+#             ylabel="Sea level [m]",
+#             show_legend=True,
+#             aspect=2,
+#             responsive=True,
+#         )
+#         fes_loc1 = locals()[locs[0]]
+#         figure3 = hv.Overlay(fes_loc1 * curves3)
+#         figure3.opts(
+#             title="FES: sum of selected components and total signal",
+#             xlabel="Time",
+#             ylabel="Sea level [m]",
+#             show_legend=True,
+#             aspect=2,
+#             responsive=True,
+#             legend_position="right",
+#         )
+
+#         curves4 = hv.Curve(sum_loc2, label="Sum sel.")
+#         curves4.opts(
+#             color="red",
+#             line_width=0.5,
+#             xlabel="Time",
+#             ylabel="Sea level [m]",
+#             show_legend=True,
+#             aspect=2,
+#             responsive=True,
+#         )
+#         fes_loc2 = locals()[locs[1]]
+#         figure4 = hv.Overlay(fes_loc2 * curves4)
+#         figure4.opts(
+#             title="FES: sum of selected components and total signal",
+#             xlabel="Time",
+#             ylabel="Sea level [m]",
+#             show_legend=True,
+#             aspect=2,
+#             responsive=True,
+#             legend_position="right",
+#         )
+
+#         final = (
+#             hv.Layout(figure1 + figure2 + figure3 + figure4)
+#             .cols(2)
+#             .opts(width=1000, height=3000)
+#         )
+#         filterwarnings("ignore", category=FutureWarning)
+#         return display(final)
+
+#     filterwarnings("ignore", category=FutureWarning)
+#     filterwarnings("ignore", category=UserWarning)
+
+#     # Create an interactive widget with checkboxes
+#     figure = widgets.interactive(
+#         hv_plot_timeseries,
+#         date_range=date_range_selector,
+#         **{checkbox.description: checkbox for checkbox in checkboxes},
+#     )
+
+#     # Create a new container for arranging controls
+#     controls = widgets.VBox([checkbox_row, figure.children[-1]])
+#     controls.layout.height = "100%"
+#     display(controls)

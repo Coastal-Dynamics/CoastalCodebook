@@ -292,150 +292,181 @@ def W2_tsunami_c_cg(c1, c2, c3, c4, cg1, cg2, cg3, cg4):
     filterwarnings("ignore")
     return display(figure.opts())
 
+def hv_W2_Q7():
+
+    # Panel widgets
+    T1 = pn.widgets.FloatSlider(
+        name="T1 [s]", value=4, start=1, end=20, step=0.01
+    )
+    T2 = pn.widgets.FloatSlider(
+        name="T2 [s]", value=7, start=1, end=20, step=0.01
+    )
+    T3 = pn.widgets.FloatSlider(
+        name="T3 [s]", value=25, start=1, end=30, step=0.01
+    )
+
+    slope = pn.widgets.FloatSlider(
+        name="slope 1:...", value=75, start=50, end=200, step=0.1
+    )
+
+    d0 = pn.widgets.FloatSlider(
+        name="max. depth [m]", value=50, start=0.1, end=500, step=0.1
+    )
+
+    # Create reactive plot
+    graph = pn.bind(
+        hv_W2_Q7_graph,
+        T1=T1,
+        T2=T2,
+        T3=T3,
+        slope_in=slope,
+        d0=d0,
+    )
+
+    # Layout
+    waves = pn.Column(
+        pn.pane.Markdown("### Waves"),
+        T1,
+        T2,
+        T3,
+    )
+
+    bed = pn.Column(
+        pn.pane.Markdown("### Bed profile"),
+        slope,
+        d0,
+    )
+
+    return pn.Column(
+        pn.Row(waves, bed),
+        pn.Row(graph, sizing_mode="stretch_width"),
+        width_policy="max",
+    )
+
 
 def hv_W2_Q7_graph(T1, T2, T3, slope_in, d0):
-    # bed profile
 
-    slope = 1.0 / slope_in  # bed slope [-]
-    d0  # offshore water depth [m]
+    slope = 1.0 / slope_in
+
     x_max = round((d0 + 2) / slope)
-    x = np.arange(0, x_max + 1, 1)  # cross-shore coordinate [m]
-    # x = np.linspace(0, x_max + x_max/100, 100)# <-- should be used to reduce computational demands, influences xticks
-    zbed = -(d0 - slope * x)  # bed elevation [m]
-    h = -zbed  # still water depth [m]
-    h[h < 0] = 0  # no negative depths
 
-    # w is zero when h is 0, causing a divide by zero.
-    # shorten the lists if a water depth of 0 is reached.
-    x0_id = np.argwhere(h == 0)[0][0]  # first location where water depth = 0
-    h_water = h[0:x0_id]
-    x_water = x[0:x0_id]
+    x = np.arange(0, x_max + 1, 1)
 
-    # To solve the xticks problem and shift the axis for plotting so that x=0 at water line.
+    zbed = -(d0 - slope * x)
+    h = -zbed
+    h[h < 0] = 0
+
+    # Remove dry part
+    x0_id = np.argwhere(h == 0)[0][0]
+
+    h_water = h[:x0_id]
+    x_water = x[:x0_id]
+
+    # Shift x-axis so shoreline is x=0
     x_shift_rev = -x_water[::-1]
 
-    # wavelength through profile
-    L1 = [wave_length(T1, h) for h in h_water]
-    L2 = [wave_length(T2, h) for h in h_water]
-    L3 = [wave_length(T3, h) for h in h_water]
+    # Wave length
+    L1 = [wave_length(T1, depth) for depth in h_water]
+    L2 = [wave_length(T2, depth) for depth in h_water]
+    L3 = [wave_length(T3, depth) for depth in h_water]
 
-    # phase velocity cross-shore distribution
-    # 9.81 * T / (2 * np.pi) * np.tanh(2 * np.pi * h / L)
-
-    def calc_c(T, h):
-        L = wave_length(T, h)
+    # Celerity
+    def calc_c(T, depth):
+        L = wave_length(T, depth)
         return L / T
 
-    c1 = [calc_c(T1, h) for h in h_water]
-    c2 = [calc_c(T2, h) for h in h_water]
-    c3 = [calc_c(T3, h) for h in h_water]
+    c1 = [calc_c(T1, depth) for depth in h_water]
+    c2 = [calc_c(T2, depth) for depth in h_water]
+    c3 = [calc_c(T3, depth) for depth in h_water]
 
-    bed = hv.Curve(
-        (x_shift_rev, -h_water), label="bed (1:" + str(round(slope_in, 2)) + ")"
-    ).opts(color="black", padding=((0, 0.05), 0.1))
 
-    still_water_s = hv.HLine((0), label="still water").opts(
+    # -------------------------
+    # Bed profile
+    # -------------------------
+
+    bed_curve = hv.Curve(
+        (x_shift_rev, -h_water),
+        label=f"bed (1:{round(slope_in,2)})"
+    ).opts(color="black")
+
+    still_water = hv.HLine(
+        0,
+        label="still water"
+    ).opts(color="grey")
+
+    shoreline = hv.VLine(
+        0,
+        label="shoreline"
+    ).opts(
         color="grey",
+        line_dash="dashed"
     )
 
-    bx0 = hv.VLine((0), label="shoreline").opts(color="grey", line_dash="dashed")
-
-    plot0 = (bed * still_water_s * bx0).opts(
-        legend_position="right", title="bed profile (z = 0 is still water level)"
-    )
-
-    plot0.opts(
-        width=500,
+    plot0 = (
+        bed_curve *
+        still_water *
+        shoreline
+    ).opts(
         height=300,
+        xlabel="cross-shore location x [m]",
         ylabel="z [m]",
-        xlabel="cross-shore location x [m]",
+        title="Bed profile",
+        legend_position="right",
+        responsive=True,
     )
 
-    # wavelength
 
-    #    y_max = np.max(([L1], [L2], [L3])) * 1.1
+    # -------------------------
+    # Wavelength
+    # -------------------------
 
-    wL1 = hv.Curve((x_shift_rev, L1), label="wave 1")
-    wL2 = hv.Curve((x_shift_rev, L2), label="wave 2")
-    wL3 = hv.Curve((x_shift_rev, L3), label="wave 3")
-
-    wx0 = hv.VLine((0), label="shoreline").opts(color="grey", line_dash="dashed")
-
-    plot1 = (wL1 * wL2 * wL3 * wx0).opts(legend_position="right", title="wave length")
-    plot1.opts(
-        #        ylim=(0, y_max),
-        width=500,
+    plot1 = (
+        hv.Curve((x_shift_rev, L1), label="wave 1") *
+        hv.Curve((x_shift_rev, L2), label="wave 2") *
+        hv.Curve((x_shift_rev, L3), label="wave 3") *
+        shoreline
+    ).opts(
         height=300,
+        xlabel="cross-shore location x [m]",
         ylabel="wave length L [m]",
-        xlabel="cross-shore location x [m]",
-        padding=((0, 0.05), 0.1),
+        title="Wave length",
+        legend_position="right",
+        responsive=True,
     )
 
-    # wave celerity
-    #    y_max = np.max(([c1], [c2], [c3])) * 1.1
 
-    wc1 = hv.Curve((x_shift_rev, c1), label="wave 1")
-    wc2 = hv.Curve((x_shift_rev, c2), label="wave 2")
-    wc3 = hv.Curve((x_shift_rev, c3), label="wave 3")
+    # -------------------------
+    # Celerity
+    # -------------------------
 
-    plot2 = (wc1 * wc2 * wc3 * wx0).opts(legend_position="right", title="wave celerity")
-    plot2.opts(
-        # ylim=(0, y_max),
-        width=500,
+    plot2 = (
+        hv.Curve((x_shift_rev, c1), label="wave 1") *
+        hv.Curve((x_shift_rev, c2), label="wave 2") *
+        hv.Curve((x_shift_rev, c3), label="wave 3") *
+        shoreline
+    ).opts(
         height=300,
-        ylabel="celerity c [m/s]",
         xlabel="cross-shore location x [m]",
-        padding=((0, 0.05), 0.1),
+        ylabel="celerity c [m/s]",
+        title="Wave celerity",
+        legend_position="right",
+        responsive=True,
     )
+
 
     filterwarnings("ignore", category=FutureWarning)
-    plot = (
-        hv.Layout(plot1 + plot2 + plot0 + plot0)
-        .cols(2)
-        .opts(
-            title="Cross-shore distribution of wave length and wave celerity",
-            shared_axes=False,
-        )
-    )
 
-    display(plot)
-
-
-def hv_W2_Q7():
-    # Create interactive widgets, which require IPY Widgets, widgets from panel do not work
-    T1 = ipw.FloatSlider(value=4, min=1, max=20, step=0.01, description="T1 [s]")
-    T2 = ipw.FloatSlider(value=7, min=1, max=20, step=0.01, description="T2 [s]")
-    T3 = ipw.FloatSlider(value=25, min=1, max=20, step=0.01, description="T3 [s]")
-
-    slope = ipw.FloatSlider(
-        value=75, min=50, max=200, step=0.1, description="slope 1:..."
-    )
-    d0 = ipw.FloatSlider(
-        value=50, min=0.1, max=500, step=0.1, description="max. depth [m]"
-    )
-
-    # Setup widget layout (User Interface) for the graph input
-    vbox1 = ipw.VBox(
+    return hv.Layout(
         [
-            ipw.Label("Waves", layout=ipw.Layout(align_self="center")),
-            T1,
-            T2,
-            T3,
+            plot1,
+            plot2,
+            plot0,
+            plot0,
         ]
+    ).cols(2).opts(
+        title="Cross-shore distribution of wave length and wave celerity",
+        shared_axes=False,
     )
-    vbox2 = ipw.VBox(
-        [ipw.Label("Bed profile", layout=ipw.Layout(align_self="center")), slope, d0]
-    )
-    UI = ipw.HBox([vbox1, vbox2])
-
-    # Use the interactive function to update the plot
-    graph = ipw.interactive_output(
-        hv_W2_Q7_graph, {"T1": T1, "T2": T2, "T3": T3, "slope_in": slope, "d0": d0}
-    )
-
-    filterwarnings("ignore", category=FutureWarning)
-    #    display(UI, graph, intro_widget, *questions)
-    display(UI, graph)
 
 
 def W2_Q9_t(input_values, student_func):
@@ -1113,3 +1144,149 @@ def W2_Wave_animation():
 
     discrete_player.param.watch(update_line, "value")
     display(discrete_player)
+
+# DEPRECATED
+    
+# def hv_W2_Q7_graph_old(T1, T2, T3, slope_in, d0):
+#     # bed profile
+
+#     slope = 1.0 / slope_in  # bed slope [-]
+#     d0  # offshore water depth [m]
+#     x_max = round((d0 + 2) / slope)
+#     x = np.arange(0, x_max + 1, 1)  # cross-shore coordinate [m]
+#     # x = np.linspace(0, x_max + x_max/100, 100)# <-- should be used to reduce computational demands, influences xticks
+#     zbed = -(d0 - slope * x)  # bed elevation [m]
+#     h = -zbed  # still water depth [m]
+#     h[h < 0] = 0  # no negative depths
+
+#     # w is zero when h is 0, causing a divide by zero.
+#     # shorten the lists if a water depth of 0 is reached.
+#     x0_id = np.argwhere(h == 0)[0][0]  # first location where water depth = 0
+#     h_water = h[0:x0_id]
+#     x_water = x[0:x0_id]
+
+#     # To solve the xticks problem and shift the axis for plotting so that x=0 at water line.
+#     x_shift_rev = -x_water[::-1]
+
+#     # wavelength through profile
+#     L1 = [wave_length(T1, h) for h in h_water]
+#     L2 = [wave_length(T2, h) for h in h_water]
+#     L3 = [wave_length(T3, h) for h in h_water]
+
+#     # phase velocity cross-shore distribution
+#     # 9.81 * T / (2 * np.pi) * np.tanh(2 * np.pi * h / L)
+
+#     def calc_c(T, h):
+#         L = wave_length(T, h)
+#         return L / T
+
+#     c1 = [calc_c(T1, h) for h in h_water]
+#     c2 = [calc_c(T2, h) for h in h_water]
+#     c3 = [calc_c(T3, h) for h in h_water]
+
+#     bed = hv.Curve(
+#         (x_shift_rev, -h_water), label="bed (1:" + str(round(slope_in, 2)) + ")"
+#     ).opts(color="black", padding=((0, 0.05), 0.1))
+
+#     still_water_s = hv.HLine((0), label="still water").opts(
+#         color="grey",
+#     )
+
+#     bx0 = hv.VLine((0), label="shoreline").opts(color="grey", line_dash="dashed")
+
+#     plot0 = (bed * still_water_s * bx0).opts(
+#         legend_position="right", title="bed profile (z = 0 is still water level)"
+#     )
+
+#     plot0.opts(
+#         width=500,
+#         height=300,
+#         ylabel="z [m]",
+#         xlabel="cross-shore location x [m]",
+#     )
+
+#     # wavelength
+
+#     #    y_max = np.max(([L1], [L2], [L3])) * 1.1
+
+#     wL1 = hv.Curve((x_shift_rev, L1), label="wave 1")
+#     wL2 = hv.Curve((x_shift_rev, L2), label="wave 2")
+#     wL3 = hv.Curve((x_shift_rev, L3), label="wave 3")
+
+#     wx0 = hv.VLine((0), label="shoreline").opts(color="grey", line_dash="dashed")
+
+#     plot1 = (wL1 * wL2 * wL3 * wx0).opts(legend_position="right", title="wave length")
+#     plot1.opts(
+#         #        ylim=(0, y_max),
+#         width=500,
+#         height=300,
+#         ylabel="wave length L [m]",
+#         xlabel="cross-shore location x [m]",
+#         padding=((0, 0.05), 0.1),
+#     )
+
+#     # wave celerity
+#     #    y_max = np.max(([c1], [c2], [c3])) * 1.1
+
+#     wc1 = hv.Curve((x_shift_rev, c1), label="wave 1")
+#     wc2 = hv.Curve((x_shift_rev, c2), label="wave 2")
+#     wc3 = hv.Curve((x_shift_rev, c3), label="wave 3")
+
+#     plot2 = (wc1 * wc2 * wc3 * wx0).opts(legend_position="right", title="wave celerity")
+#     plot2.opts(
+#         # ylim=(0, y_max),
+#         width=500,
+#         height=300,
+#         ylabel="celerity c [m/s]",
+#         xlabel="cross-shore location x [m]",
+#         padding=((0, 0.05), 0.1),
+#     )
+
+#     filterwarnings("ignore", category=FutureWarning)
+#     plot = (
+#         hv.Layout(plot1 + plot2 + plot0 + plot0)
+#         .cols(2)
+#         .opts(
+#             title="Cross-shore distribution of wave length and wave celerity",
+#             shared_axes=False,
+#         )
+#     )
+
+#     display(plot)
+
+
+# def hv_W2_Q7_old():
+#     # Create interactive widgets, which require IPY Widgets, widgets from panel do not work
+#     T1 = ipw.FloatSlider(value=4, min=1, max=20, step=0.01, description="T1 [s]")
+#     T2 = ipw.FloatSlider(value=7, min=1, max=20, step=0.01, description="T2 [s]")
+#     T3 = ipw.FloatSlider(value=25, min=1, max=20, step=0.01, description="T3 [s]")
+
+#     slope = ipw.FloatSlider(
+#         value=75, min=50, max=200, step=0.1, description="slope 1:..."
+#     )
+#     d0 = ipw.FloatSlider(
+#         value=50, min=0.1, max=500, step=0.1, description="max. depth [m]"
+#     )
+
+#     # Setup widget layout (User Interface) for the graph input
+#     vbox1 = ipw.VBox(
+#         [
+#             ipw.Label("Waves", layout=ipw.Layout(align_self="center")),
+#             T1,
+#             T2,
+#             T3,
+#         ]
+#     )
+#     vbox2 = ipw.VBox(
+#         [ipw.Label("Bed profile", layout=ipw.Layout(align_self="center")), slope, d0]
+#     )
+#     UI = ipw.HBox([vbox1, vbox2])
+
+#     # Use the interactive function to update the plot
+#     graph = ipw.interactive_output(
+#         hv_W2_Q7_graph_old, {"T1": T1, "T2": T2, "T3": T3, "slope_in": slope, "d0": d0}
+#     )
+
+#     filterwarnings("ignore", category=FutureWarning)
+#     #    display(UI, graph, intro_widget, *questions)
+#     display(UI, graph)
