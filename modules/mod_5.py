@@ -97,6 +97,7 @@ def fig413(gdf):
     fp = Path(
         "../images/5_coastal_impact_beach_states/4_graph_relationship-mean-tidal-range-wave-height.png"
     )
+    # fp = Path("../images/5_coastal_impact_beach_states/5_fig413_bg_test.jpg")
 
     # bg = hv.RGB.load_image(fp, bounds=(-0.23, -0.65, 2.5, 6)).opts(alpha=0.5)
     bg = hv.RGB.load_image(fp, bounds=(0, 0, 2.5, 6)).opts(alpha=0.5)
@@ -105,6 +106,10 @@ def fig413(gdf):
 
     plot_width = 1000
     plot_height = 850
+
+    # new
+    # plot_width = 700
+    # plot_height = 600
 
     # plot_height = int(height/width * (plot_width - legend_width))
 
