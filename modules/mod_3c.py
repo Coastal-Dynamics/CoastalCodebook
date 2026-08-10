@@ -688,7 +688,7 @@ def pop_radiation_stresses():
         )
         plot0 = hv.Overlay([bed_lvl, water_lvl]).opts(
             responsive=True,
-            height=300,
+            height=200,
             legend_position="bottom_right",
             ylabel="z = -h [m]",
         )
@@ -721,14 +721,14 @@ def pop_radiation_stresses():
                 hv.Curve((x_rev, wave1[key]), label=f"{key}₁").opts(
                     ylabel=ylabels[key],
                     xlabel="Cross-shore location (x) [m]",
-                    height=300,
+                    height=200,
                     responsive=True,
                     padding=((0, 0.05), 0.1),
                 )
                 * hv.Curve((x_rev, wave2[key]), label=f"{key}₂").opts(
                     ylabel=ylabels[key],
                     xlabel="Cross-shore location (x) [m]",
-                    height=300,
+                    height=200,
                     responsive=True,
                     padding=((0, 0.05), 0.1),
                 )
