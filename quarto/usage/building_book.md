@@ -1,25 +1,35 @@
 # Building the book
 
-## Running Quarto locally
+If you'd like to build the book yourself locally, you can do so using Quarto. Quarto needs to be installed separately from the other CoastalCodebook software requirements. Here we assume you have already installed these requirements as per our [installation instructions](installation.md), including registering the `coastalcodebook` environment as a Jupyter kernel.
 
-- **@ this needs to be revised to explain the local book building with quarto**
-- **@ also  check in installation instructions the kernel registration in the environment versus the below system-wide kernel registration**
+## Install Quarto
 
-If you'd like to build the book yourself you should:
+Follow the official Quarto installation instructions for your operating system.
 
-1. Fork this repository
-2. Run `mamba env create -f ci/envs/coastal.yml`
-3. Run `mamba activate coastal`
-4. Run `jupyter-book build book`
+For Ubuntu/Debian Linux, download the `.deb` package from the Quarto download page and install it with:
 
-A fully-rendered HTML version of the book will be built in
-`book/_build/html/`.
+```bash
+sudo dpkg -i quarto-<version>-linux-amd64.deb
+```
 
-**Known issue**: If you use `nb_conda_kernels` to expose your environments, you might run
-into kernelspec errors when building the book. Until [this
-issue](https://github.com/executablebooks/jupyter-book/issues/1348) is fixed, a
-workaround is to add the environments manually to the kernselspec:
+You can check that Quarto is installed correctly with: `quarto --version`.
 
-1. Run `mamba activate coastal`
-2. Run `python -m ipykernel install --user --name conda-env-coastal-py --display-name
-   "conda-env-coastal-py"`
+## Build the book
+
+1. Navigate to the Quarto directory: `cd ~/path/to/CoastalCodebook/quarto`
+2. Activate the environment by running `mamba activate coastalcodebook`
+3. Build the book: `quarto render --execute`
+
+A fully rendered HTML version of the book will be built in:
+
+`~/path/to/CoastalCodebook/quarto/_site/`
+
+## Preview the book
+
+If you want to preview your local version of the book in your browser directly, you can instead run:
+
+```bash
+quarto preview --execute
+```
+
+This renders the book and opens a local browser preview. You can also open the generated files in `_site/` directly using your preferred method.

@@ -2,23 +2,20 @@
 
 Welcome to the Coastal Dynamics Open Codebook. The Coastal Codebook consists of a series of Jupyter notebooks, supplementing the [Coastal Dynamics Open Textbook](https://doi.org/10.5074/T.2021.001). The interactive exercises of the Coastal Codebook help students interact with and reflect on the textbook material.
 
-This book contains the documentation of the CoastalCodebook. It gives background information on the CoastalCodebook project, practical guidance for working with the CoastalCodebook materials, and notebook previews.
+This book contains the documentation of the CoastalCodebook. It gives background information on the CoastalCodebook project, practical guidance for working with the CoastalCodebook materials, and **previews** of the notebooks.
 
 ---
-
-> ### ⚠️ Warning
+> ### ⚠️ About interactivity in the previews
 >
-> The notebook previews in this documentation are **static and non-interactive**.
+>The notebook previews are intended to provide a quick overview of the notebook content and structure in a web browser. They are **static** versions of the notebooks and do not provide the full interactive functionality of the original notebooks.
 >
-> They are intended only for browsing the notebook content in a web browser.
+> Since the **Python code is not executed in the web version**, you cannot run code cells, load or modify data, perform computations, or use interactive visualisations in their full form. Some visual elements may still support limited interaction, such as zooming and panning figures or moving a displayed slider. But these interactions cannot trigger new computations or regenerate visualisations.
 >
-> To access the full interactive functionality and complete the exercises as intended, you must install the **CoastalCodebook environment** and run the notebooks locally.
+> ### ⓘ Full interactive experience
+> To use the notebooks as intended, including running code and exploring the exercises, install the **CoastalCodebook environment** and run the notebooks locally.
 >
->Alternatively, interactive access is available through our JupyterHub environment, which is currently only available for TU Delft students.
-
-> ### ⓘ Note
+>Alternatively, you can use our **JupyterHub environment**, which is currently only available for TU Delft students or upon request.
 >
->Previews of notebooks 2b and 3a are not yet available and will be added soon
 
 ```{tableofcontents}
 ```

@@ -122,10 +122,12 @@ we will create this environment.
    mamba env create -f environment.yml
    ```
 4. Register the environment as a Jupyter kernel:
+
 	```bash
 	mamba activate coastalcodebook
 	python -m ipykernel install --sys-prefix --name coastalcodebook --display-name "coastalcodebook"
 	```
+
 </details>
 
 <details>
@@ -144,9 +146,11 @@ we will create this environment.
    mamba env create -f environment.yml
    ```
 4. Register the environment as a Jupyter kernel:
+
 	```bash
 	mamba activate coastalcodebook
 	python -m ipykernel install --sys-prefix --name coastalcodebook --display-name "coastalcodebook"
+	```
 
 </details>
 

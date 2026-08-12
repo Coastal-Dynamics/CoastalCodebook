@@ -21,6 +21,22 @@ If you're unfamiliar with the process of creating an issue on GitHub, [here is a
 3. Describing the Problem: Provide a clear and concise description of what the issue is,
    including steps to reproduce it, expected outcomes, and any screenshots if applicable.
 
-## JupyterHub
+## JupyterHub users
 
-**To be added some of the stuff from the BS Rescue Guide**
+Normally, your Codebook on the TU Delft JupyterHub should run without any problems. However, if a widget does not load or a question becomes unresponsive, the problem may be caused by leftover or conflicting JupyterLab sessions and kernels.
+
+Before asking for help, try the following rescue steps. They usually resolve the problem.
+
+1. *Save and close all other notebooks.*   Save (**Ctrl + S**) and close (**Alt + W**) all notebooks except the one you are currently working on.
+
+2. *Shut down unused kernels.*
+   In the file browser, look for notebooks with an active kernel indicator (a small dot next to the notebook name). Right-click each notebook with an active kernel and select **Shut Down Kernel**. Keep the kernel for your active notebook running.
+
+3. *Restart your active kernel and clear the output.*
+   In your active notebook, select **Kernel → Restart Kernel and Clear Outputs of All Cells**.
+
+4. *Run the notebook again.*
+   Rerun the notebook cells from the beginning. In most cases, the problem should now be resolved.
+
+5. *If the problem persists, reset the JupyterLab workspace.*
+   First, make sure your notebook is saved. Then select **File → Reset JupyterLab Workspace**.
