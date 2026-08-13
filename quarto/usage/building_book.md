@@ -24,12 +24,10 @@ A fully rendered HTML version of the book will be built in:
 
 `~/path/to/CoastalCodebook/quarto/_site/`
 
-## Preview the book
-
-If you want to preview your local version of the book in your browser directly, you can instead run:
+You can view the generated files in `_site/` using your preferred method. For instance, you can serve the `_site` directory locally:
 
 ```bash
-quarto preview --execute
+python -m http.server 8000 --directory _site
 ```
 
-This renders the book and opens a local browser preview. You can also open the generated files in `_site/` directly using your preferred method.
+And open http://localhost:8000/ in your browser.
