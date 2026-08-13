@@ -551,6 +551,7 @@ def velocity_concentration_app():
             f"β [m{superscript_dic[int(1-n)]} s{superscript_dic[int(n-1)]}]"
         )
         # # This is in test phase to solve for error in dynamic names for param versions higher than 2.2.0
+        # # Does not work, other solution is needed
         # # Update and Force-Refresh the UI
         # with param.edit_constant(beta_slider):
         #     beta_slider.name = (
@@ -776,14 +777,18 @@ def intermezzo_app():
         Vod = (Cod * 10**-4) * P**power_od
 
         # 1. Calculate the new units
-        Cv_units = 3 - 3 * power_c_slider.value
-        Cod_units = 3 - 3 * power_od_slider.value
+        # Cv_units = 3 - 3 * power_c_slider.value
+        # Cod_units = 3 - 3 * power_od_slider.value
+
+        Cv_units = 3 - 3 * power_c
+        Cod_units = 3 - 3 * power_od
 
         # This works fine for param versions up to 2.2.0
         Cv_slider.name = f"Cᵛ [10⁻⁶ m^{Cv_units:,.2f}]"
         Cod_slider.name = f"Cᵒᵈ [10⁻⁴ m^{Cod_units:,.2f}]"
 
         # # This is in test phase to solve for error in dynamic names for param versions higher than 2.2.0
+        # # Does not work, other solution is needed
         # # 2. Update and Force-Refresh the UI
         # with param.edit_constant(Cv_slider):
         #     Cv_slider.name = f"Cᵛ [10⁻⁶ m^{Cv_units:,.2f}]"
@@ -823,6 +828,9 @@ def intermezzo_app():
     )
 
     return app
+
+
+#    return app, Cv_slider, Cod_slider, power_c_slider, power_od_slider
 
 
 def plot_fig935(
