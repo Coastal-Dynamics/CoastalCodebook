@@ -9,12 +9,12 @@ This book contains the documentation of the CoastalCodebook. It gives background
 >
 >The notebook previews are intended to provide a quick overview of the notebook content and structure in a web browser. They are **static** versions of the notebooks and do not provide the full interactive functionality of the original notebooks.
 >
-> Since the **Python code is not executed in the web version**, you cannot run code cells, load or modify data, perform computations, or use interactive visualisations in their full form. Some visual elements may still support limited interaction, such as zooming and panning figures or moving a displayed slider. But these interactions cannot trigger new computations or regenerate visualisations.
+> Since the **Python code is not executed in the web version**, you cannot run code cells, load or modify data, perform computations, or use interactive visualisations in their full form. Some visual elements may still support limited interaction, such as zooming and panning figures or moving a slider. But these interactions cannot trigger new computations or regenerate visualisations.
 >
 > ### ⓘ Full interactive experience
 > To use the notebooks as intended, including running code and exploring the exercises, install the **CoastalCodebook environment** and run the notebooks locally.
 >
->Alternatively, you can use our **JupyterHub environment**, which is currently only available for TU Delft students or upon request.
+>Alternatively, you can use our **JupyterHub**, which is currently only available for TU Delft students or upon request.
 >
 
 ```{tableofcontents}
