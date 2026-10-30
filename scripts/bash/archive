@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+# Archive all regular files directly inside existing jupyter-* users'
+# notebooks/ directories into notebooks/<ARCHIVE_NAME>/.
+#
+# Directories inside notebooks/ are left untouched.
+# Files inside subdirectories are not archived.
+# Existing files in the archive with the same name are skipped.
+#
+# This script does not modify /etc/skel or updated/.
+
+# Name of the archive directory inside each user's notebooks/ directory.
+ARCHIVE_NAME="2025-2026"
+
+# Identify all existing Jupyter users.
+users=$(getent passwd | grep "jupyter-" | cut -d: -f1)
+
+# --- Archive notebooks for each existing user -------------------------------
+for user in $users
+do
+  echo "user: $user"
+
+  NOTEBOOKS_DIR="/home/$user/notebooks"
+  ARCHIVE_DIR="$NOTEBOOKS_DIR/$ARCHIVE_NAME"
+
+  # Skip users who do not have a notebooks/ directory.
+  if [[ ! -d "$NOTEBOOKS_DIR" ]]; then
+    echo "skipping: notebooks directory does not exist"
+    continue
+  fi
+
+  # Create the archive directory if it does not exist.
+  mkdir -p "$ARCHIVE_DIR"
+
+  # Archive regular files directly inside notebooks/.
+  for file in "$NOTEBOOKS_DIR/*"
+  do
+    # Skip if the pattern did not match any files.
+    [[ -e "$file" ]] || continue
+
+    # Skip directories and other non-regular files.
+    [[ -f "$file" ]] || continue
+
+    filename=$(basename "$file")
+
+    # Skip files that already exist in the archive.
+    if [[ -e "$ARCHIVE_DIR/$filename" ]]; then
+      echo "skipping existing archive file: $filename"
+      continue
+    fi
+
+    echo "archiving: $filename"
+    mv -- "$file" "$ARCHIVE_DIR/"
+  done
+done
