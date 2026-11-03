@@ -35,7 +35,7 @@ do
   mkdir -p "$ARCHIVE_DIR"
 
   # Archive regular files directly inside notebooks/.
-  for file in "$NOTEBOOKS_DIR/*"
+  for file in "$NOTEBOOKS_DIR/"*
   do
     # Skip if the pattern did not match any files.
     [[ -e "$file" ]] || continue
