@@ -8,9 +8,11 @@
 # Existing files in the archive with the same name are skipped.
 #
 # This script does not modify /etc/skel or updated/.
+# Use from CoastalCodebook location: sudo ./scripts/bash/archive 2025-2026
+# Or to use a different archive folder: sudo ./scripts/bash/archive 2026-2027
 
 # Name of the archive directory inside each user's notebooks/ directory.
-ARCHIVE_NAME="2025-2026"
+ARCHIVE_NAME="${1:?Usage: $0 <archive_name>}"
 
 # Identify all existing Jupyter users.
 users=$(getent passwd | grep "jupyter-" | cut -d: -f1)
