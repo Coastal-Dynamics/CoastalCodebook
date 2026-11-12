@@ -1,8 +1,8 @@
 # Welcome to the Coastal Codebook
 
-Welcome to the Coastal Dynamics Open Codebook. The Coastal Codebook consists of a series of Jupyter notebooks, supplementing the [Coastal Dynamics Open Textbook](https://doi.org/10.5074/T.2021.001). The interactive exercises of the Coastal Codebook help students interact with and reflect on the textbook material.
+Welcome to the Coastal Dynamics Open Codebook, part of [Open Coastal Education](https://coastal.citg.tudelft.nl), developed at TU Delft. The Coastal Codebook consists of a series of Jupyter notebooks designed to help students interact with and reflect on the material covered in the [Coastal Dynamics Open Textbook](https://doi.org/10.5074/T.2021.001).
 
-This book contains the documentation of the CoastalCodebook. It gives background information on the CoastalCodebook project, practical guidance for working with the CoastalCodebook materials, and **previews** of the notebooks.
+This website provides the **documentation** of the CoastalCodebook. It gives background information on the CoastalCodebook project, practical guidance for working with the CoastalCodebook materials, and **previews** of the notebooks.
 
 ---
 > ### ⚠️ About interactivity in the previews
@@ -12,7 +12,7 @@ This book contains the documentation of the CoastalCodebook. It gives background
 > Since the **Python code is not executed in the web version**, you cannot run code cells, load or modify data, perform computations, or use interactive visualisations in their full form. Some visual elements may still support limited interaction, such as zooming and panning figures or moving a slider. But these interactions cannot trigger new computations or regenerate visualisations.
 >
 > ### ⓘ Full interactive experience
-> To use the notebooks as intended, including running code and exploring the exercises, install the **CoastalCodebook environment** and run the notebooks locally.
+> To use the notebooks as intended, including running code and exploring the exercises, [install](usage/installation.md) the **CoastalCodebook environment** and run the notebooks locally.
 >
 >Alternatively, you can use our **JupyterHub**, which is currently only available for TU Delft students or upon request.
 >

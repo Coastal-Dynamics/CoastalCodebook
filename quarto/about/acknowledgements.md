@@ -3,11 +3,11 @@ Acknowledgements
 
 ## Funding
 
-The Coastal Codebook project was initiated by Judith Bosboom, José Álvarez Antolínez and Floris Calkoen. Funding was provided by the TU Delft Open Stimulation Fund.
+The Coastal Codebook project was initiated by Judith Bosboom, José Álvarez Antolínez and Floris Calkoen. The project has been supported by funding from the TU Delft Open Stimulation Fund and the Faculty of Civil Engineering and Geosciences.
 
 ## Development team
 
-Over the years various TU Delft educators and teaching assistants (MSc and PhD students) have contributed to the development of these notebooks:
+The Coastal Codebook is part of the [Open Coastal Education](https://coastal.citg.tudelft.nl) initiative, led by Judith Bosboom. Over the years various TU Delft educators and teaching assistants (MSc and PhD students) have contributed to the development of the Codebook:
 
 - Mario van den Berg (PhD student)
 - Judith Bosboom (Senior lecturer)
@@ -31,3 +31,10 @@ We welcome and recognize all contributions. You can see a list of current contri
 The CoastalCodebook documentation is built and published using Quarto.
 
 The project builds upon a wide range of open-source scientific Python tools for interactive computing, data analysis, visualization, and geospatial workflows. We gratefully acknowledge the communities and contributors who develop and maintain these projects.
+
+## Contact
+
+For questions about the Coastal Codebook or Open Coastal Education, please contact:
+
+- **Judith Bosboom** – j.bosboom@tudelft.nl
+- **Stuart Pearson** – s.g.pearson@tudelft.nl
